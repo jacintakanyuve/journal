@@ -1334,13 +1334,13 @@
         <button class="subj-btn" data-subj="Труд (Технология)">Труд</button>
       </div>
     </div>
-    <div class="class-list" id="classList"><div class="class-item active">
+    <div class="class-list" id="classList"><div class="class-item">
       <div style="min-width:0;">
         <div class="class-item-title">11 класс</div>
         <div class="class-item-meta">18 уч. • Пт </div>
       </div>
       <span class="class-tag inf">Инф</span>
-    </div><div class="class-item">
+    </div><div class="class-item active">
       <div style="min-width:0;">
         <div class="class-item-title">10 класс</div>
         <div class="class-item-meta">19 уч. • Пн, Ср </div>
@@ -1420,17 +1420,17 @@
     <div class="toolbar" id="classToolbar">
       <div class="toolbar-left">
         <div class="class-header-badge">
-          <span class="class-h1" id="activeClassTitle">11 класс</span>
+          <span class="class-h1" id="activeClassTitle">10 класс</span>
           <span class="class-tag inf" id="activeClassSubj">Информатика</span>
         </div>
 
         <div class="day-pills" title="Дни недели уроков по календарю 2026–2027 (нажмите, чтобы изменить расписание класса)">
           <span style="font-size:11px; color:var(--text-muted); padding:0 5px; font-weight:600;">Дни:</span>
-          <button class="day-pill" data-day="mon">Пн</button>
+          <button class="day-pill active" data-day="mon">Пн</button>
           <button class="day-pill" data-day="tue">Вт</button>
-          <button class="day-pill" data-day="wed">Ср</button>
+          <button class="day-pill active" data-day="wed">Ср</button>
           <button class="day-pill" data-day="thu">Чт</button>
-          <button class="day-pill active" data-day="fri">Пт</button>
+          <button class="day-pill" data-day="fri">Пт</button>
         </div>
 
         <div class="day-pills" title="Количество уроков в день (для 5 класса по Труду — 2 урока в понедельник)">
@@ -1460,14 +1460,14 @@
     <div class="quarter-bar" id="quarterBar">
       <div style="display:flex; align-items:center; gap:6px; flex-wrap:wrap;">
         <div class="quarter-pills" id="quarterPills">
-          <button class="q-pill" data-period="q1" title="1 четверть: 01.09.2026 – 25.10.2026"><span class="q-current-dot" style="display:none;"></span>1 четв. <span class="q-pill-cnt" data-qcnt="q1">8</span></button>
-          <button class="q-pill active" data-period="q2" title="2 четверть: 05.11.2026 – 30.12.2026 (Текущая четверть)"><span class="q-current-dot" style="display: inline-block;"></span>2 четв. <span class="q-pill-cnt" data-qcnt="q2">8</span></button>
-          <button class="q-pill" data-period="q3" title="3 четверть: 11.01.2027 – 28.03.2027"><span class="q-current-dot" style="display:none;"></span>3 четв. <span class="q-pill-cnt" data-qcnt="q3">11</span></button>
-          <button class="q-pill" data-period="q4" title="4 четверть: 05.04.2027 – 31.05.2027"><span class="q-current-dot" style="display:none;"></span>4 четв. <span class="q-pill-cnt" data-qcnt="q4">7</span></button>
+          <button class="q-pill" data-period="q1" title="1 четверть: 01.09.2026 – 25.10.2026"><span class="q-current-dot" style="display:none;"></span>1 четв. <span class="q-pill-cnt" data-qcnt="q1">14</span></button>
+          <button class="q-pill active" data-period="q2" title="2 четверть: 05.11.2026 – 30.12.2026 (Текущая четверть)"><span class="q-current-dot" style="display: inline-block;"></span>2 четв. <span class="q-pill-cnt" data-qcnt="q2">16</span></button>
+          <button class="q-pill" data-period="q3" title="3 четверть: 11.01.2027 – 28.03.2027"><span class="q-current-dot" style="display:none;"></span>3 четв. <span class="q-pill-cnt" data-qcnt="q3">21</span></button>
+          <button class="q-pill" data-period="q4" title="4 четверть: 05.04.2027 – 31.05.2027"><span class="q-current-dot" style="display:none;"></span>4 четв. <span class="q-pill-cnt" data-qcnt="q4">14</span></button>
           <span class="q-sep"></span>
-          <button class="q-pill" data-period="h1" title="1 полугодие: 01.09.2026 – 30.12.2026">1 полуг. <span class="q-pill-cnt" data-qcnt="h1">16</span></button>
-          <button class="q-pill" data-period="h2" title="2 полугодие: 11.01.2027 – 31.05.2027">2 полуг. <span class="q-pill-cnt" data-qcnt="h2">18</span></button>
-          <button class="q-pill" data-period="all" title="Весь год: 01.09.2026 – 31.05.2027">Весь год <span class="q-pill-cnt" data-qcnt="all">34</span></button>
+          <button class="q-pill" data-period="h1" title="1 полугодие: 01.09.2026 – 30.12.2026">1 полуг. <span class="q-pill-cnt" data-qcnt="h1">30</span></button>
+          <button class="q-pill" data-period="h2" title="2 полугодие: 11.01.2027 – 31.05.2027">2 полуг. <span class="q-pill-cnt" data-qcnt="h2">35</span></button>
+          <button class="q-pill" data-period="all" title="Весь год: 01.09.2026 – 31.05.2027">Весь год <span class="q-pill-cnt" data-qcnt="all">65</span></button>
         </div>
         <button class="btn btn-sm" id="btnJumpCurrentQuarter" style="display:none;" title="Вернуться к текущей четверти">
           Текущая четверть
@@ -1479,7 +1479,7 @@
 
       <div class="quarter-meta" id="quarterMetaInfo">
     <span class="period-info-badge">2 четверть: 05.11 – 30.12</span>
-    <span>Показано уроков: <b>2</b> из 34</span>
+    <span>Показано уроков: <b>2</b> из 65</span>
   </div>
     </div>
 
@@ -1487,7 +1487,7 @@
     <div class="lesson-strip" id="lessonStrip">
       <div class="lesson-strip-info" id="lessonStripInfo">
     <span class="hw-pill">
-      <strong>Урок 13.11.2026 (Пт):</strong>
+      <strong>Урок 11.11.2026 (Ср):</strong>
       <span><i style="color:var(--text-muted)">Тема не указана</i></span>
     </span>
     <span class="hw-pill">
@@ -1511,17 +1511,17 @@
       <table class="journal" id="journalTable">
         <thead id="journalHead"><tr>
     <th class="col-idx">№</th>
-    <th class="col-name">ФИО ученика</th><th class="date-th" data-lkey="2026-11-06" title="Урок: 06.11.2026 (Пт)
+    <th class="col-name">ФИО ученика</th><th class="date-th" data-lkey="2026-11-09" title="Урок: 09.11.2026 (Пн)
 Нажмите, чтобы задать тему и ДЗ">
-      <div class="d-lnum">№9</div>
-      <div class="d-date">06.11</div>
-      <div><span class="d-dow">Пт</span></div>
+      <div class="d-lnum">№15</div>
+      <div class="d-date">09.11</div>
+      <div><span class="d-dow">Пн</span></div>
       <div class="d-badges"></div>
-    </th><th class="date-th is-today" data-lkey="2026-11-13" title="Урок: 13.11.2026 (Пт)
+    </th><th class="date-th is-today" data-lkey="2026-11-11" title="Урок: 11.11.2026 (Ср)
 Нажмите, чтобы задать тему и ДЗ">
-      <div class="d-lnum">№10</div>
-      <div class="d-date">13.11</div>
-      <div><span class="d-dow">Пт</span></div>
+      <div class="d-lnum">№16</div>
+      <div class="d-date">11.11</div>
+      <div><span class="d-dow">Ср</span></div>
       <div class="d-badges"></div>
     </th>
     <th class="col-avg" title="Средний балл (2 четверть)">Ср.</th>
