@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
+<html lang="ru" data-theme="dark"><head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Электронный журнал учителя • 2026–2027 учебный год</title>
@@ -1225,8 +1224,8 @@
   <div class="auth-card" id="authCard">
     <div class="auth-icon-wrap">
       <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
-        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
-        <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+        <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
       </svg>
     </div>
     <div class="auth-title">Электронный журнал • 2026–2027</div>
@@ -1234,17 +1233,17 @@
 
     <form id="authForm" autocomplete="off" onsubmit="return handleAuthSubmit(event)">
       <div class="auth-input-wrap">
-        <input type="password" id="authPasswordInput" class="auth-input" placeholder="Введите пароль..." autofocus required>
+        <input type="password" id="authPasswordInput" class="auth-input" placeholder="Введите пароль..." autofocus="" required="">
         <button type="button" class="auth-eye-btn" id="authToggleEye" title="Показать / скрыть пароль">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
-            <circle cx="12" cy="12" r="3"/>
+            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+            <circle cx="12" cy="12" r="3"></circle>
           </svg>
         </button>
       </div>
       <div class="auth-error" id="authErrorMsg"></div>
       <label class="auth-remember">
-        <input type="checkbox" id="authRememberSession" checked>
+        <input type="checkbox" id="authRememberSession" checked="">
         <span>Не запрашивать повторно до закрытия вкладки</span>
       </label>
       <button type="submit" class="btn btn-primary auth-submit" id="authSubmitBtn">
@@ -1262,10 +1261,10 @@
 <header class="topbar">
   <div class="brand">
     <button class="btn btn-icon" id="btnToggleSidebar" title="Скрыть/показать список классов">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
     </button>
     <div class="brand-logo">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
     </div>
     <div>
       <div class="brand-title">Электронный журнал • 2026–2027</div>
@@ -1275,19 +1274,19 @@
 
   <nav class="nav-tabs">
     <button class="nav-tab active" data-view="journal">
-      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
       Журнал
     </button>
     <button class="nav-tab" data-view="homework">
-      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"></path><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
       ДЗ и долги <span class="badge-count" id="hwBadgeCount">0</span>
     </button>
     <button class="nav-tab" data-view="calendar">
-      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
       Календарь 2026–2027
     </button>
     <button class="nav-tab" data-view="analytics">
-      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
       Итоги и отчёты
     </button>
   </nav>
@@ -1297,15 +1296,15 @@
       <span class="dot-live"></span>
       <span id="saveStatusText">Локально</span>
     </div>
-    <button type="button" class="gh-pill" id="btnGithubConfig" title="Настроить автоматическое сохранение изменений прямо в репозиторий GitHub">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-      <span id="ghStatusText">GitHub: настроить</span>
+    <button type="button" class="gh-pill syncing" id="btnGithubConfig" title="Настроить автоматическое сохранение изменений прямо в репозиторий GitHub">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"></path></svg>
+      <span id="ghStatusText">Сохранение в GitHub...</span>
     </button>
-    <button class="btn btn-primary btn-sm" id="btnPushGithubNow" style="display:none;" title="Немедленно сохранить все текущие оценки и ДЗ в репозиторий GitHub">
+    <button class="btn btn-primary btn-sm" id="btnPushGithubNow" style="display: inline-flex;" title="Немедленно сохранить все текущие оценки и ДЗ в репозиторий GitHub">
       Сохранить в GitHub
     </button>
     <button class="btn btn-sm" id="btnSavePortableHtml" title="Скачать автономный HTML-файл со всеми вашими текущими оценками и ДЗ">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
       Скачать HTML
     </button>
     <button class="btn btn-sm" id="btnBackupMenu" title="Резервная копия JSON / Экспорт в Excel / Печать">
@@ -1313,13 +1312,13 @@
     </button>
     <button class="btn btn-sm" id="btnLockJournal" title="Заблокировать журнал паролем">
       <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
-        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
-        <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+        <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
       </svg>
       Заблокировать
     </button>
     <button class="btn btn-icon" id="btnTheme" title="Переключить светлую/тёмную тему">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
     </button>
   </div>
 </header>
@@ -1335,7 +1334,79 @@
         <button class="subj-btn" data-subj="Труд (Технология)">Труд</button>
       </div>
     </div>
-    <div class="class-list" id="classList"></div>
+    <div class="class-list" id="classList"><div class="class-item">
+      <div style="min-width:0;">
+        <div class="class-item-title">11 класс</div>
+        <div class="class-item-meta">18 уч. • Пт </div>
+      </div>
+      <span class="class-tag inf">Инф</span>
+    </div><div class="class-item">
+      <div style="min-width:0;">
+        <div class="class-item-title">10 класс</div>
+        <div class="class-item-meta">19 уч. • Пн, Ср </div>
+      </div>
+      <span class="class-tag inf">Инф</span>
+    </div><div class="class-item active">
+      <div style="min-width:0;">
+        <div class="class-item-title">9 класс</div>
+        <div class="class-item-meta">22 уч. • Вт </div>
+      </div>
+      <span class="class-tag inf">Инф</span>
+    </div><div class="class-item">
+      <div style="min-width:0;">
+        <div class="class-item-title">8 класс</div>
+        <div class="class-item-meta">20 уч. • Пн, Вт </div>
+      </div>
+      <span class="class-tag inf">Инф</span>
+    </div><div class="class-item">
+      <div style="min-width:0;">
+        <div class="class-item-title">7 класс</div>
+        <div class="class-item-meta">21 уч. • Пт </div>
+      </div>
+      <span class="class-tag inf">Инф</span>
+    </div><div class="class-item">
+      <div style="min-width:0;">
+        <div class="class-item-title">6 класс</div>
+        <div class="class-item-meta">19 уч. • Чт </div>
+      </div>
+      <span class="class-tag inf">Инф</span>
+    </div><div class="class-item">
+      <div style="min-width:0;">
+        <div class="class-item-title">5 класс</div>
+        <div class="class-item-meta">11 уч. • Чт </div>
+      </div>
+      <span class="class-tag inf">Инф</span>
+    </div><div class="class-item">
+      <div style="min-width:0;">
+        <div class="class-item-title">5 класс</div>
+        <div class="class-item-meta">11 уч. • Пн • 2 ур. </div>
+      </div>
+      <span class="class-tag trud">Труд</span>
+    </div><div class="class-item">
+      <div style="min-width:0;">
+        <div class="class-item-title">6 класс</div>
+        <div class="class-item-meta">11 уч. • Ср </div>
+      </div>
+      <span class="class-tag trud">Труд</span>
+    </div><div class="class-item">
+      <div style="min-width:0;">
+        <div class="class-item-title">7 класс</div>
+        <div class="class-item-meta">11 уч. • Чт </div>
+      </div>
+      <span class="class-tag trud">Труд</span>
+    </div><div class="class-item">
+      <div style="min-width:0;">
+        <div class="class-item-title">8 класс</div>
+        <div class="class-item-meta">10 уч. • Ср </div>
+      </div>
+      <span class="class-tag trud">Труд</span>
+    </div><div class="class-item">
+      <div style="min-width:0;">
+        <div class="class-item-title">9 класс</div>
+        <div class="class-item-meta">16 уч. • Пт </div>
+      </div>
+      <span class="class-tag trud">Труд</span>
+    </div></div>
     <div class="sidebar-foot">
       <button class="btn btn-sm" id="btnAddClass" style="width:100%; justify-content:center;">
         + Добавить класс / группу
@@ -1349,14 +1420,14 @@
     <div class="toolbar" id="classToolbar">
       <div class="toolbar-left">
         <div class="class-header-badge">
-          <span class="class-h1" id="activeClassTitle">5 класс</span>
-          <span class="class-tag trud" id="activeClassSubj">Труд (Технология)</span>
+          <span class="class-h1" id="activeClassTitle">9 класс</span>
+          <span class="class-tag inf" id="activeClassSubj">Информатика</span>
         </div>
 
         <div class="day-pills" title="Дни недели уроков по календарю 2026–2027 (нажмите, чтобы изменить расписание класса)">
           <span style="font-size:11px; color:var(--text-muted); padding:0 5px; font-weight:600;">Дни:</span>
           <button class="day-pill" data-day="mon">Пн</button>
-          <button class="day-pill" data-day="tue">Вт</button>
+          <button class="day-pill active" data-day="tue">Вт</button>
           <button class="day-pill" data-day="wed">Ср</button>
           <button class="day-pill" data-day="thu">Чт</button>
           <button class="day-pill" data-day="fri">Пт</button>
@@ -1364,7 +1435,7 @@
 
         <div class="day-pills" title="Количество уроков в день (для 5 класса по Труду — 2 урока в понедельник)">
           <span style="font-size:11px; color:var(--text-muted); padding:0 5px; font-weight:600;">Ур./день:</span>
-          <button class="day-pill lpd-pill" data-lpd="1">1</button>
+          <button class="day-pill lpd-pill active" data-lpd="1">1</button>
           <button class="day-pill lpd-pill" data-lpd="2">2</button>
         </div>
       </div>
@@ -1389,14 +1460,14 @@
     <div class="quarter-bar" id="quarterBar">
       <div style="display:flex; align-items:center; gap:6px; flex-wrap:wrap;">
         <div class="quarter-pills" id="quarterPills">
-          <button class="q-pill" data-period="q1"><span class="q-current-dot" style="display:none;"></span>1 четв. <span class="q-pill-cnt" data-qcnt="q1">0</span></button>
-          <button class="q-pill" data-period="q2"><span class="q-current-dot" style="display:none;"></span>2 четв. <span class="q-pill-cnt" data-qcnt="q2">0</span></button>
-          <button class="q-pill" data-period="q3"><span class="q-current-dot" style="display:none;"></span>3 четв. <span class="q-pill-cnt" data-qcnt="q3">0</span></button>
-          <button class="q-pill" data-period="q4"><span class="q-current-dot" style="display:none;"></span>4 четв. <span class="q-pill-cnt" data-qcnt="q4">0</span></button>
+          <button class="q-pill" data-period="q1" title="1 четверть: 01.09.2026 – 25.10.2026"><span class="q-current-dot" style="display:none;"></span>1 четв. <span class="q-pill-cnt" data-qcnt="q1">8</span></button>
+          <button class="q-pill active" data-period="q2" title="2 четверть: 05.11.2026 – 30.12.2026 (Текущая четверть)"><span class="q-current-dot" style="display: inline-block;"></span>2 четв. <span class="q-pill-cnt" data-qcnt="q2">8</span></button>
+          <button class="q-pill" data-period="q3" title="3 четверть: 11.01.2027 – 28.03.2027"><span class="q-current-dot" style="display:none;"></span>3 четв. <span class="q-pill-cnt" data-qcnt="q3">10</span></button>
+          <button class="q-pill" data-period="q4" title="4 четверть: 05.04.2027 – 31.05.2027"><span class="q-current-dot" style="display:none;"></span>4 четв. <span class="q-pill-cnt" data-qcnt="q4">6</span></button>
           <span class="q-sep"></span>
-          <button class="q-pill" data-period="h1">1 полуг. <span class="q-pill-cnt" data-qcnt="h1">0</span></button>
-          <button class="q-pill" data-period="h2">2 полуг. <span class="q-pill-cnt" data-qcnt="h2">0</span></button>
-          <button class="q-pill" data-period="all">Весь год <span class="q-pill-cnt" data-qcnt="all">0</span></button>
+          <button class="q-pill" data-period="h1" title="1 полугодие: 01.09.2026 – 30.12.2026">1 полуг. <span class="q-pill-cnt" data-qcnt="h1">16</span></button>
+          <button class="q-pill" data-period="h2" title="2 полугодие: 11.01.2027 – 31.05.2027">2 полуг. <span class="q-pill-cnt" data-qcnt="h2">16</span></button>
+          <button class="q-pill" data-period="all" title="Весь год: 01.09.2026 – 31.05.2027">Весь год <span class="q-pill-cnt" data-qcnt="all">32</span></button>
         </div>
         <button class="btn btn-sm" id="btnJumpCurrentQuarter" style="display:none;" title="Вернуться к текущей четверти">
           Текущая четверть
@@ -1406,12 +1477,25 @@
         </button>
       </div>
 
-      <div class="quarter-meta" id="quarterMetaInfo"></div>
+      <div class="quarter-meta" id="quarterMetaInfo">
+    <span class="period-info-badge">2 четверть: 05.11 – 30.12</span>
+    <span>Показано уроков: <b>8</b> из 32</span>
+  </div>
     </div>
 
     <!-- LESSON / HOMEWORK QUICK STRIP -->
     <div class="lesson-strip" id="lessonStrip">
-      <div class="lesson-strip-info" id="lessonStripInfo"></div>
+      <div class="lesson-strip-info" id="lessonStripInfo">
+    <span class="hw-pill">
+      <strong>Урок 17.11.2026 (Вт):</strong>
+      <span><i style="color:var(--text-muted)">Тема не указана</i></span>
+    </span>
+    <span class="hw-pill">
+      <strong>ДЗ:</strong>
+      <span><i style="color:var(--text-muted)">Не задано (нажмите на дату или кнопку справа)</i></span>
+      
+    </span>
+  </div>
       <div style="display:flex; gap:6px; align-items:center;">
         <span style="font-size:11.5px; color:var(--text-muted);" title="Клавиши 5, 4, 3, 2, Z (зач), N (н), Del (очистить) работают при выделении ячейки">
           Клавиатура: <b>5/4/3/2</b>, <b>Z</b>=зач, <b>N</b>=н
@@ -1425,8 +1509,1317 @@
     <!-- VIEW 1: JOURNAL GRID -->
     <div class="table-wrap" id="view-journal">
       <table class="journal" id="journalTable">
-        <thead id="journalHead"></thead>
-        <tbody id="journalBody"></tbody>
+        <thead id="journalHead"><tr>
+    <th class="col-idx">№</th>
+    <th class="col-name">ФИО ученика</th><th class="date-th" data-lkey="2026-11-10" title="Урок: 10.11.2026 (Вт)
+Нажмите, чтобы задать тему и ДЗ">
+      <div class="d-lnum">№9</div>
+      <div class="d-date">10.11</div>
+      <div><span class="d-dow">Вт</span></div>
+      <div class="d-badges"></div>
+    </th><th class="date-th is-today" data-lkey="2026-11-17" title="Урок: 17.11.2026 (Вт)
+Нажмите, чтобы задать тему и ДЗ">
+      <div class="d-lnum">№10</div>
+      <div class="d-date">17.11</div>
+      <div><span class="d-dow">Вт</span></div>
+      <div class="d-badges"></div>
+    </th><th class="date-th" data-lkey="2026-11-24" title="Урок: 24.11.2026 (Вт)
+Нажмите, чтобы задать тему и ДЗ">
+      <div class="d-lnum">№11</div>
+      <div class="d-date">24.11</div>
+      <div><span class="d-dow">Вт</span></div>
+      <div class="d-badges"></div>
+    </th><th class="date-th" data-lkey="2026-12-01" title="Урок: 01.12.2026 (Вт)
+Нажмите, чтобы задать тему и ДЗ">
+      <div class="d-lnum">№12</div>
+      <div class="d-date">01.12</div>
+      <div><span class="d-dow">Вт</span></div>
+      <div class="d-badges"></div>
+    </th><th class="date-th" data-lkey="2026-12-08" title="Урок: 08.12.2026 (Вт)
+Нажмите, чтобы задать тему и ДЗ">
+      <div class="d-lnum">№13</div>
+      <div class="d-date">08.12</div>
+      <div><span class="d-dow">Вт</span></div>
+      <div class="d-badges"></div>
+    </th><th class="date-th" data-lkey="2026-12-15" title="Урок: 15.12.2026 (Вт)
+Нажмите, чтобы задать тему и ДЗ">
+      <div class="d-lnum">№14</div>
+      <div class="d-date">15.12</div>
+      <div><span class="d-dow">Вт</span></div>
+      <div class="d-badges"></div>
+    </th><th class="date-th" data-lkey="2026-12-22" title="Урок: 22.12.2026 (Вт)
+Нажмите, чтобы задать тему и ДЗ">
+      <div class="d-lnum">№15</div>
+      <div class="d-date">22.12</div>
+      <div><span class="d-dow">Вт</span></div>
+      <div class="d-badges"></div>
+    </th><th class="date-th" data-lkey="2026-12-29" title="Урок: 29.12.2026 (Вт)
+Нажмите, чтобы задать тему и ДЗ">
+      <div class="d-lnum">№16</div>
+      <div class="d-date">29.12</div>
+      <div><span class="d-dow">Вт</span></div>
+      <div class="d-badges"></div>
+    </th>
+    <th class="col-avg" title="Средний балл (2 четверть)">Ср.</th>
+    <th class="col-rec" title="Рекомендуемая оценка (2 четверть)">Рек.</th>
+    <th class="col-fin" title="Итоговая оценка (2 четверть)">Итог</th>
+    <th class="col-stat" title="Зачёты / Пропуски (н)">Зач/Н</th>
+  </tr></thead>
+        <tbody id="journalBody"><tr>
+      <td class="col-idx">1</td>
+      <td class="col-name">
+        <div class="student-cell" data-stid="inf_9_s1" title="Авдеева София Михайловна">
+          <span class="student-name-txt">Авдеева София Михайловна</span>
+          <span class="student-icons">
+            
+            
+          </span>
+        </div>
+      </td><td class="grade-cell" data-stid="inf_9_s1" data-lkey="2026-11-10" title="Авдеева София Михайловна • 10.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s1" data-lkey="2026-11-17" title="Авдеева София Михайловна • 17.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s1" data-lkey="2026-11-24" title="Авдеева София Михайловна • 24.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s1" data-lkey="2026-12-01" title="Авдеева София Михайловна • 01.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s1" data-lkey="2026-12-08" title="Авдеева София Михайловна • 08.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s1" data-lkey="2026-12-15" title="Авдеева София Михайловна • 15.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s1" data-lkey="2026-12-22" title="Авдеева София Михайловна • 22.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s1" data-lkey="2026-12-29" title="Авдеева София Михайловна • 29.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td>
+      <td class="col-avg"><span class="avg-val ">—</span></td>
+      <td class="col-rec">—</td>
+      <td class="col-fin">
+        <select class="final-select" data-finkey="q2_inf_9_s1">
+          <option value="" selected="">—</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="зач">зач</option>
+          <option value="н/а">н/а</option>
+        </select>
+      </td>
+      <td class="col-stat">0 / 0</td>
+    </tr><tr>
+      <td class="col-idx">2</td>
+      <td class="col-name">
+        <div class="student-cell" data-stid="inf_9_s2" title="Баранов Владислав Валерьевич">
+          <span class="student-name-txt">Баранов Владислав Валерьевич</span>
+          <span class="student-icons">
+            
+            
+          </span>
+        </div>
+      </td><td class="grade-cell" data-stid="inf_9_s2" data-lkey="2026-11-10" title="Баранов Владислав Валерьевич • 10.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s2" data-lkey="2026-11-17" title="Баранов Владислав Валерьевич • 17.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s2" data-lkey="2026-11-24" title="Баранов Владислав Валерьевич • 24.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s2" data-lkey="2026-12-01" title="Баранов Владислав Валерьевич • 01.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s2" data-lkey="2026-12-08" title="Баранов Владислав Валерьевич • 08.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s2" data-lkey="2026-12-15" title="Баранов Владислав Валерьевич • 15.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s2" data-lkey="2026-12-22" title="Баранов Владислав Валерьевич • 22.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s2" data-lkey="2026-12-29" title="Баранов Владислав Валерьевич • 29.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td>
+      <td class="col-avg"><span class="avg-val ">—</span></td>
+      <td class="col-rec">—</td>
+      <td class="col-fin">
+        <select class="final-select" data-finkey="q2_inf_9_s2">
+          <option value="" selected="">—</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="зач">зач</option>
+          <option value="н/а">н/а</option>
+        </select>
+      </td>
+      <td class="col-stat">0 / 0</td>
+    </tr><tr>
+      <td class="col-idx">3</td>
+      <td class="col-name">
+        <div class="student-cell" data-stid="inf_9_s3" title="Буняев Никита Вячеславович">
+          <span class="student-name-txt">Буняев Никита Вячеславович</span>
+          <span class="student-icons">
+            
+            
+          </span>
+        </div>
+      </td><td class="grade-cell" data-stid="inf_9_s3" data-lkey="2026-11-10" title="Буняев Никита Вячеславович • 10.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s3" data-lkey="2026-11-17" title="Буняев Никита Вячеславович • 17.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s3" data-lkey="2026-11-24" title="Буняев Никита Вячеславович • 24.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s3" data-lkey="2026-12-01" title="Буняев Никита Вячеславович • 01.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s3" data-lkey="2026-12-08" title="Буняев Никита Вячеславович • 08.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s3" data-lkey="2026-12-15" title="Буняев Никита Вячеславович • 15.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s3" data-lkey="2026-12-22" title="Буняев Никита Вячеславович • 22.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s3" data-lkey="2026-12-29" title="Буняев Никита Вячеславович • 29.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td>
+      <td class="col-avg"><span class="avg-val ">—</span></td>
+      <td class="col-rec">—</td>
+      <td class="col-fin">
+        <select class="final-select" data-finkey="q2_inf_9_s3">
+          <option value="" selected="">—</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="зач">зач</option>
+          <option value="н/а">н/а</option>
+        </select>
+      </td>
+      <td class="col-stat">0 / 0</td>
+    </tr><tr>
+      <td class="col-idx">4</td>
+      <td class="col-name">
+        <div class="student-cell" data-stid="inf_9_s4" title="Гаврилов Александр Александрович">
+          <span class="student-name-txt">Гаврилов Александр Александрович</span>
+          <span class="student-icons">
+            
+            
+          </span>
+        </div>
+      </td><td class="grade-cell" data-stid="inf_9_s4" data-lkey="2026-11-10" title="Гаврилов Александр Александрович • 10.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s4" data-lkey="2026-11-17" title="Гаврилов Александр Александрович • 17.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s4" data-lkey="2026-11-24" title="Гаврилов Александр Александрович • 24.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s4" data-lkey="2026-12-01" title="Гаврилов Александр Александрович • 01.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s4" data-lkey="2026-12-08" title="Гаврилов Александр Александрович • 08.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s4" data-lkey="2026-12-15" title="Гаврилов Александр Александрович • 15.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s4" data-lkey="2026-12-22" title="Гаврилов Александр Александрович • 22.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s4" data-lkey="2026-12-29" title="Гаврилов Александр Александрович • 29.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td>
+      <td class="col-avg"><span class="avg-val ">—</span></td>
+      <td class="col-rec">—</td>
+      <td class="col-fin">
+        <select class="final-select" data-finkey="q2_inf_9_s4">
+          <option value="" selected="">—</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="зач">зач</option>
+          <option value="н/а">н/а</option>
+        </select>
+      </td>
+      <td class="col-stat">0 / 0</td>
+    </tr><tr>
+      <td class="col-idx">5</td>
+      <td class="col-name">
+        <div class="student-cell" data-stid="inf_9_s5" title="Белошеин Даниил Владимирович">
+          <span class="student-name-txt">Белошеин Даниил Владимирович</span>
+          <span class="student-icons">
+            
+            
+          </span>
+        </div>
+      </td><td class="grade-cell" data-stid="inf_9_s5" data-lkey="2026-11-10" title="Белошеин Даниил Владимирович • 10.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s5" data-lkey="2026-11-17" title="Белошеин Даниил Владимирович • 17.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s5" data-lkey="2026-11-24" title="Белошеин Даниил Владимирович • 24.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s5" data-lkey="2026-12-01" title="Белошеин Даниил Владимирович • 01.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s5" data-lkey="2026-12-08" title="Белошеин Даниил Владимирович • 08.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s5" data-lkey="2026-12-15" title="Белошеин Даниил Владимирович • 15.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s5" data-lkey="2026-12-22" title="Белошеин Даниил Владимирович • 22.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s5" data-lkey="2026-12-29" title="Белошеин Даниил Владимирович • 29.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td>
+      <td class="col-avg"><span class="avg-val ">—</span></td>
+      <td class="col-rec">—</td>
+      <td class="col-fin">
+        <select class="final-select" data-finkey="q2_inf_9_s5">
+          <option value="" selected="">—</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="зач">зач</option>
+          <option value="н/а">н/а</option>
+        </select>
+      </td>
+      <td class="col-stat">0 / 0</td>
+    </tr><tr>
+      <td class="col-idx">6</td>
+      <td class="col-name">
+        <div class="student-cell" data-stid="inf_9_s6" title="Довбыш Артем Алексеевич">
+          <span class="student-name-txt">Довбыш Артем Алексеевич</span>
+          <span class="student-icons">
+            
+            
+          </span>
+        </div>
+      </td><td class="grade-cell" data-stid="inf_9_s6" data-lkey="2026-11-10" title="Довбыш Артем Алексеевич • 10.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s6" data-lkey="2026-11-17" title="Довбыш Артем Алексеевич • 17.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s6" data-lkey="2026-11-24" title="Довбыш Артем Алексеевич • 24.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s6" data-lkey="2026-12-01" title="Довбыш Артем Алексеевич • 01.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s6" data-lkey="2026-12-08" title="Довбыш Артем Алексеевич • 08.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s6" data-lkey="2026-12-15" title="Довбыш Артем Алексеевич • 15.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s6" data-lkey="2026-12-22" title="Довбыш Артем Алексеевич • 22.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s6" data-lkey="2026-12-29" title="Довбыш Артем Алексеевич • 29.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td>
+      <td class="col-avg"><span class="avg-val ">—</span></td>
+      <td class="col-rec">—</td>
+      <td class="col-fin">
+        <select class="final-select" data-finkey="q2_inf_9_s6">
+          <option value="" selected="">—</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="зач">зач</option>
+          <option value="н/а">н/а</option>
+        </select>
+      </td>
+      <td class="col-stat">0 / 0</td>
+    </tr><tr>
+      <td class="col-idx">7</td>
+      <td class="col-name">
+        <div class="student-cell" data-stid="inf_9_s7" title="Дрёмов Даниил Витальевич">
+          <span class="student-name-txt">Дрёмов Даниил Витальевич</span>
+          <span class="student-icons">
+            
+            
+          </span>
+        </div>
+      </td><td class="grade-cell" data-stid="inf_9_s7" data-lkey="2026-11-10" title="Дрёмов Даниил Витальевич • 10.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s7" data-lkey="2026-11-17" title="Дрёмов Даниил Витальевич • 17.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s7" data-lkey="2026-11-24" title="Дрёмов Даниил Витальевич • 24.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s7" data-lkey="2026-12-01" title="Дрёмов Даниил Витальевич • 01.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s7" data-lkey="2026-12-08" title="Дрёмов Даниил Витальевич • 08.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s7" data-lkey="2026-12-15" title="Дрёмов Даниил Витальевич • 15.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s7" data-lkey="2026-12-22" title="Дрёмов Даниил Витальевич • 22.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s7" data-lkey="2026-12-29" title="Дрёмов Даниил Витальевич • 29.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td>
+      <td class="col-avg"><span class="avg-val ">—</span></td>
+      <td class="col-rec">—</td>
+      <td class="col-fin">
+        <select class="final-select" data-finkey="q2_inf_9_s7">
+          <option value="" selected="">—</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="зач">зач</option>
+          <option value="н/а">н/а</option>
+        </select>
+      </td>
+      <td class="col-stat">0 / 0</td>
+    </tr><tr>
+      <td class="col-idx">8</td>
+      <td class="col-name">
+        <div class="student-cell" data-stid="inf_9_s8" title="Есина Милена Андреевна">
+          <span class="student-name-txt">Есина Милена Андреевна</span>
+          <span class="student-icons">
+            
+            
+          </span>
+        </div>
+      </td><td class="grade-cell" data-stid="inf_9_s8" data-lkey="2026-11-10" title="Есина Милена Андреевна • 10.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s8" data-lkey="2026-11-17" title="Есина Милена Андреевна • 17.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s8" data-lkey="2026-11-24" title="Есина Милена Андреевна • 24.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s8" data-lkey="2026-12-01" title="Есина Милена Андреевна • 01.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s8" data-lkey="2026-12-08" title="Есина Милена Андреевна • 08.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s8" data-lkey="2026-12-15" title="Есина Милена Андреевна • 15.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s8" data-lkey="2026-12-22" title="Есина Милена Андреевна • 22.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s8" data-lkey="2026-12-29" title="Есина Милена Андреевна • 29.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td>
+      <td class="col-avg"><span class="avg-val ">—</span></td>
+      <td class="col-rec">—</td>
+      <td class="col-fin">
+        <select class="final-select" data-finkey="q2_inf_9_s8">
+          <option value="" selected="">—</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="зач">зач</option>
+          <option value="н/а">н/а</option>
+        </select>
+      </td>
+      <td class="col-stat">0 / 0</td>
+    </tr><tr>
+      <td class="col-idx">9</td>
+      <td class="col-name">
+        <div class="student-cell" data-stid="inf_9_s9" title="Логунов Архип Денисович">
+          <span class="student-name-txt">Логунов Архип Денисович</span>
+          <span class="student-icons">
+            
+            
+          </span>
+        </div>
+      </td><td class="grade-cell" data-stid="inf_9_s9" data-lkey="2026-11-10" title="Логунов Архип Денисович • 10.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s9" data-lkey="2026-11-17" title="Логунов Архип Денисович • 17.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s9" data-lkey="2026-11-24" title="Логунов Архип Денисович • 24.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s9" data-lkey="2026-12-01" title="Логунов Архип Денисович • 01.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s9" data-lkey="2026-12-08" title="Логунов Архип Денисович • 08.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s9" data-lkey="2026-12-15" title="Логунов Архип Денисович • 15.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s9" data-lkey="2026-12-22" title="Логунов Архип Денисович • 22.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s9" data-lkey="2026-12-29" title="Логунов Архип Денисович • 29.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td>
+      <td class="col-avg"><span class="avg-val ">—</span></td>
+      <td class="col-rec">—</td>
+      <td class="col-fin">
+        <select class="final-select" data-finkey="q2_inf_9_s9">
+          <option value="" selected="">—</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="зач">зач</option>
+          <option value="н/а">н/а</option>
+        </select>
+      </td>
+      <td class="col-stat">0 / 0</td>
+    </tr><tr>
+      <td class="col-idx">10</td>
+      <td class="col-name">
+        <div class="student-cell" data-stid="inf_9_s10" title="Луданик Богдан Русланович">
+          <span class="student-name-txt">Луданик Богдан Русланович</span>
+          <span class="student-icons">
+            
+            
+          </span>
+        </div>
+      </td><td class="grade-cell" data-stid="inf_9_s10" data-lkey="2026-11-10" title="Луданик Богдан Русланович • 10.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s10" data-lkey="2026-11-17" title="Луданик Богдан Русланович • 17.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s10" data-lkey="2026-11-24" title="Луданик Богдан Русланович • 24.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s10" data-lkey="2026-12-01" title="Луданик Богдан Русланович • 01.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s10" data-lkey="2026-12-08" title="Луданик Богдан Русланович • 08.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s10" data-lkey="2026-12-15" title="Луданик Богдан Русланович • 15.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s10" data-lkey="2026-12-22" title="Луданик Богдан Русланович • 22.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s10" data-lkey="2026-12-29" title="Луданик Богдан Русланович • 29.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td>
+      <td class="col-avg"><span class="avg-val ">—</span></td>
+      <td class="col-rec">—</td>
+      <td class="col-fin">
+        <select class="final-select" data-finkey="q2_inf_9_s10">
+          <option value="" selected="">—</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="зач">зач</option>
+          <option value="н/а">н/а</option>
+        </select>
+      </td>
+      <td class="col-stat">0 / 0</td>
+    </tr><tr>
+      <td class="col-idx">11</td>
+      <td class="col-name">
+        <div class="student-cell" data-stid="inf_9_s11" title="Лукина Кира Андреевна">
+          <span class="student-name-txt">Лукина Кира Андреевна</span>
+          <span class="student-icons">
+            
+            
+          </span>
+        </div>
+      </td><td class="grade-cell" data-stid="inf_9_s11" data-lkey="2026-11-10" title="Лукина Кира Андреевна • 10.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s11" data-lkey="2026-11-17" title="Лукина Кира Андреевна • 17.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s11" data-lkey="2026-11-24" title="Лукина Кира Андреевна • 24.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s11" data-lkey="2026-12-01" title="Лукина Кира Андреевна • 01.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s11" data-lkey="2026-12-08" title="Лукина Кира Андреевна • 08.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s11" data-lkey="2026-12-15" title="Лукина Кира Андреевна • 15.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s11" data-lkey="2026-12-22" title="Лукина Кира Андреевна • 22.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s11" data-lkey="2026-12-29" title="Лукина Кира Андреевна • 29.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td>
+      <td class="col-avg"><span class="avg-val ">—</span></td>
+      <td class="col-rec">—</td>
+      <td class="col-fin">
+        <select class="final-select" data-finkey="q2_inf_9_s11">
+          <option value="" selected="">—</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="зач">зач</option>
+          <option value="н/а">н/а</option>
+        </select>
+      </td>
+      <td class="col-stat">0 / 0</td>
+    </tr><tr>
+      <td class="col-idx">12</td>
+      <td class="col-name">
+        <div class="student-cell" data-stid="inf_9_s12" title="Лукьянов Давид Вячеславович">
+          <span class="student-name-txt">Лукьянов Давид Вячеславович</span>
+          <span class="student-icons">
+            
+            
+          </span>
+        </div>
+      </td><td class="grade-cell" data-stid="inf_9_s12" data-lkey="2026-11-10" title="Лукьянов Давид Вячеславович • 10.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s12" data-lkey="2026-11-17" title="Лукьянов Давид Вячеславович • 17.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s12" data-lkey="2026-11-24" title="Лукьянов Давид Вячеславович • 24.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s12" data-lkey="2026-12-01" title="Лукьянов Давид Вячеславович • 01.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s12" data-lkey="2026-12-08" title="Лукьянов Давид Вячеславович • 08.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s12" data-lkey="2026-12-15" title="Лукьянов Давид Вячеславович • 15.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s12" data-lkey="2026-12-22" title="Лукьянов Давид Вячеславович • 22.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s12" data-lkey="2026-12-29" title="Лукьянов Давид Вячеславович • 29.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td>
+      <td class="col-avg"><span class="avg-val ">—</span></td>
+      <td class="col-rec">—</td>
+      <td class="col-fin">
+        <select class="final-select" data-finkey="q2_inf_9_s12">
+          <option value="" selected="">—</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="зач">зач</option>
+          <option value="н/а">н/а</option>
+        </select>
+      </td>
+      <td class="col-stat">0 / 0</td>
+    </tr><tr>
+      <td class="col-idx">13</td>
+      <td class="col-name">
+        <div class="student-cell" data-stid="inf_9_s13" title="Мищенко Дарья Андреевна">
+          <span class="student-name-txt">Мищенко Дарья Андреевна</span>
+          <span class="student-icons">
+            
+            
+          </span>
+        </div>
+      </td><td class="grade-cell" data-stid="inf_9_s13" data-lkey="2026-11-10" title="Мищенко Дарья Андреевна • 10.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s13" data-lkey="2026-11-17" title="Мищенко Дарья Андреевна • 17.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s13" data-lkey="2026-11-24" title="Мищенко Дарья Андреевна • 24.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s13" data-lkey="2026-12-01" title="Мищенко Дарья Андреевна • 01.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s13" data-lkey="2026-12-08" title="Мищенко Дарья Андреевна • 08.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s13" data-lkey="2026-12-15" title="Мищенко Дарья Андреевна • 15.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s13" data-lkey="2026-12-22" title="Мищенко Дарья Андреевна • 22.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s13" data-lkey="2026-12-29" title="Мищенко Дарья Андреевна • 29.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td>
+      <td class="col-avg"><span class="avg-val ">—</span></td>
+      <td class="col-rec">—</td>
+      <td class="col-fin">
+        <select class="final-select" data-finkey="q2_inf_9_s13">
+          <option value="" selected="">—</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="зач">зач</option>
+          <option value="н/а">н/а</option>
+        </select>
+      </td>
+      <td class="col-stat">0 / 0</td>
+    </tr><tr>
+      <td class="col-idx">14</td>
+      <td class="col-name">
+        <div class="student-cell" data-stid="inf_9_s14" title="Осадчий Данил Юрьевич">
+          <span class="student-name-txt">Осадчий Данил Юрьевич</span>
+          <span class="student-icons">
+            
+            
+          </span>
+        </div>
+      </td><td class="grade-cell" data-stid="inf_9_s14" data-lkey="2026-11-10" title="Осадчий Данил Юрьевич • 10.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s14" data-lkey="2026-11-17" title="Осадчий Данил Юрьевич • 17.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s14" data-lkey="2026-11-24" title="Осадчий Данил Юрьевич • 24.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s14" data-lkey="2026-12-01" title="Осадчий Данил Юрьевич • 01.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s14" data-lkey="2026-12-08" title="Осадчий Данил Юрьевич • 08.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s14" data-lkey="2026-12-15" title="Осадчий Данил Юрьевич • 15.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s14" data-lkey="2026-12-22" title="Осадчий Данил Юрьевич • 22.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s14" data-lkey="2026-12-29" title="Осадчий Данил Юрьевич • 29.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td>
+      <td class="col-avg"><span class="avg-val ">—</span></td>
+      <td class="col-rec">—</td>
+      <td class="col-fin">
+        <select class="final-select" data-finkey="q2_inf_9_s14">
+          <option value="" selected="">—</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="зач">зач</option>
+          <option value="н/а">н/а</option>
+        </select>
+      </td>
+      <td class="col-stat">0 / 0</td>
+    </tr><tr>
+      <td class="col-idx">15</td>
+      <td class="col-name">
+        <div class="student-cell" data-stid="inf_9_s15" title="Осадчий Кирилл Юрьевич">
+          <span class="student-name-txt">Осадчий Кирилл Юрьевич</span>
+          <span class="student-icons">
+            
+            
+          </span>
+        </div>
+      </td><td class="grade-cell" data-stid="inf_9_s15" data-lkey="2026-11-10" title="Осадчий Кирилл Юрьевич • 10.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s15" data-lkey="2026-11-17" title="Осадчий Кирилл Юрьевич • 17.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s15" data-lkey="2026-11-24" title="Осадчий Кирилл Юрьевич • 24.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s15" data-lkey="2026-12-01" title="Осадчий Кирилл Юрьевич • 01.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s15" data-lkey="2026-12-08" title="Осадчий Кирилл Юрьевич • 08.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s15" data-lkey="2026-12-15" title="Осадчий Кирилл Юрьевич • 15.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s15" data-lkey="2026-12-22" title="Осадчий Кирилл Юрьевич • 22.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s15" data-lkey="2026-12-29" title="Осадчий Кирилл Юрьевич • 29.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td>
+      <td class="col-avg"><span class="avg-val ">—</span></td>
+      <td class="col-rec">—</td>
+      <td class="col-fin">
+        <select class="final-select" data-finkey="q2_inf_9_s15">
+          <option value="" selected="">—</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="зач">зач</option>
+          <option value="н/а">н/а</option>
+        </select>
+      </td>
+      <td class="col-stat">0 / 0</td>
+    </tr><tr>
+      <td class="col-idx">16</td>
+      <td class="col-name">
+        <div class="student-cell" data-stid="inf_9_s16" title="Пахомов Илья Максимович">
+          <span class="student-name-txt">Пахомов Илья Максимович</span>
+          <span class="student-icons">
+            
+            
+          </span>
+        </div>
+      </td><td class="grade-cell" data-stid="inf_9_s16" data-lkey="2026-11-10" title="Пахомов Илья Максимович • 10.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s16" data-lkey="2026-11-17" title="Пахомов Илья Максимович • 17.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s16" data-lkey="2026-11-24" title="Пахомов Илья Максимович • 24.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s16" data-lkey="2026-12-01" title="Пахомов Илья Максимович • 01.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s16" data-lkey="2026-12-08" title="Пахомов Илья Максимович • 08.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s16" data-lkey="2026-12-15" title="Пахомов Илья Максимович • 15.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s16" data-lkey="2026-12-22" title="Пахомов Илья Максимович • 22.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s16" data-lkey="2026-12-29" title="Пахомов Илья Максимович • 29.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td>
+      <td class="col-avg"><span class="avg-val ">—</span></td>
+      <td class="col-rec">—</td>
+      <td class="col-fin">
+        <select class="final-select" data-finkey="q2_inf_9_s16">
+          <option value="" selected="">—</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="зач">зач</option>
+          <option value="н/а">н/а</option>
+        </select>
+      </td>
+      <td class="col-stat">0 / 0</td>
+    </tr><tr>
+      <td class="col-idx">17</td>
+      <td class="col-name">
+        <div class="student-cell" data-stid="inf_9_s17" title="Пронин Максим Сергеевич">
+          <span class="student-name-txt">Пронин Максим Сергеевич</span>
+          <span class="student-icons">
+            
+            
+          </span>
+        </div>
+      </td><td class="grade-cell" data-stid="inf_9_s17" data-lkey="2026-11-10" title="Пронин Максим Сергеевич • 10.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s17" data-lkey="2026-11-17" title="Пронин Максим Сергеевич • 17.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s17" data-lkey="2026-11-24" title="Пронин Максим Сергеевич • 24.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s17" data-lkey="2026-12-01" title="Пронин Максим Сергеевич • 01.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s17" data-lkey="2026-12-08" title="Пронин Максим Сергеевич • 08.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s17" data-lkey="2026-12-15" title="Пронин Максим Сергеевич • 15.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s17" data-lkey="2026-12-22" title="Пронин Максим Сергеевич • 22.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s17" data-lkey="2026-12-29" title="Пронин Максим Сергеевич • 29.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td>
+      <td class="col-avg"><span class="avg-val ">—</span></td>
+      <td class="col-rec">—</td>
+      <td class="col-fin">
+        <select class="final-select" data-finkey="q2_inf_9_s17">
+          <option value="" selected="">—</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="зач">зач</option>
+          <option value="н/а">н/а</option>
+        </select>
+      </td>
+      <td class="col-stat">0 / 0</td>
+    </tr><tr>
+      <td class="col-idx">18</td>
+      <td class="col-name">
+        <div class="student-cell" data-stid="inf_9_s18" title="Селищева Милана Андреевна">
+          <span class="student-name-txt">Селищева Милана Андреевна</span>
+          <span class="student-icons">
+            
+            
+          </span>
+        </div>
+      </td><td class="grade-cell" data-stid="inf_9_s18" data-lkey="2026-11-10" title="Селищева Милана Андреевна • 10.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s18" data-lkey="2026-11-17" title="Селищева Милана Андреевна • 17.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s18" data-lkey="2026-11-24" title="Селищева Милана Андреевна • 24.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s18" data-lkey="2026-12-01" title="Селищева Милана Андреевна • 01.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s18" data-lkey="2026-12-08" title="Селищева Милана Андреевна • 08.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s18" data-lkey="2026-12-15" title="Селищева Милана Андреевна • 15.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s18" data-lkey="2026-12-22" title="Селищева Милана Андреевна • 22.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s18" data-lkey="2026-12-29" title="Селищева Милана Андреевна • 29.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td>
+      <td class="col-avg"><span class="avg-val ">—</span></td>
+      <td class="col-rec">—</td>
+      <td class="col-fin">
+        <select class="final-select" data-finkey="q2_inf_9_s18">
+          <option value="" selected="">—</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="зач">зач</option>
+          <option value="н/а">н/а</option>
+        </select>
+      </td>
+      <td class="col-stat">0 / 0</td>
+    </tr><tr>
+      <td class="col-idx">19</td>
+      <td class="col-name">
+        <div class="student-cell" data-stid="inf_9_s19" title="Серебров Максим Евгеньевич">
+          <span class="student-name-txt">Серебров Максим Евгеньевич</span>
+          <span class="student-icons">
+            
+            
+          </span>
+        </div>
+      </td><td class="grade-cell" data-stid="inf_9_s19" data-lkey="2026-11-10" title="Серебров Максим Евгеньевич • 10.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s19" data-lkey="2026-11-17" title="Серебров Максим Евгеньевич • 17.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s19" data-lkey="2026-11-24" title="Серебров Максим Евгеньевич • 24.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s19" data-lkey="2026-12-01" title="Серебров Максим Евгеньевич • 01.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s19" data-lkey="2026-12-08" title="Серебров Максим Евгеньевич • 08.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s19" data-lkey="2026-12-15" title="Серебров Максим Евгеньевич • 15.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s19" data-lkey="2026-12-22" title="Серебров Максим Евгеньевич • 22.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s19" data-lkey="2026-12-29" title="Серебров Максим Евгеньевич • 29.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td>
+      <td class="col-avg"><span class="avg-val ">—</span></td>
+      <td class="col-rec">—</td>
+      <td class="col-fin">
+        <select class="final-select" data-finkey="q2_inf_9_s19">
+          <option value="" selected="">—</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="зач">зач</option>
+          <option value="н/а">н/а</option>
+        </select>
+      </td>
+      <td class="col-stat">0 / 0</td>
+    </tr><tr>
+      <td class="col-idx">20</td>
+      <td class="col-name">
+        <div class="student-cell" data-stid="inf_9_s20" title="Соболева Ксения Сергеевна">
+          <span class="student-name-txt">Соболева Ксения Сергеевна</span>
+          <span class="student-icons">
+            
+            
+          </span>
+        </div>
+      </td><td class="grade-cell" data-stid="inf_9_s20" data-lkey="2026-11-10" title="Соболева Ксения Сергеевна • 10.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s20" data-lkey="2026-11-17" title="Соболева Ксения Сергеевна • 17.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s20" data-lkey="2026-11-24" title="Соболева Ксения Сергеевна • 24.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s20" data-lkey="2026-12-01" title="Соболева Ксения Сергеевна • 01.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s20" data-lkey="2026-12-08" title="Соболева Ксения Сергеевна • 08.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s20" data-lkey="2026-12-15" title="Соболева Ксения Сергеевна • 15.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s20" data-lkey="2026-12-22" title="Соболева Ксения Сергеевна • 22.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s20" data-lkey="2026-12-29" title="Соболева Ксения Сергеевна • 29.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td>
+      <td class="col-avg"><span class="avg-val ">—</span></td>
+      <td class="col-rec">—</td>
+      <td class="col-fin">
+        <select class="final-select" data-finkey="q2_inf_9_s20">
+          <option value="" selected="">—</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="зач">зач</option>
+          <option value="н/а">н/а</option>
+        </select>
+      </td>
+      <td class="col-stat">0 / 0</td>
+    </tr><tr>
+      <td class="col-idx">21</td>
+      <td class="col-name">
+        <div class="student-cell" data-stid="inf_9_s21" title="Финагин Артем Дмитриевич">
+          <span class="student-name-txt">Финагин Артем Дмитриевич</span>
+          <span class="student-icons">
+            
+            
+          </span>
+        </div>
+      </td><td class="grade-cell" data-stid="inf_9_s21" data-lkey="2026-11-10" title="Финагин Артем Дмитриевич • 10.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s21" data-lkey="2026-11-17" title="Финагин Артем Дмитриевич • 17.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s21" data-lkey="2026-11-24" title="Финагин Артем Дмитриевич • 24.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s21" data-lkey="2026-12-01" title="Финагин Артем Дмитриевич • 01.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s21" data-lkey="2026-12-08" title="Финагин Артем Дмитриевич • 08.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s21" data-lkey="2026-12-15" title="Финагин Артем Дмитриевич • 15.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s21" data-lkey="2026-12-22" title="Финагин Артем Дмитриевич • 22.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s21" data-lkey="2026-12-29" title="Финагин Артем Дмитриевич • 29.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td>
+      <td class="col-avg"><span class="avg-val ">—</span></td>
+      <td class="col-rec">—</td>
+      <td class="col-fin">
+        <select class="final-select" data-finkey="q2_inf_9_s21">
+          <option value="" selected="">—</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="зач">зач</option>
+          <option value="н/а">н/а</option>
+        </select>
+      </td>
+      <td class="col-stat">0 / 0</td>
+    </tr><tr>
+      <td class="col-idx">22</td>
+      <td class="col-name">
+        <div class="student-cell" data-stid="inf_9_s22" title="Хохлова Ольга Алексевна">
+          <span class="student-name-txt">Хохлова Ольга Алексевна</span>
+          <span class="student-icons">
+            
+            
+          </span>
+        </div>
+      </td><td class="grade-cell" data-stid="inf_9_s22" data-lkey="2026-11-10" title="Хохлова Ольга Алексевна • 10.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s22" data-lkey="2026-11-17" title="Хохлова Ольга Алексевна • 17.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s22" data-lkey="2026-11-24" title="Хохлова Ольга Алексевна • 24.11.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s22" data-lkey="2026-12-01" title="Хохлова Ольга Алексевна • 01.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s22" data-lkey="2026-12-08" title="Хохлова Ольга Алексевна • 08.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s22" data-lkey="2026-12-15" title="Хохлова Ольга Алексевна • 15.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s22" data-lkey="2026-12-22" title="Хохлова Ольга Алексевна • 22.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_9_s22" data-lkey="2026-12-29" title="Хохлова Ольга Алексевна • 29.12.2026 (Вт)
+Нажмите для выставления оценки">
+        
+        
+      </td>
+      <td class="col-avg"><span class="avg-val ">—</span></td>
+      <td class="col-rec">—</td>
+      <td class="col-fin">
+        <select class="final-select" data-finkey="q2_inf_9_s22">
+          <option value="" selected="">—</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="зач">зач</option>
+          <option value="н/а">н/а</option>
+        </select>
+      </td>
+      <td class="col-stat">0 / 0</td>
+    </tr></tbody>
       </table>
     </div>
 
@@ -1704,7 +3097,7 @@
   <div class="modal" style="max-width:560px;">
     <div class="modal-head">
       <h2 style="display:flex; align-items:center; gap:8px;">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"></path></svg>
         Автосохранение в репозиторий GitHub
       </h2>
       <button class="btn btn-sm btn-icon" onclick="closeModal('githubModal')">✕</button>
@@ -1748,16 +3141,16 @@
 
       <div style="display:flex; flex-direction:column; gap:8px;">
         <label style="display:flex; align-items:center; gap:8px; font-size:13px; cursor:pointer;">
-          <input type="checkbox" id="ghAutoPushChk" checked>
+          <input type="checkbox" id="ghAutoPushChk" checked="">
           <span><b>Автосохранение в GitHub</b> (автоматически коммитить через 2.5 сек после изменений)</span>
         </label>
         <label style="display:flex; align-items:center; gap:8px; font-size:13px; cursor:pointer;">
-          <input type="checkbox" id="ghAutoPullChk" checked>
+          <input type="checkbox" id="ghAutoPullChk" checked="">
           <span><b>Автозагрузка свежих данных из GitHub</b> при входе (удобно при работе с разных ПК)</span>
         </label>
       </div>
 
-      <div id="ghModalFeedback" style="font-size:12.5px; font-weight:600; min-height:18px;"></div>
+      <div id="ghModalFeedback" style="font-size: 12.5px; font-weight: 600; min-height: 18px; color: var(--primary);">Отправка изменений в репозиторий GitHub...</div>
     </div>
     <div class="modal-foot">
       <button class="btn btn-sm" id="ghDisconnectBtn" type="button" style="margin-right:auto; color:#ef4444; border-color:#fca5a5;">Отключить</button>
@@ -1845,7 +3238,8 @@
       </div>
       <div class="form-group">
         <label class="form-label">Список учеников (каждый с новой строки)</label>
-        <textarea id="acStudents" rows="5" placeholder="Иванов Иван Иванович&#10;Петрова Анна Сергеевна"></textarea>
+        <textarea id="acStudents" rows="5" placeholder="Иванов Иван Иванович
+Петрова Анна Сергеевна"></textarea>
       </div>
     </div>
     <div class="modal-foot">
@@ -1858,7 +3252,7 @@
 <div class="toast" id="toast"></div>
 
 <script id="seed-data-script">
-const EMBEDDED_STATE = null;
+const EMBEDDED_STATE = {"calendar":[{"date":"2026-09-01","dayCode":"tue","dayShort":"Вт","lessonNum":1,"type":"work","note":"Начало учебного года (1 сентября)"},{"date":"2026-09-02","dayCode":"wed","dayShort":"Ср","lessonNum":1,"type":"work","note":""},{"date":"2026-09-03","dayCode":"thu","dayShort":"Чт","lessonNum":1,"type":"work","note":""},{"date":"2026-09-04","dayCode":"fri","dayShort":"Пт","lessonNum":1,"type":"work","note":""},{"date":"2026-09-07","dayCode":"mon","dayShort":"Пн","lessonNum":1,"type":"work","note":""},{"date":"2026-09-08","dayCode":"tue","dayShort":"Вт","lessonNum":2,"type":"work","note":""},{"date":"2026-09-09","dayCode":"wed","dayShort":"Ср","lessonNum":2,"type":"work","note":""},{"date":"2026-09-10","dayCode":"thu","dayShort":"Чт","lessonNum":2,"type":"work","note":""},{"date":"2026-09-11","dayCode":"fri","dayShort":"Пт","lessonNum":2,"type":"work","note":""},{"date":"2026-09-14","dayCode":"mon","dayShort":"Пн","lessonNum":2,"type":"work","note":""},{"date":"2026-09-15","dayCode":"tue","dayShort":"Вт","lessonNum":3,"type":"work","note":""},{"date":"2026-09-16","dayCode":"wed","dayShort":"Ср","lessonNum":3,"type":"work","note":""},{"date":"2026-09-17","dayCode":"thu","dayShort":"Чт","lessonNum":3,"type":"work","note":""},{"date":"2026-09-18","dayCode":"fri","dayShort":"Пт","lessonNum":3,"type":"work","note":""},{"date":"2026-09-21","dayCode":"mon","dayShort":"Пн","lessonNum":3,"type":"work","note":""},{"date":"2026-09-22","dayCode":"tue","dayShort":"Вт","lessonNum":4,"type":"work","note":""},{"date":"2026-09-23","dayCode":"wed","dayShort":"Ср","lessonNum":4,"type":"work","note":""},{"date":"2026-09-24","dayCode":"thu","dayShort":"Чт","lessonNum":4,"type":"work","note":""},{"date":"2026-09-25","dayCode":"fri","dayShort":"Пт","lessonNum":4,"type":"work","note":""},{"date":"2026-09-28","dayCode":"mon","dayShort":"Пн","lessonNum":4,"type":"work","note":""},{"date":"2026-09-29","dayCode":"tue","dayShort":"Вт","lessonNum":5,"type":"work","note":""},{"date":"2026-09-30","dayCode":"wed","dayShort":"Ср","lessonNum":null,"type":"holiday","note":"Праздничный / нерабочий день"},{"date":"2026-10-01","dayCode":"thu","dayShort":"Чт","lessonNum":5,"type":"work","note":""},{"date":"2026-10-02","dayCode":"fri","dayShort":"Пт","lessonNum":5,"type":"work","note":""},{"date":"2026-10-05","dayCode":"mon","dayShort":"Пн","lessonNum":5,"type":"work","note":""},{"date":"2026-10-06","dayCode":"tue","dayShort":"Вт","lessonNum":6,"type":"work","note":""},{"date":"2026-10-07","dayCode":"wed","dayShort":"Ср","lessonNum":5,"type":"work","note":""},{"date":"2026-10-08","dayCode":"thu","dayShort":"Чт","lessonNum":6,"type":"work","note":""},{"date":"2026-10-09","dayCode":"fri","dayShort":"Пт","lessonNum":6,"type":"work","note":""},{"date":"2026-10-12","dayCode":"mon","dayShort":"Пн","lessonNum":6,"type":"work","note":""},{"date":"2026-10-13","dayCode":"tue","dayShort":"Вт","lessonNum":7,"type":"work","note":""},{"date":"2026-10-14","dayCode":"wed","dayShort":"Ср","lessonNum":6,"type":"work","note":""},{"date":"2026-10-15","dayCode":"thu","dayShort":"Чт","lessonNum":7,"type":"work","note":""},{"date":"2026-10-16","dayCode":"fri","dayShort":"Пт","lessonNum":7,"type":"work","note":""},{"date":"2026-10-19","dayCode":"mon","dayShort":"Пн","lessonNum":7,"type":"work","note":""},{"date":"2026-10-20","dayCode":"tue","dayShort":"Вт","lessonNum":8,"type":"work","note":""},{"date":"2026-10-21","dayCode":"wed","dayShort":"Ср","lessonNum":7,"type":"work","note":""},{"date":"2026-10-22","dayCode":"thu","dayShort":"Чт","lessonNum":8,"type":"work","note":""},{"date":"2026-10-23","dayCode":"fri","dayShort":"Пт","lessonNum":8,"type":"work","note":""},{"date":"2026-10-26","dayCode":"mon","dayShort":"Пн","lessonNum":null,"type":"vacation","note":"Каникулы"},{"date":"2026-10-27","dayCode":"tue","dayShort":"Вт","lessonNum":null,"type":"vacation","note":"Каникулы"},{"date":"2026-10-28","dayCode":"wed","dayShort":"Ср","lessonNum":null,"type":"vacation","note":"Каникулы"},{"date":"2026-10-29","dayCode":"thu","dayShort":"Чт","lessonNum":null,"type":"vacation","note":"Каникулы"},{"date":"2026-10-30","dayCode":"fri","dayShort":"Пт","lessonNum":null,"type":"vacation","note":"Каникулы"},{"date":"2026-11-02","dayCode":"mon","dayShort":"Пн","lessonNum":null,"type":"vacation","note":"Каникулы"},{"date":"2026-11-03","dayCode":"tue","dayShort":"Вт","lessonNum":null,"type":"vacation","note":"Каникулы"},{"date":"2026-11-04","dayCode":"wed","dayShort":"Ср","lessonNum":null,"type":"holiday","note":"Праздничный / нерабочий день"},{"date":"2026-11-05","dayCode":"thu","dayShort":"Чт","lessonNum":9,"type":"work","note":""},{"date":"2026-11-06","dayCode":"fri","dayShort":"Пт","lessonNum":9,"type":"work","note":""},{"date":"2026-11-09","dayCode":"mon","dayShort":"Пн","lessonNum":8,"type":"work","note":""},{"date":"2026-11-10","dayCode":"tue","dayShort":"Вт","lessonNum":9,"type":"work","note":""},{"date":"2026-11-11","dayCode":"wed","dayShort":"Ср","lessonNum":8,"type":"work","note":""},{"date":"2026-11-12","dayCode":"thu","dayShort":"Чт","lessonNum":10,"type":"work","note":""},{"date":"2026-11-13","dayCode":"fri","dayShort":"Пт","lessonNum":10,"type":"work","note":""},{"date":"2026-11-16","dayCode":"mon","dayShort":"Пн","lessonNum":9,"type":"work","note":""},{"date":"2026-11-17","dayCode":"tue","dayShort":"Вт","lessonNum":10,"type":"work","note":""},{"date":"2026-11-18","dayCode":"wed","dayShort":"Ср","lessonNum":9,"type":"work","note":""},{"date":"2026-11-19","dayCode":"thu","dayShort":"Чт","lessonNum":11,"type":"work","note":""},{"date":"2026-11-20","dayCode":"fri","dayShort":"Пт","lessonNum":11,"type":"work","note":""},{"date":"2026-11-23","dayCode":"mon","dayShort":"Пн","lessonNum":10,"type":"work","note":""},{"date":"2026-11-24","dayCode":"tue","dayShort":"Вт","lessonNum":11,"type":"work","note":""},{"date":"2026-11-25","dayCode":"wed","dayShort":"Ср","lessonNum":10,"type":"work","note":""},{"date":"2026-11-26","dayCode":"thu","dayShort":"Чт","lessonNum":12,"type":"work","note":""},{"date":"2026-11-27","dayCode":"fri","dayShort":"Пт","lessonNum":12,"type":"work","note":""},{"date":"2026-11-30","dayCode":"mon","dayShort":"Пн","lessonNum":11,"type":"work","note":""},{"date":"2026-12-01","dayCode":"tue","dayShort":"Вт","lessonNum":12,"type":"work","note":""},{"date":"2026-12-02","dayCode":"wed","dayShort":"Ср","lessonNum":11,"type":"work","note":""},{"date":"2026-12-03","dayCode":"thu","dayShort":"Чт","lessonNum":13,"type":"work","note":""},{"date":"2026-12-04","dayCode":"fri","dayShort":"Пт","lessonNum":13,"type":"work","note":""},{"date":"2026-12-07","dayCode":"mon","dayShort":"Пн","lessonNum":12,"type":"work","note":""},{"date":"2026-12-08","dayCode":"tue","dayShort":"Вт","lessonNum":13,"type":"work","note":""},{"date":"2026-12-09","dayCode":"wed","dayShort":"Ср","lessonNum":12,"type":"work","note":""},{"date":"2026-12-10","dayCode":"thu","dayShort":"Чт","lessonNum":14,"type":"work","note":""},{"date":"2026-12-11","dayCode":"fri","dayShort":"Пт","lessonNum":14,"type":"work","note":""},{"date":"2026-12-14","dayCode":"mon","dayShort":"Пн","lessonNum":13,"type":"work","note":""},{"date":"2026-12-15","dayCode":"tue","dayShort":"Вт","lessonNum":14,"type":"work","note":""},{"date":"2026-12-16","dayCode":"wed","dayShort":"Ср","lessonNum":13,"type":"work","note":""},{"date":"2026-12-17","dayCode":"thu","dayShort":"Чт","lessonNum":15,"type":"work","note":""},{"date":"2026-12-18","dayCode":"fri","dayShort":"Пт","lessonNum":15,"type":"work","note":""},{"date":"2026-12-21","dayCode":"mon","dayShort":"Пн","lessonNum":14,"type":"work","note":""},{"date":"2026-12-22","dayCode":"tue","dayShort":"Вт","lessonNum":15,"type":"work","note":""},{"date":"2026-12-23","dayCode":"wed","dayShort":"Ср","lessonNum":14,"type":"work","note":""},{"date":"2026-12-24","dayCode":"thu","dayShort":"Чт","lessonNum":16,"type":"work","note":""},{"date":"2026-12-25","dayCode":"fri","dayShort":"Пт","lessonNum":16,"type":"work","note":""},{"date":"2026-12-28","dayCode":"mon","dayShort":"Пн","lessonNum":15,"type":"work","note":""},{"date":"2026-12-29","dayCode":"tue","dayShort":"Вт","lessonNum":16,"type":"work","note":""},{"date":"2026-12-30","dayCode":"wed","dayShort":"Ср","lessonNum":15,"type":"work","note":""},{"date":"2026-12-31","dayCode":"thu","dayShort":"Чт","lessonNum":null,"type":"vacation","note":"Каникулы"},{"date":"2027-01-01","dayCode":"fri","dayShort":"Пт","lessonNum":null,"type":"vacation","note":"Каникулы"},{"date":"2027-01-04","dayCode":"mon","dayShort":"Пн","lessonNum":null,"type":"vacation","note":"Каникулы"},{"date":"2027-01-05","dayCode":"tue","dayShort":"Вт","lessonNum":null,"type":"vacation","note":"Каникулы"},{"date":"2027-01-06","dayCode":"wed","dayShort":"Ср","lessonNum":null,"type":"vacation","note":"Каникулы"},{"date":"2027-01-07","dayCode":"thu","dayShort":"Чт","lessonNum":null,"type":"vacation","note":"Каникулы"},{"date":"2027-01-08","dayCode":"fri","dayShort":"Пт","lessonNum":null,"type":"vacation","note":"Каникулы"},{"date":"2027-01-11","dayCode":"mon","dayShort":"Пн","lessonNum":16,"type":"work","note":""},{"date":"2027-01-12","dayCode":"tue","dayShort":"Вт","lessonNum":17,"type":"work","note":""},{"date":"2027-01-13","dayCode":"wed","dayShort":"Ср","lessonNum":16,"type":"work","note":""},{"date":"2027-01-14","dayCode":"thu","dayShort":"Чт","lessonNum":17,"type":"work","note":""},{"date":"2027-01-15","dayCode":"fri","dayShort":"Пт","lessonNum":17,"type":"work","note":""},{"date":"2027-01-18","dayCode":"mon","dayShort":"Пн","lessonNum":17,"type":"work","note":""},{"date":"2027-01-19","dayCode":"tue","dayShort":"Вт","lessonNum":18,"type":"work","note":""},{"date":"2027-01-20","dayCode":"wed","dayShort":"Ср","lessonNum":17,"type":"work","note":""},{"date":"2027-01-21","dayCode":"thu","dayShort":"Чт","lessonNum":18,"type":"work","note":""},{"date":"2027-01-22","dayCode":"fri","dayShort":"Пт","lessonNum":18,"type":"work","note":""},{"date":"2027-01-25","dayCode":"mon","dayShort":"Пн","lessonNum":18,"type":"work","note":""},{"date":"2027-01-26","dayCode":"tue","dayShort":"Вт","lessonNum":19,"type":"work","note":""},{"date":"2027-01-27","dayCode":"wed","dayShort":"Ср","lessonNum":18,"type":"work","note":""},{"date":"2027-01-28","dayCode":"thu","dayShort":"Чт","lessonNum":19,"type":"work","note":""},{"date":"2027-01-29","dayCode":"fri","dayShort":"Пт","lessonNum":19,"type":"work","note":""},{"date":"2027-02-01","dayCode":"mon","dayShort":"Пн","lessonNum":19,"type":"work","note":""},{"date":"2027-02-02","dayCode":"tue","dayShort":"Вт","lessonNum":20,"type":"work","note":""},{"date":"2027-02-03","dayCode":"wed","dayShort":"Ср","lessonNum":19,"type":"work","note":""},{"date":"2027-02-04","dayCode":"thu","dayShort":"Чт","lessonNum":20,"type":"work","note":""},{"date":"2027-02-05","dayCode":"fri","dayShort":"Пт","lessonNum":20,"type":"work","note":""},{"date":"2027-02-08","dayCode":"mon","dayShort":"Пн","lessonNum":20,"type":"work","note":""},{"date":"2027-02-09","dayCode":"tue","dayShort":"Вт","lessonNum":21,"type":"work","note":""},{"date":"2027-02-10","dayCode":"wed","dayShort":"Ср","lessonNum":20,"type":"work","note":""},{"date":"2027-02-11","dayCode":"thu","dayShort":"Чт","lessonNum":21,"type":"work","note":""},{"date":"2027-02-12","dayCode":"fri","dayShort":"Пт","lessonNum":21,"type":"work","note":""},{"date":"2027-02-15","dayCode":"mon","dayShort":"Пн","lessonNum":21,"type":"work","note":""},{"date":"2027-02-16","dayCode":"tue","dayShort":"Вт","lessonNum":22,"type":"work","note":""},{"date":"2027-02-17","dayCode":"wed","dayShort":"Ср","lessonNum":21,"type":"work","note":""},{"date":"2027-02-18","dayCode":"thu","dayShort":"Чт","lessonNum":22,"type":"work","note":""},{"date":"2027-02-19","dayCode":"fri","dayShort":"Пт","lessonNum":22,"type":"work","note":""},{"date":"2027-02-22","dayCode":"mon","dayShort":"Пн","lessonNum":22,"type":"work","note":"Работаем 20"},{"date":"2027-02-23","dayCode":"tue","dayShort":"Вт","lessonNum":null,"type":"holiday","note":"Праздничный / нерабочий день"},{"date":"2027-02-24","dayCode":"wed","dayShort":"Ср","lessonNum":22,"type":"work","note":""},{"date":"2027-02-25","dayCode":"thu","dayShort":"Чт","lessonNum":23,"type":"work","note":""},{"date":"2027-02-26","dayCode":"fri","dayShort":"Пт","lessonNum":23,"type":"work","note":""},{"date":"2027-03-01","dayCode":"mon","dayShort":"Пн","lessonNum":23,"type":"work","note":""},{"date":"2027-03-02","dayCode":"tue","dayShort":"Вт","lessonNum":23,"type":"work","note":""},{"date":"2027-03-03","dayCode":"wed","dayShort":"Ср","lessonNum":23,"type":"work","note":""},{"date":"2027-03-04","dayCode":"thu","dayShort":"Чт","lessonNum":24,"type":"work","note":""},{"date":"2027-03-05","dayCode":"fri","dayShort":"Пт","lessonNum":24,"type":"work","note":""},{"date":"2027-03-08","dayCode":"mon","dayShort":"Пн","lessonNum":null,"type":"holiday","note":"Праздничный / нерабочий день"},{"date":"2027-03-09","dayCode":"tue","dayShort":"Вт","lessonNum":24,"type":"work","note":""},{"date":"2027-03-10","dayCode":"wed","dayShort":"Ср","lessonNum":24,"type":"work","note":""},{"date":"2027-03-11","dayCode":"thu","dayShort":"Чт","lessonNum":25,"type":"work","note":""},{"date":"2027-03-12","dayCode":"fri","dayShort":"Пт","lessonNum":25,"type":"work","note":""},{"date":"2027-03-15","dayCode":"mon","dayShort":"Пн","lessonNum":24,"type":"work","note":""},{"date":"2027-03-16","dayCode":"tue","dayShort":"Вт","lessonNum":25,"type":"work","note":""},{"date":"2027-03-17","dayCode":"wed","dayShort":"Ср","lessonNum":25,"type":"work","note":""},{"date":"2027-03-18","dayCode":"thu","dayShort":"Чт","lessonNum":26,"type":"work","note":""},{"date":"2027-03-19","dayCode":"fri","dayShort":"Пт","lessonNum":26,"type":"work","note":""},{"date":"2027-03-22","dayCode":"mon","dayShort":"Пн","lessonNum":25,"type":"work","note":""},{"date":"2027-03-23","dayCode":"tue","dayShort":"Вт","lessonNum":26,"type":"work","note":""},{"date":"2027-03-24","dayCode":"wed","dayShort":"Ср","lessonNum":26,"type":"work","note":""},{"date":"2027-03-25","dayCode":"thu","dayShort":"Чт","lessonNum":27,"type":"work","note":""},{"date":"2027-03-26","dayCode":"fri","dayShort":"Пт","lessonNum":27,"type":"work","note":""},{"date":"2027-03-29","dayCode":"mon","dayShort":"Пн","lessonNum":null,"type":"vacation","note":"Каникулы"},{"date":"2027-03-30","dayCode":"tue","dayShort":"Вт","lessonNum":null,"type":"vacation","note":"Каникулы"},{"date":"2027-03-31","dayCode":"wed","dayShort":"Ср","lessonNum":null,"type":"vacation","note":"Каникулы"},{"date":"2027-04-01","dayCode":"thu","dayShort":"Чт","lessonNum":null,"type":"vacation","note":"Каникулы"},{"date":"2027-04-02","dayCode":"fri","dayShort":"Пт","lessonNum":null,"type":"vacation","note":"Каникулы"},{"date":"2027-04-05","dayCode":"mon","dayShort":"Пн","lessonNum":26,"type":"work","note":""},{"date":"2027-04-06","dayCode":"tue","dayShort":"Вт","lessonNum":27,"type":"work","note":""},{"date":"2027-04-07","dayCode":"wed","dayShort":"Ср","lessonNum":27,"type":"work","note":""},{"date":"2027-04-08","dayCode":"thu","dayShort":"Чт","lessonNum":28,"type":"work","note":""},{"date":"2027-04-09","dayCode":"fri","dayShort":"Пт","lessonNum":28,"type":"work","note":""},{"date":"2027-04-12","dayCode":"mon","dayShort":"Пн","lessonNum":27,"type":"work","note":""},{"date":"2027-04-13","dayCode":"tue","dayShort":"Вт","lessonNum":28,"type":"work","note":""},{"date":"2027-04-14","dayCode":"wed","dayShort":"Ср","lessonNum":28,"type":"work","note":""},{"date":"2027-04-15","dayCode":"thu","dayShort":"Чт","lessonNum":29,"type":"work","note":""},{"date":"2027-04-16","dayCode":"fri","dayShort":"Пт","lessonNum":29,"type":"work","note":""},{"date":"2027-04-19","dayCode":"mon","dayShort":"Пн","lessonNum":28,"type":"work","note":""},{"date":"2027-04-20","dayCode":"tue","dayShort":"Вт","lessonNum":29,"type":"work","note":""},{"date":"2027-04-21","dayCode":"wed","dayShort":"Ср","lessonNum":29,"type":"work","note":""},{"date":"2027-04-22","dayCode":"thu","dayShort":"Чт","lessonNum":30,"type":"work","note":""},{"date":"2027-04-23","dayCode":"fri","dayShort":"Пт","lessonNum":30,"type":"work","note":""},{"date":"2027-04-26","dayCode":"mon","dayShort":"Пн","lessonNum":29,"type":"work","note":""},{"date":"2027-04-27","dayCode":"tue","dayShort":"Вт","lessonNum":30,"type":"work","note":""},{"date":"2027-04-28","dayCode":"wed","dayShort":"Ср","lessonNum":30,"type":"work","note":""},{"date":"2027-04-29","dayCode":"thu","dayShort":"Чт","lessonNum":31,"type":"work","note":""},{"date":"2027-04-30","dayCode":"fri","dayShort":"Пт","lessonNum":31,"type":"work","note":""},{"date":"2027-05-03","dayCode":"mon","dayShort":"Пн","lessonNum":null,"type":"holiday","note":"Праздничный / нерабочий день"},{"date":"2027-05-04","dayCode":"tue","dayShort":"Вт","lessonNum":null,"type":"holiday","note":"Праздничный / нерабочий день"},{"date":"2027-05-05","dayCode":"wed","dayShort":"Ср","lessonNum":31,"type":"work","note":""},{"date":"2027-05-06","dayCode":"thu","dayShort":"Чт","lessonNum":32,"type":"work","note":""},{"date":"2027-05-07","dayCode":"fri","dayShort":"Пт","lessonNum":32,"type":"work","note":""},{"date":"2027-05-10","dayCode":"mon","dayShort":"Пн","lessonNum":null,"type":"holiday","note":"Праздничный / нерабочий день"},{"date":"2027-05-11","dayCode":"tue","dayShort":"Вт","lessonNum":null,"type":"holiday","note":"Праздничный / нерабочий день"},{"date":"2027-05-12","dayCode":"wed","dayShort":"Ср","lessonNum":32,"type":"work","note":""},{"date":"2027-05-13","dayCode":"thu","dayShort":"Чт","lessonNum":33,"type":"work","note":""},{"date":"2027-05-14","dayCode":"fri","dayShort":"Пт","lessonNum":33,"type":"work","note":""},{"date":"2027-05-17","dayCode":"mon","dayShort":"Пн","lessonNum":30,"type":"work","note":""},{"date":"2027-05-18","dayCode":"tue","dayShort":"Вт","lessonNum":31,"type":"work","note":""},{"date":"2027-05-19","dayCode":"wed","dayShort":"Ср","lessonNum":33,"type":"work","note":""},{"date":"2027-05-20","dayCode":"thu","dayShort":"Чт","lessonNum":34,"type":"work","note":""},{"date":"2027-05-21","dayCode":"fri","dayShort":"Пт","lessonNum":34,"type":"work","note":""},{"date":"2027-05-24","dayCode":"mon","dayShort":"Пн","lessonNum":31,"type":"work","note":""},{"date":"2027-05-25","dayCode":"tue","dayShort":"Вт","lessonNum":32,"type":"work","note":""},{"date":"2027-05-26","dayCode":"wed","dayShort":"Ср","lessonNum":34,"type":"work","note":"Окончание учебного года"}],"classes":[{"id":"inf_11","title":"11 класс","subject":"Информатика","days":["fri"],"lessonsPerDay":1,"students":[{"id":"inf_11_s1","name":"Бондарь Александра Сергеевна","note":""},{"id":"inf_11_s2","name":"Галицын Марк Романович","note":""},{"id":"inf_11_s3","name":"Гасанов Владислав Камандарович","note":""},{"id":"inf_11_s4","name":"Григорюк Ангелина Александровна","note":""},{"id":"inf_11_s5","name":"Запорожцев Илья Алексеевич","note":""},{"id":"inf_11_s6","name":"Канивец Варвара Мухаммедовна","note":""},{"id":"inf_11_s7","name":"Ковальчук Игорь Олегович","note":""},{"id":"inf_11_s8","name":"Кузик Валентин Леонидович","note":""},{"id":"inf_11_s9","name":"Ломейко Дарья Сергеевна","note":""},{"id":"inf_11_s10","name":"Романенко Александр Сергеевич","note":""},{"id":"inf_11_s11","name":"Семионкин Андрей Витальевич","note":""},{"id":"inf_11_s12","name":"Сидоренко Денис Андреевич","note":""},{"id":"inf_11_s13","name":"Сидорова Карина Александровна","note":""},{"id":"inf_11_s14","name":"Силяев Егор Сергеевич","note":""},{"id":"inf_11_s15","name":"Стадницкая Анастасия Дмитриевна","note":""},{"id":"inf_11_s16","name":"Омельяненко Каролина Александровна","note":""},{"id":"inf_11_s17","name":"Хапков Илья Денисович","note":"отпустила богдана"},{"id":"inf_11_s18","name":"Харченко Анастасия Сергеевна","note":""}],"grades":{"inf_11_s1":{},"inf_11_s2":{},"inf_11_s3":{},"inf_11_s4":{},"inf_11_s5":{},"inf_11_s6":{},"inf_11_s7":{},"inf_11_s8":{},"inf_11_s9":{},"inf_11_s10":{},"inf_11_s11":{},"inf_11_s12":{},"inf_11_s13":{},"inf_11_s14":{},"inf_11_s15":{},"inf_11_s16":{},"inf_11_s17":{},"inf_11_s18":{}},"lessonMeta":{},"hwCompletion":{},"finalGrades":{}},{"id":"inf_10","title":"10 класс","subject":"Информатика","days":["mon","wed"],"lessonsPerDay":1,"students":[{"id":"inf_10_s1","name":"Галкова Анна Владимировна","note":""},{"id":"inf_10_s2","name":"Гонтарь Полина Александровна","note":""},{"id":"inf_10_s3","name":"Гортоплян Иван Романович","note":""},{"id":"inf_10_s4","name":"Дубина Николай Николаевич","note":""},{"id":"inf_10_s5","name":"Евсеев Илья Дмитриевич","note":""},{"id":"inf_10_s6","name":"Елизарьева Алена Алексеевна","note":""},{"id":"inf_10_s7","name":"Зыкова Виктория Евгеньевна","note":""},{"id":"inf_10_s8","name":"Кривуля София Андреевна","note":""},{"id":"inf_10_s9","name":"Манакова Виктория Юлиевна","note":""},{"id":"inf_10_s10","name":"Портянова Олеся Игоревна","note":""},{"id":"inf_10_s11","name":"Савченко Валерия Дмитриевна","note":""},{"id":"inf_10_s12","name":"Савченко Екатерина Дмитриевна","note":""},{"id":"inf_10_s13","name":"Самсонова Доминика Артемовна","note":""},{"id":"inf_10_s14","name":"Семёнов Владислав Андреевич","note":""},{"id":"inf_10_s15","name":"Сопов Назар Сергеевич","note":""},{"id":"inf_10_s16","name":"Страх Злата Вячеславовна","note":""},{"id":"inf_10_s17","name":"Унгурян Иван Григорьевич","note":""},{"id":"inf_10_s18","name":"Харченко Алина Валентиновна","note":""},{"id":"inf_10_s19","name":"Хомутов Владислав Павлович","note":""}],"grades":{"inf_10_s1":{"2026-09-07":{"val":"н","comment":""},"2026-09-28":{"val":"3","comment":""},"2026-10-12":{"val":"3","comment":""}},"inf_10_s2":{"2026-09-07":{"val":"зач","comment":""},"2026-09-28":{"val":"5","comment":""},"2026-10-12":{"val":"3","comment":""}},"inf_10_s3":{"2026-09-07":{"val":"н/з","comment":""},"2026-09-09":{"val":"зач","comment":""},"2026-09-28":{"val":"3","comment":""},"2026-10-12":{"val":"3","comment":""}},"inf_10_s4":{"2026-09-07":{"val":"зач","comment":""},"2026-09-28":{"val":"3","comment":""},"2026-10-12":{"val":"3","comment":""}},"inf_10_s5":{"2026-09-07":{"val":"н/з","comment":""},"2026-09-09":{"val":"зач","comment":""},"2026-09-28":{"val":"5","comment":""},"2026-10-07":{"val":"5","comment":""}},"inf_10_s6":{"2026-09-28":{"val":"5","comment":""},"2026-10-12":{"val":"3","comment":""}},"inf_10_s7":{"2026-09-28":{"val":"3","comment":""},"2026-10-12":{"val":"3","comment":""}},"inf_10_s8":{"2026-09-09":{"val":"зач","comment":""},"2026-09-28":{"val":"5","comment":""},"2026-10-12":{"val":"3","comment":""}},"inf_10_s9":{"2026-09-07":{"val":"зач","comment":""},"2026-09-28":{"val":"5","comment":""},"2026-10-07":{"val":"5","comment":""}},"inf_10_s10":{"2026-09-07":{"val":"зач","comment":""},"2026-09-28":{"val":"5","comment":""},"2026-10-07":{"val":"5","comment":""}},"inf_10_s11":{"2026-09-28":{"val":"3","comment":""},"2026-10-12":{"val":"3","comment":""}},"inf_10_s12":{"2026-09-28":{"val":"5","comment":""},"2026-10-12":{"val":"3","comment":""}},"inf_10_s13":{"2026-09-09":{"val":"зач","comment":""},"2026-09-28":{"val":"5","comment":""},"2026-10-12":{"val":"3","comment":""}},"inf_10_s14":{"2026-09-28":{"val":"5","comment":""},"2026-10-12":{"val":"3","comment":""}},"inf_10_s15":{"2026-09-07":{"val":"зач","comment":""},"2026-09-28":{"val":"5","comment":""},"2026-10-12":{"val":"3","comment":""}},"inf_10_s16":{"2026-09-07":{"val":"зач","comment":""},"2026-09-28":{"val":"5","comment":""},"2026-10-07":{"val":"5","comment":""}},"inf_10_s17":{"2026-09-09":{"val":"зач","comment":""},"2026-09-28":{"val":"3","comment":""},"2026-10-07":{"val":"5","comment":""}},"inf_10_s18":{"2026-09-07":{"val":"зач","comment":""},"2026-09-28":{"val":"5","comment":""},"2026-10-05":{"val":"5","comment":""}},"inf_10_s19":{"2026-09-28":{"val":"5","comment":""},"2026-10-07":{"val":"5","comment":""}}},"lessonMeta":{},"hwCompletion":{},"finalGrades":{}},{"id":"inf_9","title":"9 класс","subject":"Информатика","days":["tue"],"lessonsPerDay":1,"students":[{"id":"inf_9_s1","name":"Авдеева София Михайловна","note":""},{"id":"inf_9_s2","name":"Баранов Владислав Валерьевич","note":""},{"id":"inf_9_s3","name":"Буняев Никита Вячеславович","note":""},{"id":"inf_9_s4","name":"Гаврилов Александр Александрович","note":""},{"id":"inf_9_s5","name":"Белошеин Даниил Владимирович","note":""},{"id":"inf_9_s6","name":"Довбыш Артем Алексеевич","note":""},{"id":"inf_9_s7","name":"Дрёмов Даниил Витальевич","note":""},{"id":"inf_9_s8","name":"Есина Милена Андреевна","note":""},{"id":"inf_9_s9","name":"Логунов Архип Денисович","note":""},{"id":"inf_9_s10","name":"Луданик Богдан Русланович","note":""},{"id":"inf_9_s11","name":"Лукина Кира Андреевна","note":""},{"id":"inf_9_s12","name":"Лукьянов Давид Вячеславович","note":""},{"id":"inf_9_s13","name":"Мищенко Дарья Андреевна","note":""},{"id":"inf_9_s14","name":"Осадчий Данил Юрьевич","note":""},{"id":"inf_9_s15","name":"Осадчий Кирилл Юрьевич","note":""},{"id":"inf_9_s16","name":"Пахомов Илья Максимович","note":""},{"id":"inf_9_s17","name":"Пронин Максим Сергеевич","note":""},{"id":"inf_9_s18","name":"Селищева Милана Андреевна","note":""},{"id":"inf_9_s19","name":"Серебров Максим Евгеньевич","note":""},{"id":"inf_9_s20","name":"Соболева Ксения Сергеевна","note":""},{"id":"inf_9_s21","name":"Финагин Артем Дмитриевич","note":""},{"id":"inf_9_s22","name":"Хохлова Ольга Алексевна","note":""}],"grades":{"inf_9_s1":{"2026-09-01":{"val":"4","comment":"Стартовая отметка из импорта"}},"inf_9_s2":{"2026-09-01":{"val":"5","comment":"Стартовая отметка из импорта"}},"inf_9_s3":{"2026-09-01":{"val":"4","comment":"Стартовая отметка из импорта"}},"inf_9_s4":{"2026-09-01":{"val":"5","comment":"Стартовая отметка из импорта"}},"inf_9_s5":{"2026-09-01":{"val":"5","comment":"Стартовая отметка из импорта"}},"inf_9_s6":{"2026-09-01":{"val":"5","comment":"Стартовая отметка из импорта"}},"inf_9_s7":{"2026-09-01":{"val":"4","comment":"Стартовая отметка из импорта"}},"inf_9_s8":{"2026-09-01":{"val":"5","comment":"Стартовая отметка из импорта"}},"inf_9_s9":{"2026-09-01":{"val":"5","comment":"Стартовая отметка из импорта"}},"inf_9_s10":{"2026-09-01":{"val":"5","comment":"Стартовая отметка из импорта"}},"inf_9_s11":{"2026-09-01":{"val":"3","comment":"Стартовая отметка из импорта"}},"inf_9_s12":{"2026-09-01":{"val":"5","comment":"Стартовая отметка из импорта"}},"inf_9_s13":{"2026-09-01":{"val":"5","comment":"Стартовая отметка из импорта"}},"inf_9_s14":{"2026-09-01":{"val":"5","comment":"Стартовая отметка из импорта"}},"inf_9_s15":{"2026-09-01":{"val":"5","comment":"Стартовая отметка из импорта"}},"inf_9_s16":{"2026-09-01":{"val":"3","comment":"Стартовая отметка из импорта"}},"inf_9_s17":{"2026-09-01":{"val":"3","comment":"Стартовая отметка из импорта"}},"inf_9_s18":{},"inf_9_s19":{"2026-09-01":{"val":"5","comment":"Стартовая отметка из импорта"}},"inf_9_s20":{"2026-09-01":{"val":"5","comment":"Стартовая отметка из импорта"}},"inf_9_s21":{"2026-09-01":{"val":"5","comment":"Стартовая отметка из импорта"}},"inf_9_s22":{"2026-09-01":{"val":"3","comment":"Стартовая отметка из импорта"}}},"lessonMeta":{},"hwCompletion":{},"finalGrades":{}},{"id":"inf_8","title":"8 класс","subject":"Информатика","days":["mon","tue"],"lessonsPerDay":1,"students":[{"id":"inf_8_s1","name":"Богославская Полина Сергеевна","note":""},{"id":"inf_8_s2","name":"Гусева Ольга Романовна","note":""},{"id":"inf_8_s3","name":"Долгополова Вячеслава Вячеславовна","note":""},{"id":"inf_8_s4","name":"Иванько Полина Руслановна","note":""},{"id":"inf_8_s5","name":"Калинин Георгий Дмитриевич","note":""},{"id":"inf_8_s6","name":"Караваев Леонид Алексеевич","note":""},{"id":"inf_8_s7","name":"Козенюк Анна Николаевна","note":""},{"id":"inf_8_s8","name":"Лихотский Кирилл Дмитриевич","note":""},{"id":"inf_8_s9","name":"Матасова Анна Леонидовна","note":""},{"id":"inf_8_s10","name":"Насатенко Екатерина Викторовна","note":""},{"id":"inf_8_s11","name":"Руденко Анастасия Яковлевна","note":""},{"id":"inf_8_s12","name":"Становский Александр Максимович","note":""},{"id":"inf_8_s13","name":"Тимошин Артем Игоревич","note":""},{"id":"inf_8_s14","name":"Тимошина Дарья Игоревна","note":""},{"id":"inf_8_s15","name":"Титарева Милена Алексеевна","note":""},{"id":"inf_8_s16","name":"Туженкова Дарья Сергеевна","note":""},{"id":"inf_8_s17","name":"Кокарчев Роман Артемович","note":""},{"id":"inf_8_s18","name":"Чихирев Богдан Владимирович","note":""},{"id":"inf_8_s19","name":"Цапенко Богдан Максимович","note":""},{"id":"inf_8_s20","name":"Бабакова Анастасия Александровна","note":""}],"grades":{"inf_8_s1":{},"inf_8_s2":{},"inf_8_s3":{},"inf_8_s4":{},"inf_8_s5":{},"inf_8_s6":{},"inf_8_s7":{},"inf_8_s8":{},"inf_8_s9":{"2026-09-07":{"val":"н","comment":""}},"inf_8_s10":{},"inf_8_s11":{},"inf_8_s12":{},"inf_8_s13":{"2026-09-29":{"val":"3","comment":""}},"inf_8_s14":{},"inf_8_s15":{},"inf_8_s16":{},"inf_8_s17":{},"inf_8_s18":{},"inf_8_s19":{},"inf_8_s20":{"2026-09-07":{"val":"н","comment":""}}},"lessonMeta":{},"hwCompletion":{},"finalGrades":{}},{"id":"inf_7","title":"7 класс","subject":"Информатика","days":["fri"],"lessonsPerDay":1,"students":[{"id":"inf_7_s1","name":"Астапенков Ярослав Викторович","note":""},{"id":"inf_7_s2","name":"Батозская Милана Геннадиевна","note":""},{"id":"inf_7_s3","name":"Валиулина Николь Данисовна","note":""},{"id":"inf_7_s4","name":"Ермак Артём Дмитриевич","note":""},{"id":"inf_7_s5","name":"Житнюк Артём Ярославович","note":""},{"id":"inf_7_s6","name":"Заика Дмитрий Антонович","note":""},{"id":"inf_7_s7","name":"Ивко Анастасия Андреевна","note":""},{"id":"inf_7_s8","name":"Ковальчук Анастасия Михайловна","note":""},{"id":"inf_7_s9","name":"Логунова Алиса Денисовна","note":""},{"id":"inf_7_s10","name":"Лукина Диана Андреевна","note":""},{"id":"inf_7_s11","name":"Мазилин Ярослав Артемевич","note":""},{"id":"inf_7_s12","name":"Мартыщенко Полина Вячеславовна","note":""},{"id":"inf_7_s13","name":"Мерзликин Михаил Евгеньевич","note":""},{"id":"inf_7_s14","name":"Мовчан Мария Александровна","note":""},{"id":"inf_7_s15","name":"Павлюченко Максим Игоревич","note":""},{"id":"inf_7_s16","name":"Ремез Дамир Дмитриевич","note":""},{"id":"inf_7_s17","name":"Решетняк Ярослав Викторович","note":""},{"id":"inf_7_s18","name":"Светличная Марина Романовна","note":""},{"id":"inf_7_s19","name":"Фурдыгайло Александр Романович","note":""},{"id":"inf_7_s20","name":"Щербина Максим Александрович","note":""},{"id":"inf_7_s21","name":"Старковой Арины","note":""}],"grades":{"inf_7_s1":{"2026-10-16":{"val":"5","comment":""},"2026-10-23":{"val":"5","comment":""}},"inf_7_s2":{"2026-09-04":{"val":"зач","comment":""},"2026-10-16":{"val":"5","comment":""}},"inf_7_s3":{"2026-09-04":{"val":"зач","comment":""},"2026-10-16":{"val":"5","comment":""},"2026-10-23":{"val":"5","comment":""}},"inf_7_s4":{"2026-09-04":{"val":"н","comment":""},"2026-10-16":{"val":"3","comment":""},"2026-10-23":{"val":"4","comment":""}},"inf_7_s5":{"2026-10-16":{"val":"2","comment":""},"2026-10-23":{"val":"4","comment":""}},"inf_7_s6":{"2026-10-16":{"val":"5","comment":""}},"inf_7_s7":{"2026-10-16":{"val":"5","comment":""},"2026-10-23":{"val":"5","comment":""}},"inf_7_s8":{"2026-09-04":{"val":"зач","comment":""},"2026-10-16":{"val":"5","comment":""}},"inf_7_s9":{"2026-10-16":{"val":"5","comment":""},"2026-10-23":{"val":"5","comment":""}},"inf_7_s10":{"2026-10-16":{"val":"3","comment":""},"2026-10-23":{"val":"5","comment":""}},"inf_7_s11":{"2026-10-16":{"val":"5","comment":""}},"inf_7_s12":{"2026-10-16":{"val":"5","comment":""},"2026-10-23":{"val":"4","comment":""}},"inf_7_s13":{"2026-10-16":{"val":"2","comment":""},"2026-10-23":{"val":"5","comment":""}},"inf_7_s14":{"2026-10-16":{"val":"4","comment":""},"2026-10-23":{"val":"5","comment":""}},"inf_7_s15":{"2026-10-16":{"val":"3","comment":""},"2026-10-23":{"val":"4","comment":""}},"inf_7_s16":{"2026-10-16":{"val":"5","comment":""},"2026-10-23":{"val":"5","comment":""}},"inf_7_s17":{"2026-10-16":{"val":"2","comment":""},"2026-10-23":{"val":"5","comment":""}},"inf_7_s18":{"2026-09-04":{"val":"н","comment":""},"2026-10-16":{"val":"5","comment":""},"2026-10-23":{"val":"5","comment":""}},"inf_7_s19":{"2026-09-04":{"val":"н","comment":""}},"inf_7_s20":{"2026-10-16":{"val":"5","comment":""},"2026-10-23":{"val":"5","comment":""}},"inf_7_s21":{"2026-10-16":{"val":"5","comment":""},"2026-10-23":{"val":"5","comment":""}}},"lessonMeta":{},"hwCompletion":{},"finalGrades":{}},{"id":"inf_6","title":"6 класс","subject":"Информатика","days":["thu"],"lessonsPerDay":1,"students":[{"id":"inf_6_s1","name":"Белан Данислав Ильич","note":""},{"id":"inf_6_s2","name":"Бесчастная Диана Александровна","note":""},{"id":"inf_6_s3","name":"Богославский Павел Сергеевич","note":""},{"id":"inf_6_s4","name":"Бородин Илья Витальевич","note":""},{"id":"inf_6_s5","name":"Гаврилова Валерия Александровна","note":""},{"id":"inf_6_s6","name":"Демочка Виктория Витальевна","note":""},{"id":"inf_6_s7","name":"Емец Никита Сергеевич","note":""},{"id":"inf_6_s8","name":"Запорожец Анна Павловна","note":""},{"id":"inf_6_s9","name":"Киселев Даниил Дмитриевич","note":""},{"id":"inf_6_s10","name":"Крещук Андрей Максимович","note":""},{"id":"inf_6_s11","name":"Куровский Илья Дмитриевич","note":""},{"id":"inf_6_s12","name":"Малеев Даниил Денисович","note":""},{"id":"inf_6_s13","name":"Олейник Илья Витальевич","note":""},{"id":"inf_6_s14","name":"Свитюха Дмитрий Сергеевич","note":""},{"id":"inf_6_s15","name":"Смоловой Иван Сергеевич","note":""},{"id":"inf_6_s16","name":"СудилОвский Макар Андреевич","note":""},{"id":"inf_6_s17","name":"Тишкина Милана Алексевна","note":""},{"id":"inf_6_s18","name":"Шведова Анастасия Васильевна","note":""},{"id":"inf_6_s19","name":"Финагина Анастасия Дмитриевна","note":""}],"grades":{"inf_6_s1":{"2026-09-03":{"val":"5","comment":"Стартовая отметка из импорта"}},"inf_6_s2":{"2026-09-03":{"val":"5","comment":"Стартовая отметка из импорта"}},"inf_6_s3":{"2026-09-03":{"val":"5","comment":"Стартовая отметка из импорта"}},"inf_6_s4":{"2026-09-03":{"val":"5","comment":"Стартовая отметка из импорта"}},"inf_6_s5":{"2026-09-03":{"val":"5","comment":"Стартовая отметка из импорта"}},"inf_6_s6":{"2026-09-03":{"val":"4","comment":"Стартовая отметка из импорта"}},"inf_6_s7":{"2026-09-03":{"val":"5","comment":"Стартовая отметка из импорта"}},"inf_6_s8":{"2026-09-03":{"val":"5","comment":"Стартовая отметка из импорта"}},"inf_6_s9":{"2026-09-03":{"val":"5","comment":"Стартовая отметка из импорта"}},"inf_6_s10":{"2026-09-03":{"val":"5","comment":"Стартовая отметка из импорта"}},"inf_6_s11":{"2026-09-03":{"val":"4","comment":"Стартовая отметка из импорта"}},"inf_6_s12":{"2026-09-03":{"val":"5","comment":"Стартовая отметка из импорта"}},"inf_6_s13":{"2026-09-03":{"val":"5","comment":"Стартовая отметка из импорта"}},"inf_6_s14":{"2026-09-03":{"val":"5","comment":"Стартовая отметка из импорта"}},"inf_6_s15":{"2026-09-03":{"val":"5","comment":"Стартовая отметка из импорта"}},"inf_6_s16":{"2026-09-03":{"val":"5","comment":"Стартовая отметка из импорта"}},"inf_6_s17":{"2026-09-03":{"val":"5","comment":"Стартовая отметка из импорта"}},"inf_6_s18":{"2026-09-03":{"val":"5","comment":"Стартовая отметка из импорта"}},"inf_6_s19":{"2026-09-03":{"val":"5","comment":"Стартовая отметка из импорта"}}},"lessonMeta":{},"hwCompletion":{},"finalGrades":{}},{"id":"inf_5","title":"5 класс","subject":"Информатика","days":["thu"],"lessonsPerDay":1,"students":[{"id":"inf_5_s1","name":"Алексейчук Михаил Александрович","note":""},{"id":"inf_5_s2","name":"Гончаров Иван Артёмович","note":""},{"id":"inf_5_s3","name":"Калинин Алексей Дмитриевич","note":""},{"id":"inf_5_s4","name":"Кучма Алина Викторовна","note":""},{"id":"inf_5_s5","name":"Лакомый Илья Витальевич","note":""},{"id":"inf_5_s6","name":"Малеев Михаил Денисович","note":""},{"id":"inf_5_s7","name":"Насатенко Сергей Викторович","note":""},{"id":"inf_5_s8","name":"Пахомов Владислав Денисович","note":""},{"id":"inf_5_s9","name":"Хань Святослав Романович","note":""},{"id":"inf_5_s10","name":"Финагин Артем Константинович","note":""},{"id":"inf_5_s11","name":"Чолария Кира Романовна","note":""}],"grades":{"inf_5_s1":{"2026-09-10":{"val":"зач","comment":""}},"inf_5_s2":{"2026-09-10":{"val":"зач","comment":""}},"inf_5_s3":{"2026-09-10":{"val":"н","comment":""}},"inf_5_s4":{"2026-09-10":{"val":"зач","comment":""}},"inf_5_s5":{"2026-09-10":{"val":"н","comment":""}},"inf_5_s6":{"2026-09-10":{"val":"зач","comment":""}},"inf_5_s7":{"2026-09-10":{"val":"зач","comment":""}},"inf_5_s8":{"2026-09-10":{"val":"н","comment":""}},"inf_5_s9":{"2026-09-10":{"val":"зач","comment":""}},"inf_5_s10":{"2026-09-10":{"val":"зач","comment":""}},"inf_5_s11":{"2026-09-10":{"val":"зач","comment":""}}},"lessonMeta":{"2026-09-03":{"topic":"Админ: Техника безопасности","lessonType":"safety","hw":"","hwDue":"","hwStatus":"none"}},"hwCompletion":{},"finalGrades":{}},{"id":"trud_5","title":"5 класс","subject":"Труд (Технология)","days":["mon"],"lessonsPerDay":2,"students":[{"id":"trud_5_s1","name":"Алексейчук Михаил Александрович","note":""},{"id":"trud_5_s2","name":"Гончаров Иван Артёмович","note":""},{"id":"trud_5_s3","name":"Калинин Алексей Дмитриевич","note":""},{"id":"trud_5_s4","name":"Кучма Алина Викторовна","note":""},{"id":"trud_5_s5","name":"Лакомый Илья Витальевич","note":""},{"id":"trud_5_s6","name":"Малеев Михаил Денисович","note":""},{"id":"trud_5_s7","name":"Насатенко Сергей Викторович","note":""},{"id":"trud_5_s8","name":"Пахомов Владислав Денисович","note":""},{"id":"trud_5_s9","name":"Хань Святослав Романович","note":""},{"id":"trud_5_s10","name":"Финагин Артем Константинович","note":""},{"id":"trud_5_s11","name":"Чолария Кира Романовна","note":""}],"grades":{"trud_5_s1":{},"trud_5_s2":{"2026-09-07":{"val":"н","comment":""}},"trud_5_s3":{"2026-09-07":{"val":"н","comment":""}},"trud_5_s4":{},"trud_5_s5":{"2026-09-07":{"val":"н","comment":""}},"trud_5_s6":{},"trud_5_s7":{"2026-09-07":{"val":"зач","comment":""}},"trud_5_s8":{"2026-09-07":{"val":"н","comment":""}},"trud_5_s9":{},"trud_5_s10":{},"trud_5_s11":{"2026-09-07":{"val":"н","comment":""}}},"lessonMeta":{"2026-09-07":{"topic":"Админ: Техника безопасности","lessonType":"safety","hw":"","hwDue":"","hwStatus":"none"}},"hwCompletion":{},"finalGrades":{}},{"id":"trud_6","title":"6 класс","subject":"Труд (Технология)","days":["wed"],"lessonsPerDay":1,"students":[{"id":"trud_6_s1","name":"Белан Данислав Ильич","note":""},{"id":"trud_6_s2","name":"Богославский Павел Сергеевич","note":""},{"id":"trud_6_s3","name":"Бородин Илья Витальевич","note":""},{"id":"trud_6_s4","name":"Емец Никита Сергеевич","note":""},{"id":"trud_6_s5","name":"Киселев Даниил Дмитриевич","note":""},{"id":"trud_6_s6","name":"Крещук Андрей Максимович","note":""},{"id":"trud_6_s7","name":"Куровский Илья Дмитриевич","note":""},{"id":"trud_6_s8","name":"Малеев Даниил Денисович","note":""},{"id":"trud_6_s9","name":"Олейник Илья Витальевич","note":""},{"id":"trud_6_s10","name":"Свитюха Дмитрий Сергеевич","note":""},{"id":"trud_6_s11","name":"Смоловой Иван Сергеевич","note":""}],"grades":{"trud_6_s1":{"2026-09-02":{"val":"зач","comment":""}},"trud_6_s2":{"2026-09-09":{"val":"зач","comment":""}},"trud_6_s3":{"2026-09-09":{"val":"н","comment":""},"2026-09-23":{"val":"5","comment":""}},"trud_6_s4":{"2026-09-02":{"val":"зач","comment":""},"2026-09-09":{"val":"н","comment":""}},"trud_6_s5":{"2026-09-02":{"val":"зач","comment":""}},"trud_6_s6":{"2026-09-02":{"val":"зач","comment":""},"2026-09-09":{"val":"н","comment":""},"2026-09-23":{"val":"4","comment":""}},"trud_6_s7":{"2026-09-09":{"val":"зач","comment":""}},"trud_6_s8":{"2026-09-02":{"val":"н","comment":""},"2026-09-23":{"val":"4","comment":""}},"trud_6_s9":{"2026-09-09":{"val":"зач","comment":""}},"trud_6_s10":{"2026-09-09":{"val":"н","comment":""}},"trud_6_s11":{"2026-09-09":{"val":"н","comment":""}}},"lessonMeta":{"2026-09-02":{"topic":"Админ: Техника безопасности","lessonType":"safety","hw":"","hwDue":"","hwStatus":"none"}},"hwCompletion":{},"finalGrades":{}},{"id":"trud_7","title":"7 класс","subject":"Труд (Технология)","days":["thu"],"lessonsPerDay":1,"students":[{"id":"trud_7_s1","name":"Ермак Артём Дмитриевич","note":""},{"id":"trud_7_s2","name":"Житнюк Артём Ярославович","note":""},{"id":"trud_7_s3","name":"Заика Дмитрий Антонович","note":""},{"id":"trud_7_s4","name":"Мерзликин Михаил Евгеньевич","note":""},{"id":"trud_7_s5","name":"Павлюченко Максим Игоревич","note":""},{"id":"trud_7_s6","name":"Ремез Дамир Дмитриевич","note":""},{"id":"trud_7_s7","name":"Щербина Максим Александрович","note":""},{"id":"trud_7_s8","name":"Астапенков Ярослав Викторович","note":""},{"id":"trud_7_s9","name":"Решетняк Ярослав Викторович","note":""},{"id":"trud_7_s10","name":"Фурдыгайло Александр Романович","note":""},{"id":"trud_7_s11","name":"Мазилин Ярослав Артемевич","note":""}],"grades":{"trud_7_s1":{"2026-09-03":{"val":"н","comment":""},"2026-09-10":{"val":"н","comment":""},"2026-10-01":{"val":"3","comment":""}},"trud_7_s2":{"2026-09-24":{"val":"4","comment":""},"2026-10-01":{"val":"3","comment":""}},"trud_7_s3":{"2026-09-03":{"val":"н","comment":""},"2026-09-24":{"val":"5","comment":""},"2026-10-01":{"val":"5","comment":""}},"trud_7_s4":{"2026-10-01":{"val":"5","comment":""}},"trud_7_s5":{"2026-09-03":{"val":"зач","comment":""},"2026-09-24":{"val":"4","comment":""},"2026-10-01":{"val":"3","comment":""}},"trud_7_s6":{"2026-09-24":{"val":"4","comment":""},"2026-10-01":{"val":"5","comment":""}},"trud_7_s7":{"2026-10-01":{"val":"4","comment":""}},"trud_7_s8":{"2026-09-03":{"val":"зач","comment":""},"2026-09-10":{"val":"н","comment":""},"2026-10-01":{"val":"3","comment":""},"2026-10-15":{"val":"5","comment":""}},"trud_7_s9":{"2026-09-03":{"val":"зач","comment":""},"2026-09-10":{"val":"н","comment":""},"2026-09-24":{"val":"3","comment":""},"2026-10-01":{"val":"3","comment":""}},"trud_7_s10":{"2026-09-24":{"val":"5","comment":""}},"trud_7_s11":{"2026-09-24":{"val":"5","comment":""},"2026-10-01":{"val":"5","comment":""},"2026-10-15":{"val":"5","comment":""}}},"lessonMeta":{},"hwCompletion":{},"finalGrades":{}},{"id":"trud_8","title":"8 класс","subject":"Труд (Технология)","days":["wed"],"lessonsPerDay":1,"students":[{"id":"trud_8_s1","name":"Калинин Георгий Дмитриевич","note":""},{"id":"trud_8_s2","name":"Караваев Леонид Алексеевич","note":""},{"id":"trud_8_s3","name":"Лихотский Кирилл Дмитриевич","note":""},{"id":"trud_8_s4","name":"Становский Александр Максимович","note":""},{"id":"trud_8_s5","name":"Тимошин Артем Игоревич","note":""},{"id":"trud_8_s6","name":"Кокарчев Роман Артемович","note":""},{"id":"trud_8_s7","name":"Чихирев Богдан Владимирович","note":""},{"id":"trud_8_s8","name":"Цапенко Богдан Максимович","note":""},{"id":"trud_8_s9","name":"Баранов Ярослав Артёмович","note":""},{"id":"trud_8_s10","name":"Кокарчев Максим Романович","note":""}],"grades":{"trud_8_s1":{},"trud_8_s2":{"2026-09-02":{"val":"зач","comment":"Стартовая отметка из импорта"}},"trud_8_s3":{},"trud_8_s4":{"2026-09-02":{"val":"зач","comment":"Стартовая отметка из импорта"}},"trud_8_s5":{"2026-09-02":{"val":"зач","comment":"Стартовая отметка из импорта"}},"trud_8_s6":{},"trud_8_s7":{"2026-09-02":{"val":"зач","comment":"Стартовая отметка из импорта"}},"trud_8_s8":{},"trud_8_s9":{"2026-09-02":{"val":"зач","comment":"Стартовая отметка из импорта"}},"trud_8_s10":{}},"lessonMeta":{},"hwCompletion":{},"finalGrades":{}},{"id":"trud_9","title":"9 класс","subject":"Труд (Технология)","days":["fri"],"lessonsPerDay":1,"students":[{"id":"trud_9_s1","name":"Баранов Владислав Валерьевич","note":""},{"id":"trud_9_s2","name":"Буняев Никита Вячеславович","note":""},{"id":"trud_9_s3","name":"Гаврилов Александр Александрович","note":""},{"id":"trud_9_s4","name":"Грановский Михаил Владимирович","note":""},{"id":"trud_9_s5","name":"Довбыш Артем Алексеевич","note":""},{"id":"trud_9_s6","name":"Белошеин Даниил Владимирович","note":""},{"id":"trud_9_s7","name":"Логунов Архип Денисович","note":""},{"id":"trud_9_s8","name":"Луданик Богдан Русланович","note":""},{"id":"trud_9_s9","name":"Лукьянов Давид Вячеславович","note":""},{"id":"trud_9_s10","name":"Осадчий Данил Юрьевич","note":""},{"id":"trud_9_s11","name":"Осадчий Кирилл Юрьевич","note":""},{"id":"trud_9_s12","name":"Пахомов Илья Максимович","note":""},{"id":"trud_9_s13","name":"Пронин Максим Сергеевич","note":""},{"id":"trud_9_s14","name":"Серебров Максим Евгеньевич","note":""},{"id":"trud_9_s15","name":"Финагин Артем Дмитриевич","note":""},{"id":"trud_9_s16","name":"Щеткин Тимофей Олегович","note":""}],"grades":{"trud_9_s1":{"2026-09-04":{"val":"3","comment":"Стартовая отметка из импорта"}},"trud_9_s2":{"2026-09-04":{"val":"5","comment":"Стартовая отметка из импорта"}},"trud_9_s3":{"2026-09-04":{"val":"4","comment":"Стартовая отметка из импорта"}},"trud_9_s4":{"2026-09-04":{"val":"3","comment":"Стартовая отметка из импорта"}},"trud_9_s5":{"2026-09-04":{"val":"5","comment":"Стартовая отметка из импорта"}},"trud_9_s6":{"2026-09-04":{"val":"5","comment":"Стартовая отметка из импорта"}},"trud_9_s7":{"2026-09-04":{"val":"5","comment":"Стартовая отметка из импорта"}},"trud_9_s8":{"2026-09-04":{"val":"5","comment":"Стартовая отметка из импорта"}},"trud_9_s9":{"2026-09-04":{"val":"4","comment":"Стартовая отметка из импорта"}},"trud_9_s10":{"2026-09-04":{"val":"4","comment":"Стартовая отметка из импорта"}},"trud_9_s11":{"2026-09-04":{"val":"5","comment":"Стартовая отметка из импорта"}},"trud_9_s12":{"2026-09-04":{"val":"5","comment":"Стартовая отметка из импорта"}},"trud_9_s13":{"2026-09-04":{"val":"3","comment":"Стартовая отметка из импорта"}},"trud_9_s14":{"2026-09-04":{"val":"5","comment":"Стартовая отметка из импорта"}},"trud_9_s15":{"2026-09-04":{"val":"5","comment":"Стартовая отметка из импорта"}},"trud_9_s16":{"2026-09-04":{"val":"3","comment":"Стартовая отметка из импорта"}}},"lessonMeta":{},"hwCompletion":{},"finalGrades":{}}],"customDates":{},"periods":{"all":{"label":"Весь год","start":"2026-09-01","end":"2027-05-31"},"q1":{"label":"1 четверть","start":"2026-09-01","end":"2026-10-25"},"q2":{"label":"2 четверть","start":"2026-11-05","end":"2026-12-30"},"q3":{"label":"3 четверть","start":"2027-01-11","end":"2027-03-28"},"q4":{"label":"4 четверть","start":"2027-04-05","end":"2027-05-31"},"h1":{"label":"1 полугодие","start":"2026-09-01","end":"2026-12-30"},"h2":{"label":"2 полугодие","start":"2027-01-11","end":"2027-05-31"}},"updatedAt":0};
 const SEED_DATA = {"calendar": [{"date": "2026-09-01", "dayCode": "tue", "dayShort": "Вт", "lessonNum": 1, "type": "work", "note": "Начало учебного года (1 сентября)"}, {"date": "2026-09-02", "dayCode": "wed", "dayShort": "Ср", "lessonNum": 1, "type": "work", "note": ""}, {"date": "2026-09-03", "dayCode": "thu", "dayShort": "Чт", "lessonNum": 1, "type": "work", "note": ""}, {"date": "2026-09-04", "dayCode": "fri", "dayShort": "Пт", "lessonNum": 1, "type": "work", "note": ""}, {"date": "2026-09-07", "dayCode": "mon", "dayShort": "Пн", "lessonNum": 1, "type": "work", "note": ""}, {"date": "2026-09-08", "dayCode": "tue", "dayShort": "Вт", "lessonNum": 2, "type": "work", "note": ""}, {"date": "2026-09-09", "dayCode": "wed", "dayShort": "Ср", "lessonNum": 2, "type": "work", "note": ""}, {"date": "2026-09-10", "dayCode": "thu", "dayShort": "Чт", "lessonNum": 2, "type": "work", "note": ""}, {"date": "2026-09-11", "dayCode": "fri", "dayShort": "Пт", "lessonNum": 2, "type": "work", "note": ""}, {"date": "2026-09-14", "dayCode": "mon", "dayShort": "Пн", "lessonNum": 2, "type": "work", "note": ""}, {"date": "2026-09-15", "dayCode": "tue", "dayShort": "Вт", "lessonNum": 3, "type": "work", "note": ""}, {"date": "2026-09-16", "dayCode": "wed", "dayShort": "Ср", "lessonNum": 3, "type": "work", "note": ""}, {"date": "2026-09-17", "dayCode": "thu", "dayShort": "Чт", "lessonNum": 3, "type": "work", "note": ""}, {"date": "2026-09-18", "dayCode": "fri", "dayShort": "Пт", "lessonNum": 3, "type": "work", "note": ""}, {"date": "2026-09-21", "dayCode": "mon", "dayShort": "Пн", "lessonNum": 3, "type": "work", "note": ""}, {"date": "2026-09-22", "dayCode": "tue", "dayShort": "Вт", "lessonNum": 4, "type": "work", "note": ""}, {"date": "2026-09-23", "dayCode": "wed", "dayShort": "Ср", "lessonNum": 4, "type": "work", "note": ""}, {"date": "2026-09-24", "dayCode": "thu", "dayShort": "Чт", "lessonNum": 4, "type": "work", "note": ""}, {"date": "2026-09-25", "dayCode": "fri", "dayShort": "Пт", "lessonNum": 4, "type": "work", "note": ""}, {"date": "2026-09-28", "dayCode": "mon", "dayShort": "Пн", "lessonNum": 4, "type": "work", "note": ""}, {"date": "2026-09-29", "dayCode": "tue", "dayShort": "Вт", "lessonNum": 5, "type": "work", "note": ""}, {"date": "2026-09-30", "dayCode": "wed", "dayShort": "Ср", "lessonNum": null, "type": "holiday", "note": "Праздничный / нерабочий день"}, {"date": "2026-10-01", "dayCode": "thu", "dayShort": "Чт", "lessonNum": 5, "type": "work", "note": ""}, {"date": "2026-10-02", "dayCode": "fri", "dayShort": "Пт", "lessonNum": 5, "type": "work", "note": ""}, {"date": "2026-10-05", "dayCode": "mon", "dayShort": "Пн", "lessonNum": 5, "type": "work", "note": ""}, {"date": "2026-10-06", "dayCode": "tue", "dayShort": "Вт", "lessonNum": 6, "type": "work", "note": ""}, {"date": "2026-10-07", "dayCode": "wed", "dayShort": "Ср", "lessonNum": 5, "type": "work", "note": ""}, {"date": "2026-10-08", "dayCode": "thu", "dayShort": "Чт", "lessonNum": 6, "type": "work", "note": ""}, {"date": "2026-10-09", "dayCode": "fri", "dayShort": "Пт", "lessonNum": 6, "type": "work", "note": ""}, {"date": "2026-10-12", "dayCode": "mon", "dayShort": "Пн", "lessonNum": 6, "type": "work", "note": ""}, {"date": "2026-10-13", "dayCode": "tue", "dayShort": "Вт", "lessonNum": 7, "type": "work", "note": ""}, {"date": "2026-10-14", "dayCode": "wed", "dayShort": "Ср", "lessonNum": 6, "type": "work", "note": ""}, {"date": "2026-10-15", "dayCode": "thu", "dayShort": "Чт", "lessonNum": 7, "type": "work", "note": ""}, {"date": "2026-10-16", "dayCode": "fri", "dayShort": "Пт", "lessonNum": 7, "type": "work", "note": ""}, {"date": "2026-10-19", "dayCode": "mon", "dayShort": "Пн", "lessonNum": 7, "type": "work", "note": ""}, {"date": "2026-10-20", "dayCode": "tue", "dayShort": "Вт", "lessonNum": 8, "type": "work", "note": ""}, {"date": "2026-10-21", "dayCode": "wed", "dayShort": "Ср", "lessonNum": 7, "type": "work", "note": ""}, {"date": "2026-10-22", "dayCode": "thu", "dayShort": "Чт", "lessonNum": 8, "type": "work", "note": ""}, {"date": "2026-10-23", "dayCode": "fri", "dayShort": "Пт", "lessonNum": 8, "type": "work", "note": ""}, {"date": "2026-10-26", "dayCode": "mon", "dayShort": "Пн", "lessonNum": null, "type": "vacation", "note": "Каникулы"}, {"date": "2026-10-27", "dayCode": "tue", "dayShort": "Вт", "lessonNum": null, "type": "vacation", "note": "Каникулы"}, {"date": "2026-10-28", "dayCode": "wed", "dayShort": "Ср", "lessonNum": null, "type": "vacation", "note": "Каникулы"}, {"date": "2026-10-29", "dayCode": "thu", "dayShort": "Чт", "lessonNum": null, "type": "vacation", "note": "Каникулы"}, {"date": "2026-10-30", "dayCode": "fri", "dayShort": "Пт", "lessonNum": null, "type": "vacation", "note": "Каникулы"}, {"date": "2026-11-02", "dayCode": "mon", "dayShort": "Пн", "lessonNum": null, "type": "vacation", "note": "Каникулы"}, {"date": "2026-11-03", "dayCode": "tue", "dayShort": "Вт", "lessonNum": null, "type": "vacation", "note": "Каникулы"}, {"date": "2026-11-04", "dayCode": "wed", "dayShort": "Ср", "lessonNum": null, "type": "holiday", "note": "Праздничный / нерабочий день"}, {"date": "2026-11-05", "dayCode": "thu", "dayShort": "Чт", "lessonNum": 9, "type": "work", "note": ""}, {"date": "2026-11-06", "dayCode": "fri", "dayShort": "Пт", "lessonNum": 9, "type": "work", "note": ""}, {"date": "2026-11-09", "dayCode": "mon", "dayShort": "Пн", "lessonNum": 8, "type": "work", "note": ""}, {"date": "2026-11-10", "dayCode": "tue", "dayShort": "Вт", "lessonNum": 9, "type": "work", "note": ""}, {"date": "2026-11-11", "dayCode": "wed", "dayShort": "Ср", "lessonNum": 8, "type": "work", "note": ""}, {"date": "2026-11-12", "dayCode": "thu", "dayShort": "Чт", "lessonNum": 10, "type": "work", "note": ""}, {"date": "2026-11-13", "dayCode": "fri", "dayShort": "Пт", "lessonNum": 10, "type": "work", "note": ""}, {"date": "2026-11-16", "dayCode": "mon", "dayShort": "Пн", "lessonNum": 9, "type": "work", "note": ""}, {"date": "2026-11-17", "dayCode": "tue", "dayShort": "Вт", "lessonNum": 10, "type": "work", "note": ""}, {"date": "2026-11-18", "dayCode": "wed", "dayShort": "Ср", "lessonNum": 9, "type": "work", "note": ""}, {"date": "2026-11-19", "dayCode": "thu", "dayShort": "Чт", "lessonNum": 11, "type": "work", "note": ""}, {"date": "2026-11-20", "dayCode": "fri", "dayShort": "Пт", "lessonNum": 11, "type": "work", "note": ""}, {"date": "2026-11-23", "dayCode": "mon", "dayShort": "Пн", "lessonNum": 10, "type": "work", "note": ""}, {"date": "2026-11-24", "dayCode": "tue", "dayShort": "Вт", "lessonNum": 11, "type": "work", "note": ""}, {"date": "2026-11-25", "dayCode": "wed", "dayShort": "Ср", "lessonNum": 10, "type": "work", "note": ""}, {"date": "2026-11-26", "dayCode": "thu", "dayShort": "Чт", "lessonNum": 12, "type": "work", "note": ""}, {"date": "2026-11-27", "dayCode": "fri", "dayShort": "Пт", "lessonNum": 12, "type": "work", "note": ""}, {"date": "2026-11-30", "dayCode": "mon", "dayShort": "Пн", "lessonNum": 11, "type": "work", "note": ""}, {"date": "2026-12-01", "dayCode": "tue", "dayShort": "Вт", "lessonNum": 12, "type": "work", "note": ""}, {"date": "2026-12-02", "dayCode": "wed", "dayShort": "Ср", "lessonNum": 11, "type": "work", "note": ""}, {"date": "2026-12-03", "dayCode": "thu", "dayShort": "Чт", "lessonNum": 13, "type": "work", "note": ""}, {"date": "2026-12-04", "dayCode": "fri", "dayShort": "Пт", "lessonNum": 13, "type": "work", "note": ""}, {"date": "2026-12-07", "dayCode": "mon", "dayShort": "Пн", "lessonNum": 12, "type": "work", "note": ""}, {"date": "2026-12-08", "dayCode": "tue", "dayShort": "Вт", "lessonNum": 13, "type": "work", "note": ""}, {"date": "2026-12-09", "dayCode": "wed", "dayShort": "Ср", "lessonNum": 12, "type": "work", "note": ""}, {"date": "2026-12-10", "dayCode": "thu", "dayShort": "Чт", "lessonNum": 14, "type": "work", "note": ""}, {"date": "2026-12-11", "dayCode": "fri", "dayShort": "Пт", "lessonNum": 14, "type": "work", "note": ""}, {"date": "2026-12-14", "dayCode": "mon", "dayShort": "Пн", "lessonNum": 13, "type": "work", "note": ""}, {"date": "2026-12-15", "dayCode": "tue", "dayShort": "Вт", "lessonNum": 14, "type": "work", "note": ""}, {"date": "2026-12-16", "dayCode": "wed", "dayShort": "Ср", "lessonNum": 13, "type": "work", "note": ""}, {"date": "2026-12-17", "dayCode": "thu", "dayShort": "Чт", "lessonNum": 15, "type": "work", "note": ""}, {"date": "2026-12-18", "dayCode": "fri", "dayShort": "Пт", "lessonNum": 15, "type": "work", "note": ""}, {"date": "2026-12-21", "dayCode": "mon", "dayShort": "Пн", "lessonNum": 14, "type": "work", "note": ""}, {"date": "2026-12-22", "dayCode": "tue", "dayShort": "Вт", "lessonNum": 15, "type": "work", "note": ""}, {"date": "2026-12-23", "dayCode": "wed", "dayShort": "Ср", "lessonNum": 14, "type": "work", "note": ""}, {"date": "2026-12-24", "dayCode": "thu", "dayShort": "Чт", "lessonNum": 16, "type": "work", "note": ""}, {"date": "2026-12-25", "dayCode": "fri", "dayShort": "Пт", "lessonNum": 16, "type": "work", "note": ""}, {"date": "2026-12-28", "dayCode": "mon", "dayShort": "Пн", "lessonNum": 15, "type": "work", "note": ""}, {"date": "2026-12-29", "dayCode": "tue", "dayShort": "Вт", "lessonNum": 16, "type": "work", "note": ""}, {"date": "2026-12-30", "dayCode": "wed", "dayShort": "Ср", "lessonNum": 15, "type": "work", "note": ""}, {"date": "2026-12-31", "dayCode": "thu", "dayShort": "Чт", "lessonNum": null, "type": "vacation", "note": "Каникулы"}, {"date": "2027-01-01", "dayCode": "fri", "dayShort": "Пт", "lessonNum": null, "type": "vacation", "note": "Каникулы"}, {"date": "2027-01-04", "dayCode": "mon", "dayShort": "Пн", "lessonNum": null, "type": "vacation", "note": "Каникулы"}, {"date": "2027-01-05", "dayCode": "tue", "dayShort": "Вт", "lessonNum": null, "type": "vacation", "note": "Каникулы"}, {"date": "2027-01-06", "dayCode": "wed", "dayShort": "Ср", "lessonNum": null, "type": "vacation", "note": "Каникулы"}, {"date": "2027-01-07", "dayCode": "thu", "dayShort": "Чт", "lessonNum": null, "type": "vacation", "note": "Каникулы"}, {"date": "2027-01-08", "dayCode": "fri", "dayShort": "Пт", "lessonNum": null, "type": "vacation", "note": "Каникулы"}, {"date": "2027-01-11", "dayCode": "mon", "dayShort": "Пн", "lessonNum": 16, "type": "work", "note": ""}, {"date": "2027-01-12", "dayCode": "tue", "dayShort": "Вт", "lessonNum": 17, "type": "work", "note": ""}, {"date": "2027-01-13", "dayCode": "wed", "dayShort": "Ср", "lessonNum": 16, "type": "work", "note": ""}, {"date": "2027-01-14", "dayCode": "thu", "dayShort": "Чт", "lessonNum": 17, "type": "work", "note": ""}, {"date": "2027-01-15", "dayCode": "fri", "dayShort": "Пт", "lessonNum": 17, "type": "work", "note": ""}, {"date": "2027-01-18", "dayCode": "mon", "dayShort": "Пн", "lessonNum": 17, "type": "work", "note": ""}, {"date": "2027-01-19", "dayCode": "tue", "dayShort": "Вт", "lessonNum": 18, "type": "work", "note": ""}, {"date": "2027-01-20", "dayCode": "wed", "dayShort": "Ср", "lessonNum": 17, "type": "work", "note": ""}, {"date": "2027-01-21", "dayCode": "thu", "dayShort": "Чт", "lessonNum": 18, "type": "work", "note": ""}, {"date": "2027-01-22", "dayCode": "fri", "dayShort": "Пт", "lessonNum": 18, "type": "work", "note": ""}, {"date": "2027-01-25", "dayCode": "mon", "dayShort": "Пн", "lessonNum": 18, "type": "work", "note": ""}, {"date": "2027-01-26", "dayCode": "tue", "dayShort": "Вт", "lessonNum": 19, "type": "work", "note": ""}, {"date": "2027-01-27", "dayCode": "wed", "dayShort": "Ср", "lessonNum": 18, "type": "work", "note": ""}, {"date": "2027-01-28", "dayCode": "thu", "dayShort": "Чт", "lessonNum": 19, "type": "work", "note": ""}, {"date": "2027-01-29", "dayCode": "fri", "dayShort": "Пт", "lessonNum": 19, "type": "work", "note": ""}, {"date": "2027-02-01", "dayCode": "mon", "dayShort": "Пн", "lessonNum": 19, "type": "work", "note": ""}, {"date": "2027-02-02", "dayCode": "tue", "dayShort": "Вт", "lessonNum": 20, "type": "work", "note": ""}, {"date": "2027-02-03", "dayCode": "wed", "dayShort": "Ср", "lessonNum": 19, "type": "work", "note": ""}, {"date": "2027-02-04", "dayCode": "thu", "dayShort": "Чт", "lessonNum": 20, "type": "work", "note": ""}, {"date": "2027-02-05", "dayCode": "fri", "dayShort": "Пт", "lessonNum": 20, "type": "work", "note": ""}, {"date": "2027-02-08", "dayCode": "mon", "dayShort": "Пн", "lessonNum": 20, "type": "work", "note": ""}, {"date": "2027-02-09", "dayCode": "tue", "dayShort": "Вт", "lessonNum": 21, "type": "work", "note": ""}, {"date": "2027-02-10", "dayCode": "wed", "dayShort": "Ср", "lessonNum": 20, "type": "work", "note": ""}, {"date": "2027-02-11", "dayCode": "thu", "dayShort": "Чт", "lessonNum": 21, "type": "work", "note": ""}, {"date": "2027-02-12", "dayCode": "fri", "dayShort": "Пт", "lessonNum": 21, "type": "work", "note": ""}, {"date": "2027-02-15", "dayCode": "mon", "dayShort": "Пн", "lessonNum": 21, "type": "work", "note": ""}, {"date": "2027-02-16", "dayCode": "tue", "dayShort": "Вт", "lessonNum": 22, "type": "work", "note": ""}, {"date": "2027-02-17", "dayCode": "wed", "dayShort": "Ср", "lessonNum": 21, "type": "work", "note": ""}, {"date": "2027-02-18", "dayCode": "thu", "dayShort": "Чт", "lessonNum": 22, "type": "work", "note": ""}, {"date": "2027-02-19", "dayCode": "fri", "dayShort": "Пт", "lessonNum": 22, "type": "work", "note": ""}, {"date": "2027-02-22", "dayCode": "mon", "dayShort": "Пн", "lessonNum": 22, "type": "work", "note": "Работаем 20"}, {"date": "2027-02-23", "dayCode": "tue", "dayShort": "Вт", "lessonNum": null, "type": "holiday", "note": "Праздничный / нерабочий день"}, {"date": "2027-02-24", "dayCode": "wed", "dayShort": "Ср", "lessonNum": 22, "type": "work", "note": ""}, {"date": "2027-02-25", "dayCode": "thu", "dayShort": "Чт", "lessonNum": 23, "type": "work", "note": ""}, {"date": "2027-02-26", "dayCode": "fri", "dayShort": "Пт", "lessonNum": 23, "type": "work", "note": ""}, {"date": "2027-03-01", "dayCode": "mon", "dayShort": "Пн", "lessonNum": 23, "type": "work", "note": ""}, {"date": "2027-03-02", "dayCode": "tue", "dayShort": "Вт", "lessonNum": 23, "type": "work", "note": ""}, {"date": "2027-03-03", "dayCode": "wed", "dayShort": "Ср", "lessonNum": 23, "type": "work", "note": ""}, {"date": "2027-03-04", "dayCode": "thu", "dayShort": "Чт", "lessonNum": 24, "type": "work", "note": ""}, {"date": "2027-03-05", "dayCode": "fri", "dayShort": "Пт", "lessonNum": 24, "type": "work", "note": ""}, {"date": "2027-03-08", "dayCode": "mon", "dayShort": "Пн", "lessonNum": null, "type": "holiday", "note": "Праздничный / нерабочий день"}, {"date": "2027-03-09", "dayCode": "tue", "dayShort": "Вт", "lessonNum": 24, "type": "work", "note": ""}, {"date": "2027-03-10", "dayCode": "wed", "dayShort": "Ср", "lessonNum": 24, "type": "work", "note": ""}, {"date": "2027-03-11", "dayCode": "thu", "dayShort": "Чт", "lessonNum": 25, "type": "work", "note": ""}, {"date": "2027-03-12", "dayCode": "fri", "dayShort": "Пт", "lessonNum": 25, "type": "work", "note": ""}, {"date": "2027-03-15", "dayCode": "mon", "dayShort": "Пн", "lessonNum": 24, "type": "work", "note": ""}, {"date": "2027-03-16", "dayCode": "tue", "dayShort": "Вт", "lessonNum": 25, "type": "work", "note": ""}, {"date": "2027-03-17", "dayCode": "wed", "dayShort": "Ср", "lessonNum": 25, "type": "work", "note": ""}, {"date": "2027-03-18", "dayCode": "thu", "dayShort": "Чт", "lessonNum": 26, "type": "work", "note": ""}, {"date": "2027-03-19", "dayCode": "fri", "dayShort": "Пт", "lessonNum": 26, "type": "work", "note": ""}, {"date": "2027-03-22", "dayCode": "mon", "dayShort": "Пн", "lessonNum": 25, "type": "work", "note": ""}, {"date": "2027-03-23", "dayCode": "tue", "dayShort": "Вт", "lessonNum": 26, "type": "work", "note": ""}, {"date": "2027-03-24", "dayCode": "wed", "dayShort": "Ср", "lessonNum": 26, "type": "work", "note": ""}, {"date": "2027-03-25", "dayCode": "thu", "dayShort": "Чт", "lessonNum": 27, "type": "work", "note": ""}, {"date": "2027-03-26", "dayCode": "fri", "dayShort": "Пт", "lessonNum": 27, "type": "work", "note": ""}, {"date": "2027-03-29", "dayCode": "mon", "dayShort": "Пн", "lessonNum": null, "type": "vacation", "note": "Каникулы"}, {"date": "2027-03-30", "dayCode": "tue", "dayShort": "Вт", "lessonNum": null, "type": "vacation", "note": "Каникулы"}, {"date": "2027-03-31", "dayCode": "wed", "dayShort": "Ср", "lessonNum": null, "type": "vacation", "note": "Каникулы"}, {"date": "2027-04-01", "dayCode": "thu", "dayShort": "Чт", "lessonNum": null, "type": "vacation", "note": "Каникулы"}, {"date": "2027-04-02", "dayCode": "fri", "dayShort": "Пт", "lessonNum": null, "type": "vacation", "note": "Каникулы"}, {"date": "2027-04-05", "dayCode": "mon", "dayShort": "Пн", "lessonNum": 26, "type": "work", "note": ""}, {"date": "2027-04-06", "dayCode": "tue", "dayShort": "Вт", "lessonNum": 27, "type": "work", "note": ""}, {"date": "2027-04-07", "dayCode": "wed", "dayShort": "Ср", "lessonNum": 27, "type": "work", "note": ""}, {"date": "2027-04-08", "dayCode": "thu", "dayShort": "Чт", "lessonNum": 28, "type": "work", "note": ""}, {"date": "2027-04-09", "dayCode": "fri", "dayShort": "Пт", "lessonNum": 28, "type": "work", "note": ""}, {"date": "2027-04-12", "dayCode": "mon", "dayShort": "Пн", "lessonNum": 27, "type": "work", "note": ""}, {"date": "2027-04-13", "dayCode": "tue", "dayShort": "Вт", "lessonNum": 28, "type": "work", "note": ""}, {"date": "2027-04-14", "dayCode": "wed", "dayShort": "Ср", "lessonNum": 28, "type": "work", "note": ""}, {"date": "2027-04-15", "dayCode": "thu", "dayShort": "Чт", "lessonNum": 29, "type": "work", "note": ""}, {"date": "2027-04-16", "dayCode": "fri", "dayShort": "Пт", "lessonNum": 29, "type": "work", "note": ""}, {"date": "2027-04-19", "dayCode": "mon", "dayShort": "Пн", "lessonNum": 28, "type": "work", "note": ""}, {"date": "2027-04-20", "dayCode": "tue", "dayShort": "Вт", "lessonNum": 29, "type": "work", "note": ""}, {"date": "2027-04-21", "dayCode": "wed", "dayShort": "Ср", "lessonNum": 29, "type": "work", "note": ""}, {"date": "2027-04-22", "dayCode": "thu", "dayShort": "Чт", "lessonNum": 30, "type": "work", "note": ""}, {"date": "2027-04-23", "dayCode": "fri", "dayShort": "Пт", "lessonNum": 30, "type": "work", "note": ""}, {"date": "2027-04-26", "dayCode": "mon", "dayShort": "Пн", "lessonNum": 29, "type": "work", "note": ""}, {"date": "2027-04-27", "dayCode": "tue", "dayShort": "Вт", "lessonNum": 30, "type": "work", "note": ""}, {"date": "2027-04-28", "dayCode": "wed", "dayShort": "Ср", "lessonNum": 30, "type": "work", "note": ""}, {"date": "2027-04-29", "dayCode": "thu", "dayShort": "Чт", "lessonNum": 31, "type": "work", "note": ""}, {"date": "2027-04-30", "dayCode": "fri", "dayShort": "Пт", "lessonNum": 31, "type": "work", "note": ""}, {"date": "2027-05-03", "dayCode": "mon", "dayShort": "Пн", "lessonNum": null, "type": "holiday", "note": "Праздничный / нерабочий день"}, {"date": "2027-05-04", "dayCode": "tue", "dayShort": "Вт", "lessonNum": null, "type": "holiday", "note": "Праздничный / нерабочий день"}, {"date": "2027-05-05", "dayCode": "wed", "dayShort": "Ср", "lessonNum": 31, "type": "work", "note": ""}, {"date": "2027-05-06", "dayCode": "thu", "dayShort": "Чт", "lessonNum": 32, "type": "work", "note": ""}, {"date": "2027-05-07", "dayCode": "fri", "dayShort": "Пт", "lessonNum": 32, "type": "work", "note": ""}, {"date": "2027-05-10", "dayCode": "mon", "dayShort": "Пн", "lessonNum": null, "type": "holiday", "note": "Праздничный / нерабочий день"}, {"date": "2027-05-11", "dayCode": "tue", "dayShort": "Вт", "lessonNum": null, "type": "holiday", "note": "Праздничный / нерабочий день"}, {"date": "2027-05-12", "dayCode": "wed", "dayShort": "Ср", "lessonNum": 32, "type": "work", "note": ""}, {"date": "2027-05-13", "dayCode": "thu", "dayShort": "Чт", "lessonNum": 33, "type": "work", "note": ""}, {"date": "2027-05-14", "dayCode": "fri", "dayShort": "Пт", "lessonNum": 33, "type": "work", "note": ""}, {"date": "2027-05-17", "dayCode": "mon", "dayShort": "Пн", "lessonNum": 30, "type": "work", "note": ""}, {"date": "2027-05-18", "dayCode": "tue", "dayShort": "Вт", "lessonNum": 31, "type": "work", "note": ""}, {"date": "2027-05-19", "dayCode": "wed", "dayShort": "Ср", "lessonNum": 33, "type": "work", "note": ""}, {"date": "2027-05-20", "dayCode": "thu", "dayShort": "Чт", "lessonNum": 34, "type": "work", "note": ""}, {"date": "2027-05-21", "dayCode": "fri", "dayShort": "Пт", "lessonNum": 34, "type": "work", "note": ""}, {"date": "2027-05-24", "dayCode": "mon", "dayShort": "Пн", "lessonNum": 31, "type": "work", "note": ""}, {"date": "2027-05-25", "dayCode": "tue", "dayShort": "Вт", "lessonNum": 32, "type": "work", "note": ""}, {"date": "2027-05-26", "dayCode": "wed", "dayShort": "Ср", "lessonNum": 34, "type": "work", "note": "Окончание учебного года"}], "classes": [{"id": "inf_11", "title": "11 класс", "subject": "Информатика", "days": ["fri"], "lessonsPerDay": 1, "students": [{"id": "inf_11_s1", "name": "Бондарь Александра Сергеевна", "note": ""}, {"id": "inf_11_s2", "name": "Галицын Марк Романович", "note": ""}, {"id": "inf_11_s3", "name": "Гасанов Владислав Камандарович", "note": ""}, {"id": "inf_11_s4", "name": "Григорюк Ангелина Александровна", "note": ""}, {"id": "inf_11_s5", "name": "Запорожцев Илья Алексеевич", "note": ""}, {"id": "inf_11_s6", "name": "Канивец Варвара Мухаммедовна", "note": ""}, {"id": "inf_11_s7", "name": "Ковальчук Игорь Олегович", "note": ""}, {"id": "inf_11_s8", "name": "Кузик Валентин Леонидович", "note": ""}, {"id": "inf_11_s9", "name": "Ломейко Дарья Сергеевна", "note": ""}, {"id": "inf_11_s10", "name": "Романенко Александр Сергеевич", "note": ""}, {"id": "inf_11_s11", "name": "Семионкин Андрей Витальевич", "note": ""}, {"id": "inf_11_s12", "name": "Сидоренко Денис Андреевич", "note": ""}, {"id": "inf_11_s13", "name": "Сидорова Карина Александровна", "note": ""}, {"id": "inf_11_s14", "name": "Силяев Егор Сергеевич", "note": ""}, {"id": "inf_11_s15", "name": "Стадницкая Анастасия Дмитриевна", "note": ""}, {"id": "inf_11_s16", "name": "Омельяненко Каролина Александровна", "note": ""}, {"id": "inf_11_s17", "name": "Хапков Илья Денисович", "note": "отпустила богдана"}, {"id": "inf_11_s18", "name": "Харченко Анастасия Сергеевна", "note": ""}], "grades": {"inf_11_s1": {}, "inf_11_s2": {}, "inf_11_s3": {}, "inf_11_s4": {}, "inf_11_s5": {}, "inf_11_s6": {}, "inf_11_s7": {}, "inf_11_s8": {}, "inf_11_s9": {}, "inf_11_s10": {}, "inf_11_s11": {}, "inf_11_s12": {}, "inf_11_s13": {}, "inf_11_s14": {}, "inf_11_s15": {}, "inf_11_s16": {}, "inf_11_s17": {}, "inf_11_s18": {}}, "lessonMeta": {}, "hwCompletion": {}, "finalGrades": {}}, {"id": "inf_10", "title": "10 класс", "subject": "Информатика", "days": ["mon", "wed"], "lessonsPerDay": 1, "students": [{"id": "inf_10_s1", "name": "Галкова Анна Владимировна", "note": ""}, {"id": "inf_10_s2", "name": "Гонтарь Полина Александровна", "note": ""}, {"id": "inf_10_s3", "name": "Гортоплян Иван Романович", "note": ""}, {"id": "inf_10_s4", "name": "Дубина Николай Николаевич", "note": ""}, {"id": "inf_10_s5", "name": "Евсеев Илья Дмитриевич", "note": ""}, {"id": "inf_10_s6", "name": "Елизарьева Алена Алексеевна", "note": ""}, {"id": "inf_10_s7", "name": "Зыкова Виктория Евгеньевна", "note": ""}, {"id": "inf_10_s8", "name": "Кривуля София Андреевна", "note": ""}, {"id": "inf_10_s9", "name": "Манакова Виктория Юлиевна", "note": ""}, {"id": "inf_10_s10", "name": "Портянова Олеся Игоревна", "note": ""}, {"id": "inf_10_s11", "name": "Савченко Валерия Дмитриевна", "note": ""}, {"id": "inf_10_s12", "name": "Савченко Екатерина Дмитриевна", "note": ""}, {"id": "inf_10_s13", "name": "Самсонова Доминика Артемовна", "note": ""}, {"id": "inf_10_s14", "name": "Семёнов Владислав Андреевич", "note": ""}, {"id": "inf_10_s15", "name": "Сопов Назар Сергеевич", "note": ""}, {"id": "inf_10_s16", "name": "Страх Злата Вячеславовна", "note": ""}, {"id": "inf_10_s17", "name": "Унгурян Иван Григорьевич", "note": ""}, {"id": "inf_10_s18", "name": "Харченко Алина Валентиновна", "note": ""}, {"id": "inf_10_s19", "name": "Хомутов Владислав Павлович", "note": ""}], "grades": {"inf_10_s1": {"2026-09-07": {"val": "н", "comment": ""}, "2026-09-28": {"val": "3", "comment": ""}, "2026-10-12": {"val": "3", "comment": ""}}, "inf_10_s2": {"2026-09-07": {"val": "зач", "comment": ""}, "2026-09-28": {"val": "5", "comment": ""}, "2026-10-12": {"val": "3", "comment": ""}}, "inf_10_s3": {"2026-09-07": {"val": "н/з", "comment": ""}, "2026-09-09": {"val": "зач", "comment": ""}, "2026-09-28": {"val": "3", "comment": ""}, "2026-10-12": {"val": "3", "comment": ""}}, "inf_10_s4": {"2026-09-07": {"val": "зач", "comment": ""}, "2026-09-28": {"val": "3", "comment": ""}, "2026-10-12": {"val": "3", "comment": ""}}, "inf_10_s5": {"2026-09-07": {"val": "н/з", "comment": ""}, "2026-09-09": {"val": "зач", "comment": ""}, "2026-09-28": {"val": "5", "comment": ""}, "2026-10-07": {"val": "5", "comment": ""}}, "inf_10_s6": {"2026-09-28": {"val": "5", "comment": ""}, "2026-10-12": {"val": "3", "comment": ""}}, "inf_10_s7": {"2026-09-28": {"val": "3", "comment": ""}, "2026-10-12": {"val": "3", "comment": ""}}, "inf_10_s8": {"2026-09-09": {"val": "зач", "comment": ""}, "2026-09-28": {"val": "5", "comment": ""}, "2026-10-12": {"val": "3", "comment": ""}}, "inf_10_s9": {"2026-09-07": {"val": "зач", "comment": ""}, "2026-09-28": {"val": "5", "comment": ""}, "2026-10-07": {"val": "5", "comment": ""}}, "inf_10_s10": {"2026-09-07": {"val": "зач", "comment": ""}, "2026-09-28": {"val": "5", "comment": ""}, "2026-10-07": {"val": "5", "comment": ""}}, "inf_10_s11": {"2026-09-28": {"val": "3", "comment": ""}, "2026-10-12": {"val": "3", "comment": ""}}, "inf_10_s12": {"2026-09-28": {"val": "5", "comment": ""}, "2026-10-12": {"val": "3", "comment": ""}}, "inf_10_s13": {"2026-09-09": {"val": "зач", "comment": ""}, "2026-09-28": {"val": "5", "comment": ""}, "2026-10-12": {"val": "3", "comment": ""}}, "inf_10_s14": {"2026-09-28": {"val": "5", "comment": ""}, "2026-10-12": {"val": "3", "comment": ""}}, "inf_10_s15": {"2026-09-07": {"val": "зач", "comment": ""}, "2026-09-28": {"val": "5", "comment": ""}, "2026-10-12": {"val": "3", "comment": ""}}, "inf_10_s16": {"2026-09-07": {"val": "зач", "comment": ""}, "2026-09-28": {"val": "5", "comment": ""}, "2026-10-07": {"val": "5", "comment": ""}}, "inf_10_s17": {"2026-09-09": {"val": "зач", "comment": ""}, "2026-09-28": {"val": "3", "comment": ""}, "2026-10-07": {"val": "5", "comment": ""}}, "inf_10_s18": {"2026-09-07": {"val": "зач", "comment": ""}, "2026-09-28": {"val": "5", "comment": ""}, "2026-10-05": {"val": "5", "comment": ""}}, "inf_10_s19": {"2026-09-28": {"val": "5", "comment": ""}, "2026-10-07": {"val": "5", "comment": ""}}}, "lessonMeta": {}, "hwCompletion": {}, "finalGrades": {}}, {"id": "inf_9", "title": "9 класс", "subject": "Информатика", "days": ["tue"], "lessonsPerDay": 1, "students": [{"id": "inf_9_s1", "name": "Авдеева София Михайловна", "note": ""}, {"id": "inf_9_s2", "name": "Баранов Владислав Валерьевич", "note": ""}, {"id": "inf_9_s3", "name": "Буняев Никита Вячеславович", "note": ""}, {"id": "inf_9_s4", "name": "Гаврилов Александр Александрович", "note": ""}, {"id": "inf_9_s5", "name": "Белошеин Даниил Владимирович", "note": ""}, {"id": "inf_9_s6", "name": "Довбыш Артем Алексеевич", "note": ""}, {"id": "inf_9_s7", "name": "Дрёмов Даниил Витальевич", "note": ""}, {"id": "inf_9_s8", "name": "Есина Милена Андреевна", "note": ""}, {"id": "inf_9_s9", "name": "Логунов Архип Денисович", "note": ""}, {"id": "inf_9_s10", "name": "Луданик Богдан Русланович", "note": ""}, {"id": "inf_9_s11", "name": "Лукина Кира Андреевна", "note": ""}, {"id": "inf_9_s12", "name": "Лукьянов Давид Вячеславович", "note": ""}, {"id": "inf_9_s13", "name": "Мищенко Дарья Андреевна", "note": ""}, {"id": "inf_9_s14", "name": "Осадчий Данил Юрьевич", "note": ""}, {"id": "inf_9_s15", "name": "Осадчий Кирилл Юрьевич", "note": ""}, {"id": "inf_9_s16", "name": "Пахомов Илья Максимович", "note": ""}, {"id": "inf_9_s17", "name": "Пронин Максим Сергеевич", "note": ""}, {"id": "inf_9_s18", "name": "Селищева Милана Андреевна", "note": ""}, {"id": "inf_9_s19", "name": "Серебров Максим Евгеньевич", "note": ""}, {"id": "inf_9_s20", "name": "Соболева Ксения Сергеевна", "note": ""}, {"id": "inf_9_s21", "name": "Финагин Артем Дмитриевич", "note": ""}, {"id": "inf_9_s22", "name": "Хохлова Ольга Алексевна", "note": ""}], "grades": {"inf_9_s1": {"2026-09-01": {"val": "4", "comment": "Стартовая отметка из импорта"}}, "inf_9_s2": {"2026-09-01": {"val": "5", "comment": "Стартовая отметка из импорта"}}, "inf_9_s3": {"2026-09-01": {"val": "4", "comment": "Стартовая отметка из импорта"}}, "inf_9_s4": {"2026-09-01": {"val": "5", "comment": "Стартовая отметка из импорта"}}, "inf_9_s5": {"2026-09-01": {"val": "5", "comment": "Стартовая отметка из импорта"}}, "inf_9_s6": {"2026-09-01": {"val": "5", "comment": "Стартовая отметка из импорта"}}, "inf_9_s7": {"2026-09-01": {"val": "4", "comment": "Стартовая отметка из импорта"}}, "inf_9_s8": {"2026-09-01": {"val": "5", "comment": "Стартовая отметка из импорта"}}, "inf_9_s9": {"2026-09-01": {"val": "5", "comment": "Стартовая отметка из импорта"}}, "inf_9_s10": {"2026-09-01": {"val": "5", "comment": "Стартовая отметка из импорта"}}, "inf_9_s11": {"2026-09-01": {"val": "3", "comment": "Стартовая отметка из импорта"}}, "inf_9_s12": {"2026-09-01": {"val": "5", "comment": "Стартовая отметка из импорта"}}, "inf_9_s13": {"2026-09-01": {"val": "5", "comment": "Стартовая отметка из импорта"}}, "inf_9_s14": {"2026-09-01": {"val": "5", "comment": "Стартовая отметка из импорта"}}, "inf_9_s15": {"2026-09-01": {"val": "5", "comment": "Стартовая отметка из импорта"}}, "inf_9_s16": {"2026-09-01": {"val": "3", "comment": "Стартовая отметка из импорта"}}, "inf_9_s17": {"2026-09-01": {"val": "3", "comment": "Стартовая отметка из импорта"}}, "inf_9_s18": {}, "inf_9_s19": {"2026-09-01": {"val": "5", "comment": "Стартовая отметка из импорта"}}, "inf_9_s20": {"2026-09-01": {"val": "5", "comment": "Стартовая отметка из импорта"}}, "inf_9_s21": {"2026-09-01": {"val": "5", "comment": "Стартовая отметка из импорта"}}, "inf_9_s22": {"2026-09-01": {"val": "3", "comment": "Стартовая отметка из импорта"}}}, "lessonMeta": {}, "hwCompletion": {}, "finalGrades": {}}, {"id": "inf_8", "title": "8 класс", "subject": "Информатика", "days": ["mon", "tue"], "lessonsPerDay": 1, "students": [{"id": "inf_8_s1", "name": "Богославская Полина Сергеевна", "note": ""}, {"id": "inf_8_s2", "name": "Гусева Ольга Романовна", "note": ""}, {"id": "inf_8_s3", "name": "Долгополова Вячеслава Вячеславовна", "note": ""}, {"id": "inf_8_s4", "name": "Иванько Полина Руслановна", "note": ""}, {"id": "inf_8_s5", "name": "Калинин Георгий Дмитриевич", "note": ""}, {"id": "inf_8_s6", "name": "Караваев Леонид Алексеевич", "note": ""}, {"id": "inf_8_s7", "name": "Козенюк Анна Николаевна", "note": ""}, {"id": "inf_8_s8", "name": "Лихотский Кирилл Дмитриевич", "note": ""}, {"id": "inf_8_s9", "name": "Матасова Анна Леонидовна", "note": ""}, {"id": "inf_8_s10", "name": "Насатенко Екатерина Викторовна", "note": ""}, {"id": "inf_8_s11", "name": "Руденко Анастасия Яковлевна", "note": ""}, {"id": "inf_8_s12", "name": "Становский Александр Максимович", "note": ""}, {"id": "inf_8_s13", "name": "Тимошин Артем Игоревич", "note": ""}, {"id": "inf_8_s14", "name": "Тимошина Дарья Игоревна", "note": ""}, {"id": "inf_8_s15", "name": "Титарева Милена Алексеевна", "note": ""}, {"id": "inf_8_s16", "name": "Туженкова Дарья Сергеевна", "note": ""}, {"id": "inf_8_s17", "name": "Кокарчев Роман Артемович", "note": ""}, {"id": "inf_8_s18", "name": "Чихирев Богдан Владимирович", "note": ""}, {"id": "inf_8_s19", "name": "Цапенко Богдан Максимович", "note": ""}, {"id": "inf_8_s20", "name": "Бабакова Анастасия Александровна", "note": ""}], "grades": {"inf_8_s1": {}, "inf_8_s2": {}, "inf_8_s3": {}, "inf_8_s4": {}, "inf_8_s5": {}, "inf_8_s6": {}, "inf_8_s7": {}, "inf_8_s8": {}, "inf_8_s9": {"2026-09-07": {"val": "н", "comment": ""}}, "inf_8_s10": {}, "inf_8_s11": {}, "inf_8_s12": {}, "inf_8_s13": {"2026-09-29": {"val": "3", "comment": ""}}, "inf_8_s14": {}, "inf_8_s15": {}, "inf_8_s16": {}, "inf_8_s17": {}, "inf_8_s18": {}, "inf_8_s19": {}, "inf_8_s20": {"2026-09-07": {"val": "н", "comment": ""}}}, "lessonMeta": {}, "hwCompletion": {}, "finalGrades": {}}, {"id": "inf_7", "title": "7 класс", "subject": "Информатика", "days": ["fri"], "lessonsPerDay": 1, "students": [{"id": "inf_7_s1", "name": "Астапенков Ярослав Викторович", "note": ""}, {"id": "inf_7_s2", "name": "Батозская Милана Геннадиевна", "note": ""}, {"id": "inf_7_s3", "name": "Валиулина Николь Данисовна", "note": ""}, {"id": "inf_7_s4", "name": "Ермак Артём Дмитриевич", "note": ""}, {"id": "inf_7_s5", "name": "Житнюк Артём Ярославович", "note": ""}, {"id": "inf_7_s6", "name": "Заика Дмитрий Антонович", "note": ""}, {"id": "inf_7_s7", "name": "Ивко Анастасия Андреевна", "note": ""}, {"id": "inf_7_s8", "name": "Ковальчук Анастасия Михайловна", "note": ""}, {"id": "inf_7_s9", "name": "Логунова Алиса Денисовна", "note": ""}, {"id": "inf_7_s10", "name": "Лукина Диана Андреевна", "note": ""}, {"id": "inf_7_s11", "name": "Мазилин Ярослав Артемевич", "note": ""}, {"id": "inf_7_s12", "name": "Мартыщенко Полина Вячеславовна", "note": ""}, {"id": "inf_7_s13", "name": "Мерзликин Михаил Евгеньевич", "note": ""}, {"id": "inf_7_s14", "name": "Мовчан Мария Александровна", "note": ""}, {"id": "inf_7_s15", "name": "Павлюченко Максим Игоревич", "note": ""}, {"id": "inf_7_s16", "name": "Ремез Дамир Дмитриевич", "note": ""}, {"id": "inf_7_s17", "name": "Решетняк Ярослав Викторович", "note": ""}, {"id": "inf_7_s18", "name": "Светличная Марина Романовна", "note": ""}, {"id": "inf_7_s19", "name": "Фурдыгайло Александр Романович", "note": ""}, {"id": "inf_7_s20", "name": "Щербина Максим Александрович", "note": ""}, {"id": "inf_7_s21", "name": "Старковой Арины", "note": ""}], "grades": {"inf_7_s1": {"2026-10-16": {"val": "5", "comment": ""}, "2026-10-23": {"val": "5", "comment": ""}}, "inf_7_s2": {"2026-09-04": {"val": "зач", "comment": ""}, "2026-10-16": {"val": "5", "comment": ""}}, "inf_7_s3": {"2026-09-04": {"val": "зач", "comment": ""}, "2026-10-16": {"val": "5", "comment": ""}, "2026-10-23": {"val": "5", "comment": ""}}, "inf_7_s4": {"2026-09-04": {"val": "н", "comment": ""}, "2026-10-16": {"val": "3", "comment": ""}, "2026-10-23": {"val": "4", "comment": ""}}, "inf_7_s5": {"2026-10-16": {"val": "2", "comment": ""}, "2026-10-23": {"val": "4", "comment": ""}}, "inf_7_s6": {"2026-10-16": {"val": "5", "comment": ""}}, "inf_7_s7": {"2026-10-16": {"val": "5", "comment": ""}, "2026-10-23": {"val": "5", "comment": ""}}, "inf_7_s8": {"2026-09-04": {"val": "зач", "comment": ""}, "2026-10-16": {"val": "5", "comment": ""}}, "inf_7_s9": {"2026-10-16": {"val": "5", "comment": ""}, "2026-10-23": {"val": "5", "comment": ""}}, "inf_7_s10": {"2026-10-16": {"val": "3", "comment": ""}, "2026-10-23": {"val": "5", "comment": ""}}, "inf_7_s11": {"2026-10-16": {"val": "5", "comment": ""}}, "inf_7_s12": {"2026-10-16": {"val": "5", "comment": ""}, "2026-10-23": {"val": "4", "comment": ""}}, "inf_7_s13": {"2026-10-16": {"val": "2", "comment": ""}, "2026-10-23": {"val": "5", "comment": ""}}, "inf_7_s14": {"2026-10-16": {"val": "4", "comment": ""}, "2026-10-23": {"val": "5", "comment": ""}}, "inf_7_s15": {"2026-10-16": {"val": "3", "comment": ""}, "2026-10-23": {"val": "4", "comment": ""}}, "inf_7_s16": {"2026-10-16": {"val": "5", "comment": ""}, "2026-10-23": {"val": "5", "comment": ""}}, "inf_7_s17": {"2026-10-16": {"val": "2", "comment": ""}, "2026-10-23": {"val": "5", "comment": ""}}, "inf_7_s18": {"2026-09-04": {"val": "н", "comment": ""}, "2026-10-16": {"val": "5", "comment": ""}, "2026-10-23": {"val": "5", "comment": ""}}, "inf_7_s19": {"2026-09-04": {"val": "н", "comment": ""}}, "inf_7_s20": {"2026-10-16": {"val": "5", "comment": ""}, "2026-10-23": {"val": "5", "comment": ""}}, "inf_7_s21": {"2026-10-16": {"val": "5", "comment": ""}, "2026-10-23": {"val": "5", "comment": ""}}}, "lessonMeta": {}, "hwCompletion": {}, "finalGrades": {}}, {"id": "inf_6", "title": "6 класс", "subject": "Информатика", "days": ["thu"], "lessonsPerDay": 1, "students": [{"id": "inf_6_s1", "name": "Белан Данислав Ильич", "note": ""}, {"id": "inf_6_s2", "name": "Бесчастная Диана Александровна", "note": ""}, {"id": "inf_6_s3", "name": "Богославский Павел Сергеевич", "note": ""}, {"id": "inf_6_s4", "name": "Бородин Илья Витальевич", "note": ""}, {"id": "inf_6_s5", "name": "Гаврилова Валерия Александровна", "note": ""}, {"id": "inf_6_s6", "name": "Демочка Виктория Витальевна", "note": ""}, {"id": "inf_6_s7", "name": "Емец Никита Сергеевич", "note": ""}, {"id": "inf_6_s8", "name": "Запорожец Анна Павловна", "note": ""}, {"id": "inf_6_s9", "name": "Киселев Даниил Дмитриевич", "note": ""}, {"id": "inf_6_s10", "name": "Крещук Андрей Максимович", "note": ""}, {"id": "inf_6_s11", "name": "Куровский Илья Дмитриевич", "note": ""}, {"id": "inf_6_s12", "name": "Малеев Даниил Денисович", "note": ""}, {"id": "inf_6_s13", "name": "Олейник Илья Витальевич", "note": ""}, {"id": "inf_6_s14", "name": "Свитюха Дмитрий Сергеевич", "note": ""}, {"id": "inf_6_s15", "name": "Смоловой Иван Сергеевич", "note": ""}, {"id": "inf_6_s16", "name": "СудилОвский Макар Андреевич", "note": ""}, {"id": "inf_6_s17", "name": "Тишкина Милана Алексевна", "note": ""}, {"id": "inf_6_s18", "name": "Шведова Анастасия Васильевна", "note": ""}, {"id": "inf_6_s19", "name": "Финагина Анастасия Дмитриевна", "note": ""}], "grades": {"inf_6_s1": {"2026-09-03": {"val": "5", "comment": "Стартовая отметка из импорта"}}, "inf_6_s2": {"2026-09-03": {"val": "5", "comment": "Стартовая отметка из импорта"}}, "inf_6_s3": {"2026-09-03": {"val": "5", "comment": "Стартовая отметка из импорта"}}, "inf_6_s4": {"2026-09-03": {"val": "5", "comment": "Стартовая отметка из импорта"}}, "inf_6_s5": {"2026-09-03": {"val": "5", "comment": "Стартовая отметка из импорта"}}, "inf_6_s6": {"2026-09-03": {"val": "4", "comment": "Стартовая отметка из импорта"}}, "inf_6_s7": {"2026-09-03": {"val": "5", "comment": "Стартовая отметка из импорта"}}, "inf_6_s8": {"2026-09-03": {"val": "5", "comment": "Стартовая отметка из импорта"}}, "inf_6_s9": {"2026-09-03": {"val": "5", "comment": "Стартовая отметка из импорта"}}, "inf_6_s10": {"2026-09-03": {"val": "5", "comment": "Стартовая отметка из импорта"}}, "inf_6_s11": {"2026-09-03": {"val": "4", "comment": "Стартовая отметка из импорта"}}, "inf_6_s12": {"2026-09-03": {"val": "5", "comment": "Стартовая отметка из импорта"}}, "inf_6_s13": {"2026-09-03": {"val": "5", "comment": "Стартовая отметка из импорта"}}, "inf_6_s14": {"2026-09-03": {"val": "5", "comment": "Стартовая отметка из импорта"}}, "inf_6_s15": {"2026-09-03": {"val": "5", "comment": "Стартовая отметка из импорта"}}, "inf_6_s16": {"2026-09-03": {"val": "5", "comment": "Стартовая отметка из импорта"}}, "inf_6_s17": {"2026-09-03": {"val": "5", "comment": "Стартовая отметка из импорта"}}, "inf_6_s18": {"2026-09-03": {"val": "5", "comment": "Стартовая отметка из импорта"}}, "inf_6_s19": {"2026-09-03": {"val": "5", "comment": "Стартовая отметка из импорта"}}}, "lessonMeta": {}, "hwCompletion": {}, "finalGrades": {}}, {"id": "inf_5", "title": "5 класс", "subject": "Информатика", "days": ["thu"], "lessonsPerDay": 1, "students": [{"id": "inf_5_s1", "name": "Алексейчук Михаил Александрович", "note": ""}, {"id": "inf_5_s2", "name": "Гончаров Иван Артёмович", "note": ""}, {"id": "inf_5_s3", "name": "Калинин Алексей Дмитриевич", "note": ""}, {"id": "inf_5_s4", "name": "Кучма Алина Викторовна", "note": ""}, {"id": "inf_5_s5", "name": "Лакомый Илья Витальевич", "note": ""}, {"id": "inf_5_s6", "name": "Малеев Михаил Денисович", "note": ""}, {"id": "inf_5_s7", "name": "Насатенко Сергей Викторович", "note": ""}, {"id": "inf_5_s8", "name": "Пахомов Владислав Денисович", "note": ""}, {"id": "inf_5_s9", "name": "Хань Святослав Романович", "note": ""}, {"id": "inf_5_s10", "name": "Финагин Артем Константинович", "note": ""}, {"id": "inf_5_s11", "name": "Чолария Кира Романовна", "note": ""}], "grades": {"inf_5_s1": {"2026-09-10": {"val": "зач", "comment": ""}}, "inf_5_s2": {"2026-09-10": {"val": "зач", "comment": ""}}, "inf_5_s3": {"2026-09-10": {"val": "н", "comment": ""}}, "inf_5_s4": {"2026-09-10": {"val": "зач", "comment": ""}}, "inf_5_s5": {"2026-09-10": {"val": "н", "comment": ""}}, "inf_5_s6": {"2026-09-10": {"val": "зач", "comment": ""}}, "inf_5_s7": {"2026-09-10": {"val": "зач", "comment": ""}}, "inf_5_s8": {"2026-09-10": {"val": "н", "comment": ""}}, "inf_5_s9": {"2026-09-10": {"val": "зач", "comment": ""}}, "inf_5_s10": {"2026-09-10": {"val": "зач", "comment": ""}}, "inf_5_s11": {"2026-09-10": {"val": "зач", "comment": ""}}}, "lessonMeta": {"2026-09-03": {"topic": "Админ: Техника безопасности", "lessonType": "safety", "hw": "", "hwDue": "", "hwStatus": "none"}}, "hwCompletion": {}, "finalGrades": {}}, {"id": "trud_5", "title": "5 класс", "subject": "Труд (Технология)", "days": ["mon"], "lessonsPerDay": 2, "students": [{"id": "trud_5_s1", "name": "Алексейчук Михаил Александрович", "note": ""}, {"id": "trud_5_s2", "name": "Гончаров Иван Артёмович", "note": ""}, {"id": "trud_5_s3", "name": "Калинин Алексей Дмитриевич", "note": ""}, {"id": "trud_5_s4", "name": "Кучма Алина Викторовна", "note": ""}, {"id": "trud_5_s5", "name": "Лакомый Илья Витальевич", "note": ""}, {"id": "trud_5_s6", "name": "Малеев Михаил Денисович", "note": ""}, {"id": "trud_5_s7", "name": "Насатенко Сергей Викторович", "note": ""}, {"id": "trud_5_s8", "name": "Пахомов Владислав Денисович", "note": ""}, {"id": "trud_5_s9", "name": "Хань Святослав Романович", "note": ""}, {"id": "trud_5_s10", "name": "Финагин Артем Константинович", "note": ""}, {"id": "trud_5_s11", "name": "Чолария Кира Романовна", "note": ""}], "grades": {"trud_5_s1": {}, "trud_5_s2": {"2026-09-07": {"val": "н", "comment": ""}}, "trud_5_s3": {"2026-09-07": {"val": "н", "comment": ""}}, "trud_5_s4": {}, "trud_5_s5": {"2026-09-07": {"val": "н", "comment": ""}}, "trud_5_s6": {}, "trud_5_s7": {"2026-09-07": {"val": "зач", "comment": ""}}, "trud_5_s8": {"2026-09-07": {"val": "н", "comment": ""}}, "trud_5_s9": {}, "trud_5_s10": {}, "trud_5_s11": {"2026-09-07": {"val": "н", "comment": ""}}}, "lessonMeta": {"2026-09-07": {"topic": "Админ: Техника безопасности", "lessonType": "safety", "hw": "", "hwDue": "", "hwStatus": "none"}}, "hwCompletion": {}, "finalGrades": {}}, {"id": "trud_6", "title": "6 класс", "subject": "Труд (Технология)", "days": ["wed"], "lessonsPerDay": 1, "students": [{"id": "trud_6_s1", "name": "Белан Данислав Ильич", "note": ""}, {"id": "trud_6_s2", "name": "Богославский Павел Сергеевич", "note": ""}, {"id": "trud_6_s3", "name": "Бородин Илья Витальевич", "note": ""}, {"id": "trud_6_s4", "name": "Емец Никита Сергеевич", "note": ""}, {"id": "trud_6_s5", "name": "Киселев Даниил Дмитриевич", "note": ""}, {"id": "trud_6_s6", "name": "Крещук Андрей Максимович", "note": ""}, {"id": "trud_6_s7", "name": "Куровский Илья Дмитриевич", "note": ""}, {"id": "trud_6_s8", "name": "Малеев Даниил Денисович", "note": ""}, {"id": "trud_6_s9", "name": "Олейник Илья Витальевич", "note": ""}, {"id": "trud_6_s10", "name": "Свитюха Дмитрий Сергеевич", "note": ""}, {"id": "trud_6_s11", "name": "Смоловой Иван Сергеевич", "note": ""}], "grades": {"trud_6_s1": {"2026-09-02": {"val": "зач", "comment": ""}}, "trud_6_s2": {"2026-09-09": {"val": "зач", "comment": ""}}, "trud_6_s3": {"2026-09-09": {"val": "н", "comment": ""}, "2026-09-23": {"val": "5", "comment": ""}}, "trud_6_s4": {"2026-09-02": {"val": "зач", "comment": ""}, "2026-09-09": {"val": "н", "comment": ""}}, "trud_6_s5": {"2026-09-02": {"val": "зач", "comment": ""}}, "trud_6_s6": {"2026-09-02": {"val": "зач", "comment": ""}, "2026-09-09": {"val": "н", "comment": ""}, "2026-09-23": {"val": "4", "comment": ""}}, "trud_6_s7": {"2026-09-09": {"val": "зач", "comment": ""}}, "trud_6_s8": {"2026-09-02": {"val": "н", "comment": ""}, "2026-09-23": {"val": "4", "comment": ""}}, "trud_6_s9": {"2026-09-09": {"val": "зач", "comment": ""}}, "trud_6_s10": {"2026-09-09": {"val": "н", "comment": ""}}, "trud_6_s11": {"2026-09-09": {"val": "н", "comment": ""}}}, "lessonMeta": {"2026-09-02": {"topic": "Админ: Техника безопасности", "lessonType": "safety", "hw": "", "hwDue": "", "hwStatus": "none"}}, "hwCompletion": {}, "finalGrades": {}}, {"id": "trud_7", "title": "7 класс", "subject": "Труд (Технология)", "days": ["thu"], "lessonsPerDay": 1, "students": [{"id": "trud_7_s1", "name": "Ермак Артём Дмитриевич", "note": ""}, {"id": "trud_7_s2", "name": "Житнюк Артём Ярославович", "note": ""}, {"id": "trud_7_s3", "name": "Заика Дмитрий Антонович", "note": ""}, {"id": "trud_7_s4", "name": "Мерзликин Михаил Евгеньевич", "note": ""}, {"id": "trud_7_s5", "name": "Павлюченко Максим Игоревич", "note": ""}, {"id": "trud_7_s6", "name": "Ремез Дамир Дмитриевич", "note": ""}, {"id": "trud_7_s7", "name": "Щербина Максим Александрович", "note": ""}, {"id": "trud_7_s8", "name": "Астапенков Ярослав Викторович", "note": ""}, {"id": "trud_7_s9", "name": "Решетняк Ярослав Викторович", "note": ""}, {"id": "trud_7_s10", "name": "Фурдыгайло Александр Романович", "note": ""}, {"id": "trud_7_s11", "name": "Мазилин Ярослав Артемевич", "note": ""}], "grades": {"trud_7_s1": {"2026-09-03": {"val": "н", "comment": ""}, "2026-09-10": {"val": "н", "comment": ""}, "2026-10-01": {"val": "3", "comment": ""}}, "trud_7_s2": {"2026-09-24": {"val": "4", "comment": ""}, "2026-10-01": {"val": "3", "comment": ""}}, "trud_7_s3": {"2026-09-03": {"val": "н", "comment": ""}, "2026-09-24": {"val": "5", "comment": ""}, "2026-10-01": {"val": "5", "comment": ""}}, "trud_7_s4": {"2026-10-01": {"val": "5", "comment": ""}}, "trud_7_s5": {"2026-09-03": {"val": "зач", "comment": ""}, "2026-09-24": {"val": "4", "comment": ""}, "2026-10-01": {"val": "3", "comment": ""}}, "trud_7_s6": {"2026-09-24": {"val": "4", "comment": ""}, "2026-10-01": {"val": "5", "comment": ""}}, "trud_7_s7": {"2026-10-01": {"val": "4", "comment": ""}}, "trud_7_s8": {"2026-09-03": {"val": "зач", "comment": ""}, "2026-09-10": {"val": "н", "comment": ""}, "2026-10-01": {"val": "3", "comment": ""}, "2026-10-15": {"val": "5", "comment": ""}}, "trud_7_s9": {"2026-09-03": {"val": "зач", "comment": ""}, "2026-09-10": {"val": "н", "comment": ""}, "2026-09-24": {"val": "3", "comment": ""}, "2026-10-01": {"val": "3", "comment": ""}}, "trud_7_s10": {"2026-09-24": {"val": "5", "comment": ""}}, "trud_7_s11": {"2026-09-24": {"val": "5", "comment": ""}, "2026-10-01": {"val": "5", "comment": ""}, "2026-10-15": {"val": "5", "comment": ""}}}, "lessonMeta": {}, "hwCompletion": {}, "finalGrades": {}}, {"id": "trud_8", "title": "8 класс", "subject": "Труд (Технология)", "days": ["wed"], "lessonsPerDay": 1, "students": [{"id": "trud_8_s1", "name": "Калинин Георгий Дмитриевич", "note": ""}, {"id": "trud_8_s2", "name": "Караваев Леонид Алексеевич", "note": ""}, {"id": "trud_8_s3", "name": "Лихотский Кирилл Дмитриевич", "note": ""}, {"id": "trud_8_s4", "name": "Становский Александр Максимович", "note": ""}, {"id": "trud_8_s5", "name": "Тимошин Артем Игоревич", "note": ""}, {"id": "trud_8_s6", "name": "Кокарчев Роман Артемович", "note": ""}, {"id": "trud_8_s7", "name": "Чихирев Богдан Владимирович", "note": ""}, {"id": "trud_8_s8", "name": "Цапенко Богдан Максимович", "note": ""}, {"id": "trud_8_s9", "name": "Баранов Ярослав Артёмович", "note": ""}, {"id": "trud_8_s10", "name": "Кокарчев Максим Романович", "note": ""}], "grades": {"trud_8_s1": {}, "trud_8_s2": {"2026-09-02": {"val": "зач", "comment": "Стартовая отметка из импорта"}}, "trud_8_s3": {}, "trud_8_s4": {"2026-09-02": {"val": "зач", "comment": "Стартовая отметка из импорта"}}, "trud_8_s5": {"2026-09-02": {"val": "зач", "comment": "Стартовая отметка из импорта"}}, "trud_8_s6": {}, "trud_8_s7": {"2026-09-02": {"val": "зач", "comment": "Стартовая отметка из импорта"}}, "trud_8_s8": {}, "trud_8_s9": {"2026-09-02": {"val": "зач", "comment": "Стартовая отметка из импорта"}}, "trud_8_s10": {}}, "lessonMeta": {}, "hwCompletion": {}, "finalGrades": {}}, {"id": "trud_9", "title": "9 класс", "subject": "Труд (Технология)", "days": ["fri"], "lessonsPerDay": 1, "students": [{"id": "trud_9_s1", "name": "Баранов Владислав Валерьевич", "note": ""}, {"id": "trud_9_s2", "name": "Буняев Никита Вячеславович", "note": ""}, {"id": "trud_9_s3", "name": "Гаврилов Александр Александрович", "note": ""}, {"id": "trud_9_s4", "name": "Грановский Михаил Владимирович", "note": ""}, {"id": "trud_9_s5", "name": "Довбыш Артем Алексеевич", "note": ""}, {"id": "trud_9_s6", "name": "Белошеин Даниил Владимирович", "note": ""}, {"id": "trud_9_s7", "name": "Логунов Архип Денисович", "note": ""}, {"id": "trud_9_s8", "name": "Луданик Богдан Русланович", "note": ""}, {"id": "trud_9_s9", "name": "Лукьянов Давид Вячеславович", "note": ""}, {"id": "trud_9_s10", "name": "Осадчий Данил Юрьевич", "note": ""}, {"id": "trud_9_s11", "name": "Осадчий Кирилл Юрьевич", "note": ""}, {"id": "trud_9_s12", "name": "Пахомов Илья Максимович", "note": ""}, {"id": "trud_9_s13", "name": "Пронин Максим Сергеевич", "note": ""}, {"id": "trud_9_s14", "name": "Серебров Максим Евгеньевич", "note": ""}, {"id": "trud_9_s15", "name": "Финагин Артем Дмитриевич", "note": ""}, {"id": "trud_9_s16", "name": "Щеткин Тимофей Олегович", "note": ""}], "grades": {"trud_9_s1": {"2026-09-04": {"val": "3", "comment": "Стартовая отметка из импорта"}}, "trud_9_s2": {"2026-09-04": {"val": "5", "comment": "Стартовая отметка из импорта"}}, "trud_9_s3": {"2026-09-04": {"val": "4", "comment": "Стартовая отметка из импорта"}}, "trud_9_s4": {"2026-09-04": {"val": "3", "comment": "Стартовая отметка из импорта"}}, "trud_9_s5": {"2026-09-04": {"val": "5", "comment": "Стартовая отметка из импорта"}}, "trud_9_s6": {"2026-09-04": {"val": "5", "comment": "Стартовая отметка из импорта"}}, "trud_9_s7": {"2026-09-04": {"val": "5", "comment": "Стартовая отметка из импорта"}}, "trud_9_s8": {"2026-09-04": {"val": "5", "comment": "Стартовая отметка из импорта"}}, "trud_9_s9": {"2026-09-04": {"val": "4", "comment": "Стартовая отметка из импорта"}}, "trud_9_s10": {"2026-09-04": {"val": "4", "comment": "Стартовая отметка из импорта"}}, "trud_9_s11": {"2026-09-04": {"val": "5", "comment": "Стартовая отметка из импорта"}}, "trud_9_s12": {"2026-09-04": {"val": "5", "comment": "Стартовая отметка из импорта"}}, "trud_9_s13": {"2026-09-04": {"val": "3", "comment": "Стартовая отметка из импорта"}}, "trud_9_s14": {"2026-09-04": {"val": "5", "comment": "Стартовая отметка из импорта"}}, "trud_9_s15": {"2026-09-04": {"val": "5", "comment": "Стартовая отметка из импорта"}}, "trud_9_s16": {"2026-09-04": {"val": "3", "comment": "Стартовая отметка из импорта"}}}, "lessonMeta": {}, "hwCompletion": {}, "finalGrades": {}}]};
 </script>
 
@@ -4091,5 +5485,6 @@ document.getElementById('btnChangePassword').onclick = () => {
 
 renderAll();
 </script>
-</body>
-</html>
+
+
+</body></html>
