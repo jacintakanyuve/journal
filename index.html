@@ -1309,7 +1309,7 @@
     </div>
     <button type="button" class="gh-pill syncing" id="btnGithubConfig" title="Изменения будут отправлены в GitHub через 2.5 сек">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"></path></svg>
-      <span id="ghStatusText">GitHub: ожидание...</span>
+      <span id="ghStatusText">Сохранение в GitHub...</span>
     </button>
     <button class="btn btn-primary btn-sm" id="btnPushGithubNow" style="display: inline-flex;" title="Немедленно сохранить все текущие оценки и ДЗ в репозиторий GitHub">
       Сохранить в GitHub
@@ -1399,7 +1399,7 @@
         <div class="class-item-meta">11 уч. • Ср • 2 ур. </div>
       </div>
       <span class="class-tag trud">Труд</span>
-    </div><div class="class-item active">
+    </div><div class="class-item">
       <div style="min-width:0;">
         <div class="class-item-title">7 класс</div>
         <div class="class-item-meta">12 уч. • Чт • 2 ур. </div>
@@ -1411,7 +1411,7 @@
         <div class="class-item-meta">10 уч. • Ср </div>
       </div>
       <span class="class-tag trud">Труд</span>
-    </div><div class="class-item">
+    </div><div class="class-item active">
       <div style="min-width:0;">
         <div class="class-item-title">9 класс</div>
         <div class="class-item-meta">16 уч. • Чт </div>
@@ -1431,7 +1431,7 @@
     <div class="toolbar" id="classToolbar">
       <div class="toolbar-left">
         <div class="class-header-badge">
-          <span class="class-h1" id="activeClassTitle">7 класс</span>
+          <span class="class-h1" id="activeClassTitle">9 класс</span>
           <span class="class-tag trud" id="activeClassSubj">Труд (Технология)</span>
         </div>
 
@@ -1446,8 +1446,8 @@
 
         <div class="day-pills" title="Количество уроков в день (для 5 класса по Труду — 2 урока в понедельник)">
           <span style="font-size:11px; color:var(--text-muted); padding:0 5px; font-weight:600;">Ур./день:</span>
-          <button class="day-pill lpd-pill" data-lpd="1">1</button>
-          <button class="day-pill lpd-pill active" data-lpd="2">2</button>
+          <button class="day-pill lpd-pill active" data-lpd="1">1</button>
+          <button class="day-pill lpd-pill" data-lpd="2">2</button>
         </div>
       </div>
 
@@ -1471,14 +1471,14 @@
     <div class="quarter-bar" id="quarterBar">
       <div style="display:flex; align-items:center; gap:6px; flex-wrap:wrap;">
         <div class="quarter-pills" id="quarterPills">
-          <button class="q-pill" data-period="q1" title="1 четверть: 01.09.2026 – 25.10.2026"><span class="q-current-dot" style="display:none;"></span>1 четв. <span class="q-pill-cnt" data-qcnt="q1">16</span></button>
-          <button class="q-pill active" data-period="q2" title="2 четверть: 05.11.2026 – 30.12.2026 (Текущая четверть)"><span class="q-current-dot" style="display: inline-block;"></span>2 четв. <span class="q-pill-cnt" data-qcnt="q2">16</span></button>
-          <button class="q-pill" data-period="q3" title="3 четверть: 11.01.2027 – 28.03.2027"><span class="q-current-dot" style="display:none;"></span>3 четв. <span class="q-pill-cnt" data-qcnt="q3">22</span></button>
-          <button class="q-pill" data-period="q4" title="4 четверть: 05.04.2027 – 31.05.2027"><span class="q-current-dot" style="display:none;"></span>4 четв. <span class="q-pill-cnt" data-qcnt="q4">14</span></button>
+          <button class="q-pill" data-period="q1" title="1 четверть: 01.09.2026 – 25.10.2026"><span class="q-current-dot" style="display:none;"></span>1 четв. <span class="q-pill-cnt" data-qcnt="q1">9</span></button>
+          <button class="q-pill active" data-period="q2" title="2 четверть: 05.11.2026 – 30.12.2026 (Текущая четверть)"><span class="q-current-dot" style="display: inline-block;"></span>2 четв. <span class="q-pill-cnt" data-qcnt="q2">8</span></button>
+          <button class="q-pill" data-period="q3" title="3 четверть: 11.01.2027 – 28.03.2027"><span class="q-current-dot" style="display:none;"></span>3 четв. <span class="q-pill-cnt" data-qcnt="q3">11</span></button>
+          <button class="q-pill" data-period="q4" title="4 четверть: 05.04.2027 – 31.05.2027"><span class="q-current-dot" style="display:none;"></span>4 четв. <span class="q-pill-cnt" data-qcnt="q4">7</span></button>
           <span class="q-sep"></span>
-          <button class="q-pill" data-period="h1" title="1 полугодие: 01.09.2026 – 30.12.2026">1 полуг. <span class="q-pill-cnt" data-qcnt="h1">32</span></button>
-          <button class="q-pill" data-period="h2" title="2 полугодие: 11.01.2027 – 31.05.2027">2 полуг. <span class="q-pill-cnt" data-qcnt="h2">36</span></button>
-          <button class="q-pill" data-period="all" title="Весь год: 01.09.2026 – 31.05.2027">Весь год <span class="q-pill-cnt" data-qcnt="all">68</span></button>
+          <button class="q-pill" data-period="h1" title="1 полугодие: 01.09.2026 – 30.12.2026">1 полуг. <span class="q-pill-cnt" data-qcnt="h1">17</span></button>
+          <button class="q-pill" data-period="h2" title="2 полугодие: 11.01.2027 – 31.05.2027">2 полуг. <span class="q-pill-cnt" data-qcnt="h2">18</span></button>
+          <button class="q-pill" data-period="all" title="Весь год: 01.09.2026 – 31.05.2027">Весь год <span class="q-pill-cnt" data-qcnt="all">35</span></button>
         </div>
         <button class="btn btn-sm" id="btnJumpCurrentQuarter" style="display:none;" title="Вернуться к текущей четверти">
           Текущая четверть
@@ -1490,7 +1490,7 @@
 
       <div class="quarter-meta" id="quarterMetaInfo">
     <span class="period-info-badge">2 четверть: 05.11 – 30.12</span>
-    <span>Показано уроков: <b>6</b> из 68</span>
+    <span>Показано уроков: <b>3</b> из 35</span>
   </div>
     </div>
 
@@ -1498,8 +1498,8 @@
     <div class="lesson-strip" id="lessonStrip">
       <div class="lesson-strip-info" id="lessonStripInfo">
     <span class="hw-pill">
-      <strong>Урок 19.11.2026 (Чт • 1-й урок):</strong>
-      <span>Основные приемы макетирования. Профессии, связанные с 3D-печатью: макетчик, моделлер, инженер 3D-печати и др.</span>
+      <strong>Урок 19.11.2026 (Чт):</strong>
+      <span>Технологии обратного проектирования</span>
     </span>
     <span class="hw-pill">
       <strong>ДЗ:</strong>
@@ -1524,39 +1524,21 @@
     <th class="col-idx">№</th>
     <th class="col-name">ФИО ученика</th><th class="date-th" data-lkey="2026-11-05" title="Урок: 05.11.2026 (Чт)
 Нажмите, чтобы задать тему и ДЗ">
-      <div class="d-lnum">№17</div>
+      <div class="d-lnum">№10</div>
       <div class="d-date">05.11</div>
-      <div><span class="d-slot-badge">1 ур.</span></div>
-      <div class="d-badges"></div>
-    </th><th class="date-th pair-end" data-lkey="2026-11-05__2" title="Урок: 05.11.2026 (Чт) (2-й урок)
-Нажмите, чтобы задать тему и ДЗ">
-      <div class="d-lnum">№18</div>
-      <div class="d-date">05.11</div>
-      <div><span class="d-slot-badge">2 ур.</span></div>
+      <div><span class="d-dow">Чт</span></div>
       <div class="d-badges"></div>
     </th><th class="date-th" data-lkey="2026-11-12" title="Урок: 12.11.2026 (Чт)
 Нажмите, чтобы задать тему и ДЗ">
-      <div class="d-lnum">№19</div>
+      <div class="d-lnum">№11</div>
       <div class="d-date">12.11</div>
-      <div><span class="d-slot-badge">1 ур.</span></div>
-      <div class="d-badges"></div>
-    </th><th class="date-th pair-end" data-lkey="2026-11-12__2" title="Урок: 12.11.2026 (Чт) (2-й урок)
-Нажмите, чтобы задать тему и ДЗ">
-      <div class="d-lnum">№20</div>
-      <div class="d-date">12.11</div>
-      <div><span class="d-slot-badge">2 ур.</span></div>
+      <div><span class="d-dow">Чт</span></div>
       <div class="d-badges"></div>
     </th><th class="date-th is-today" data-lkey="2026-11-19" title="Урок: 19.11.2026 (Чт)
-Тема: Основные приемы макетирования. Профессии, связанные с 3D-печатью: макетчик, моделлер, инженер 3D-печати и др.">
-      <div class="d-lnum">№21</div>
+Тема: Технологии обратного проектирования">
+      <div class="d-lnum">№12</div>
       <div class="d-date">19.11</div>
-      <div><span class="d-slot-badge">1 ур.</span></div>
-      <div class="d-badges"></div>
-    </th><th class="date-th is-today pair-end" data-lkey="2026-11-19__2" title="Урок: 19.11.2026 (Чт) (2-й урок)
-Нажмите, чтобы задать тему и ДЗ">
-      <div class="d-lnum">№22</div>
-      <div class="d-date">19.11</div>
-      <div><span class="d-slot-badge">2 ур.</span></div>
+      <div><span class="d-dow">Чт</span></div>
       <div class="d-badges"></div>
     </th>
     <th class="col-avg" title="Средний балл (2 четверть)">Ср.</th>
@@ -1567,42 +1549,30 @@
         <tbody id="journalBody"><tr>
       <td class="col-idx">1</td>
       <td class="col-name">
-        <div class="student-cell" data-stid="trud_7_s1" title="Ермак Артём Дмитриевич">
-          <span class="student-name-txt">Ермак Артём Дмитриевич</span>
+        <div class="student-cell" data-stid="trud_9_s1" title="Баранов Владислав Валерьевич">
+          <span class="student-name-txt">Баранов Владислав Валерьевич</span>
           <span class="student-icons">
             
             
           </span>
         </div>
-      </td><td class="grade-cell" data-stid="trud_7_s1" data-lkey="2026-11-05" title="Ермак Артём Дмитриевич • 05.11.2026 (Чт)
+      </td><td class="grade-cell" data-stid="trud_9_s1" data-lkey="2026-11-05" title="Баранов Владислав Валерьевич • 05.11.2026 (Чт)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell pair-end" data-stid="trud_7_s1" data-lkey="2026-11-05__2" title="Ермак Артём Дмитриевич • 05.11.2026 (Чт) (2-й урок)
+      </td><td class="grade-cell" data-stid="trud_9_s1" data-lkey="2026-11-12" title="Баранов Владислав Валерьевич • 12.11.2026 (Чт)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell" data-stid="trud_7_s1" data-lkey="2026-11-12" title="Ермак Артём Дмитриевич • 12.11.2026 (Чт)
-Нажмите для выставления оценки">
-        
-        
-      </td><td class="grade-cell pair-end" data-stid="trud_7_s1" data-lkey="2026-11-12__2" title="Ермак Артём Дмитриевич • 12.11.2026 (Чт) (2-й урок)
-Нажмите для выставления оценки">
-        
-        
-      </td><td class="grade-cell" data-stid="trud_7_s1" data-lkey="2026-11-19" title="Ермак Артём Дмитриевич • 19.11.2026 (Чт)
-Нажмите для выставления оценки">
-        
-        
-      </td><td class="grade-cell pair-end" data-stid="trud_7_s1" data-lkey="2026-11-19__2" title="Ермак Артём Дмитриевич • 19.11.2026 (Чт) (2-й урок)
-Нажмите для выставления оценки">
-        
+      </td><td class="grade-cell" data-stid="trud_9_s1" data-lkey="2026-11-19" title="Баранов Владислав Валерьевич • 19.11.2026 (Чт)
+Отметка: 5">
+        <span class="g-chip g-5">5</span>
         
       </td>
-      <td class="col-avg"><span class="avg-val ">—</span></td>
-      <td class="col-rec">—</td>
+      <td class="col-avg"><span class="avg-val avg-5">5.00</span></td>
+      <td class="col-rec">5</td>
       <td class="col-fin">
-        <select class="final-select" data-finkey="q2_trud_7_s1">
+        <select class="final-select" data-finkey="q2_trud_9_s1">
           <option value="" selected="">—</option>
           <option value="5">5</option>
           <option value="4">4</option>
@@ -1616,42 +1586,30 @@
     </tr><tr>
       <td class="col-idx">2</td>
       <td class="col-name">
-        <div class="student-cell" data-stid="trud_7_s2" title="Житнюк Артём Ярославович">
-          <span class="student-name-txt">Житнюк Артём Ярославович</span>
+        <div class="student-cell" data-stid="trud_9_s2" title="Буняев Никита Вячеславович">
+          <span class="student-name-txt">Буняев Никита Вячеславович</span>
           <span class="student-icons">
             
             
           </span>
         </div>
-      </td><td class="grade-cell" data-stid="trud_7_s2" data-lkey="2026-11-05" title="Житнюк Артём Ярославович • 05.11.2026 (Чт)
+      </td><td class="grade-cell" data-stid="trud_9_s2" data-lkey="2026-11-05" title="Буняев Никита Вячеславович • 05.11.2026 (Чт)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell pair-end" data-stid="trud_7_s2" data-lkey="2026-11-05__2" title="Житнюк Артём Ярославович • 05.11.2026 (Чт) (2-й урок)
-Нажмите для выставления оценки">
+      </td><td class="grade-cell" data-stid="trud_9_s2" data-lkey="2026-11-12" title="Буняев Никита Вячеславович • 12.11.2026 (Чт)
+Отметка: 5">
+        <span class="g-chip g-5">5</span>
         
-        
-      </td><td class="grade-cell" data-stid="trud_7_s2" data-lkey="2026-11-12" title="Житнюк Артём Ярославович • 12.11.2026 (Чт)
-Нажмите для выставления оценки">
-        
-        
-      </td><td class="grade-cell pair-end" data-stid="trud_7_s2" data-lkey="2026-11-12__2" title="Житнюк Артём Ярославович • 12.11.2026 (Чт) (2-й урок)
-Нажмите для выставления оценки">
-        
-        
-      </td><td class="grade-cell" data-stid="trud_7_s2" data-lkey="2026-11-19" title="Житнюк Артём Ярославович • 19.11.2026 (Чт)
-Нажмите для выставления оценки">
-        
-        
-      </td><td class="grade-cell pair-end" data-stid="trud_7_s2" data-lkey="2026-11-19__2" title="Житнюк Артём Ярославович • 19.11.2026 (Чт) (2-й урок)
+      </td><td class="grade-cell" data-stid="trud_9_s2" data-lkey="2026-11-19" title="Буняев Никита Вячеславович • 19.11.2026 (Чт)
 Нажмите для выставления оценки">
         
         
       </td>
-      <td class="col-avg"><span class="avg-val ">—</span></td>
-      <td class="col-rec">—</td>
+      <td class="col-avg"><span class="avg-val avg-5">5.00</span></td>
+      <td class="col-rec">5</td>
       <td class="col-fin">
-        <select class="final-select" data-finkey="q2_trud_7_s2">
+        <select class="final-select" data-finkey="q2_trud_9_s2">
           <option value="" selected="">—</option>
           <option value="5">5</option>
           <option value="4">4</option>
@@ -1665,34 +1623,22 @@
     </tr><tr>
       <td class="col-idx">3</td>
       <td class="col-name">
-        <div class="student-cell" data-stid="trud_7_s3" title="Заика Дмитрий Антонович">
-          <span class="student-name-txt">Заика Дмитрий Антонович</span>
+        <div class="student-cell" data-stid="trud_9_s3" title="Гаврилов Александр Александрович">
+          <span class="student-name-txt">Гаврилов Александр Александрович</span>
           <span class="student-icons">
             
             
           </span>
         </div>
-      </td><td class="grade-cell" data-stid="trud_7_s3" data-lkey="2026-11-05" title="Заика Дмитрий Антонович • 05.11.2026 (Чт)
+      </td><td class="grade-cell" data-stid="trud_9_s3" data-lkey="2026-11-05" title="Гаврилов Александр Александрович • 05.11.2026 (Чт)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell pair-end" data-stid="trud_7_s3" data-lkey="2026-11-05__2" title="Заика Дмитрий Антонович • 05.11.2026 (Чт) (2-й урок)
+      </td><td class="grade-cell" data-stid="trud_9_s3" data-lkey="2026-11-12" title="Гаврилов Александр Александрович • 12.11.2026 (Чт)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell" data-stid="trud_7_s3" data-lkey="2026-11-12" title="Заика Дмитрий Антонович • 12.11.2026 (Чт)
-Нажмите для выставления оценки">
-        
-        
-      </td><td class="grade-cell pair-end" data-stid="trud_7_s3" data-lkey="2026-11-12__2" title="Заика Дмитрий Антонович • 12.11.2026 (Чт) (2-й урок)
-Нажмите для выставления оценки">
-        
-        
-      </td><td class="grade-cell" data-stid="trud_7_s3" data-lkey="2026-11-19" title="Заика Дмитрий Антонович • 19.11.2026 (Чт)
-Нажмите для выставления оценки">
-        
-        
-      </td><td class="grade-cell pair-end" data-stid="trud_7_s3" data-lkey="2026-11-19__2" title="Заика Дмитрий Антонович • 19.11.2026 (Чт) (2-й урок)
+      </td><td class="grade-cell" data-stid="trud_9_s3" data-lkey="2026-11-19" title="Гаврилов Александр Александрович • 19.11.2026 (Чт)
 Нажмите для выставления оценки">
         
         
@@ -1700,7 +1646,7 @@
       <td class="col-avg"><span class="avg-val ">—</span></td>
       <td class="col-rec">—</td>
       <td class="col-fin">
-        <select class="final-select" data-finkey="q2_trud_7_s3">
+        <select class="final-select" data-finkey="q2_trud_9_s3">
           <option value="" selected="">—</option>
           <option value="5">5</option>
           <option value="4">4</option>
@@ -1714,34 +1660,22 @@
     </tr><tr>
       <td class="col-idx">4</td>
       <td class="col-name">
-        <div class="student-cell" data-stid="trud_7_s4" title="Мерзликин Михаил Евгеньевич">
-          <span class="student-name-txt">Мерзликин Михаил Евгеньевич</span>
+        <div class="student-cell" data-stid="trud_9_s4" title="Грановский Михаил Владимирович">
+          <span class="student-name-txt">Грановский Михаил Владимирович</span>
           <span class="student-icons">
             
             
           </span>
         </div>
-      </td><td class="grade-cell" data-stid="trud_7_s4" data-lkey="2026-11-05" title="Мерзликин Михаил Евгеньевич • 05.11.2026 (Чт)
+      </td><td class="grade-cell" data-stid="trud_9_s4" data-lkey="2026-11-05" title="Грановский Михаил Владимирович • 05.11.2026 (Чт)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell pair-end" data-stid="trud_7_s4" data-lkey="2026-11-05__2" title="Мерзликин Михаил Евгеньевич • 05.11.2026 (Чт) (2-й урок)
+      </td><td class="grade-cell" data-stid="trud_9_s4" data-lkey="2026-11-12" title="Грановский Михаил Владимирович • 12.11.2026 (Чт)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell" data-stid="trud_7_s4" data-lkey="2026-11-12" title="Мерзликин Михаил Евгеньевич • 12.11.2026 (Чт)
-Нажмите для выставления оценки">
-        
-        
-      </td><td class="grade-cell pair-end" data-stid="trud_7_s4" data-lkey="2026-11-12__2" title="Мерзликин Михаил Евгеньевич • 12.11.2026 (Чт) (2-й урок)
-Нажмите для выставления оценки">
-        
-        
-      </td><td class="grade-cell" data-stid="trud_7_s4" data-lkey="2026-11-19" title="Мерзликин Михаил Евгеньевич • 19.11.2026 (Чт)
-Нажмите для выставления оценки">
-        
-        
-      </td><td class="grade-cell pair-end" data-stid="trud_7_s4" data-lkey="2026-11-19__2" title="Мерзликин Михаил Евгеньевич • 19.11.2026 (Чт) (2-й урок)
+      </td><td class="grade-cell" data-stid="trud_9_s4" data-lkey="2026-11-19" title="Грановский Михаил Владимирович • 19.11.2026 (Чт)
 Нажмите для выставления оценки">
         
         
@@ -1749,7 +1683,7 @@
       <td class="col-avg"><span class="avg-val ">—</span></td>
       <td class="col-rec">—</td>
       <td class="col-fin">
-        <select class="final-select" data-finkey="q2_trud_7_s4">
+        <select class="final-select" data-finkey="q2_trud_9_s4">
           <option value="" selected="">—</option>
           <option value="5">5</option>
           <option value="4">4</option>
@@ -1763,42 +1697,30 @@
     </tr><tr>
       <td class="col-idx">5</td>
       <td class="col-name">
-        <div class="student-cell" data-stid="trud_7_s5" title="Павлюченко Максим Игоревич">
-          <span class="student-name-txt">Павлюченко Максим Игоревич</span>
+        <div class="student-cell" data-stid="trud_9_s5" title="Довбыш Артем Алексеевич">
+          <span class="student-name-txt">Довбыш Артем Алексеевич</span>
           <span class="student-icons">
             
             
           </span>
         </div>
-      </td><td class="grade-cell" data-stid="trud_7_s5" data-lkey="2026-11-05" title="Павлюченко Максим Игоревич • 05.11.2026 (Чт)
+      </td><td class="grade-cell" data-stid="trud_9_s5" data-lkey="2026-11-05" title="Довбыш Артем Алексеевич • 05.11.2026 (Чт)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell pair-end" data-stid="trud_7_s5" data-lkey="2026-11-05__2" title="Павлюченко Максим Игоревич • 05.11.2026 (Чт) (2-й урок)
+      </td><td class="grade-cell" data-stid="trud_9_s5" data-lkey="2026-11-12" title="Довбыш Артем Алексеевич • 12.11.2026 (Чт)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell" data-stid="trud_7_s5" data-lkey="2026-11-12" title="Павлюченко Максим Игоревич • 12.11.2026 (Чт)
-Отметка: 5">
-        <span class="g-chip g-5">5</span>
-        
-      </td><td class="grade-cell pair-end" data-stid="trud_7_s5" data-lkey="2026-11-12__2" title="Павлюченко Максим Игоревич • 12.11.2026 (Чт) (2-й урок)
-Нажмите для выставления оценки">
-        
-        
-      </td><td class="grade-cell" data-stid="trud_7_s5" data-lkey="2026-11-19" title="Павлюченко Максим Игоревич • 19.11.2026 (Чт)
-Нажмите для выставления оценки">
-        
-        
-      </td><td class="grade-cell pair-end" data-stid="trud_7_s5" data-lkey="2026-11-19__2" title="Павлюченко Максим Игоревич • 19.11.2026 (Чт) (2-й урок)
+      </td><td class="grade-cell" data-stid="trud_9_s5" data-lkey="2026-11-19" title="Довбыш Артем Алексеевич • 19.11.2026 (Чт)
 Нажмите для выставления оценки">
         
         
       </td>
-      <td class="col-avg"><span class="avg-val avg-5">5.00</span></td>
-      <td class="col-rec">5</td>
+      <td class="col-avg"><span class="avg-val ">—</span></td>
+      <td class="col-rec">—</td>
       <td class="col-fin">
-        <select class="final-select" data-finkey="q2_trud_7_s5">
+        <select class="final-select" data-finkey="q2_trud_9_s5">
           <option value="" selected="">—</option>
           <option value="5">5</option>
           <option value="4">4</option>
@@ -1812,34 +1734,22 @@
     </tr><tr>
       <td class="col-idx">6</td>
       <td class="col-name">
-        <div class="student-cell" data-stid="trud_7_s6" title="Ремез Дамир Дмитриевич">
-          <span class="student-name-txt">Ремез Дамир Дмитриевич</span>
+        <div class="student-cell" data-stid="trud_9_s6" title="Белошеин Даниил Владимирович">
+          <span class="student-name-txt">Белошеин Даниил Владимирович</span>
           <span class="student-icons">
             
             
           </span>
         </div>
-      </td><td class="grade-cell" data-stid="trud_7_s6" data-lkey="2026-11-05" title="Ремез Дамир Дмитриевич • 05.11.2026 (Чт)
+      </td><td class="grade-cell" data-stid="trud_9_s6" data-lkey="2026-11-05" title="Белошеин Даниил Владимирович • 05.11.2026 (Чт)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell pair-end" data-stid="trud_7_s6" data-lkey="2026-11-05__2" title="Ремез Дамир Дмитриевич • 05.11.2026 (Чт) (2-й урок)
+      </td><td class="grade-cell" data-stid="trud_9_s6" data-lkey="2026-11-12" title="Белошеин Даниил Владимирович • 12.11.2026 (Чт)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell" data-stid="trud_7_s6" data-lkey="2026-11-12" title="Ремез Дамир Дмитриевич • 12.11.2026 (Чт)
-Нажмите для выставления оценки">
-        
-        
-      </td><td class="grade-cell pair-end" data-stid="trud_7_s6" data-lkey="2026-11-12__2" title="Ремез Дамир Дмитриевич • 12.11.2026 (Чт) (2-й урок)
-Нажмите для выставления оценки">
-        
-        
-      </td><td class="grade-cell" data-stid="trud_7_s6" data-lkey="2026-11-19" title="Ремез Дамир Дмитриевич • 19.11.2026 (Чт)
-Нажмите для выставления оценки">
-        
-        
-      </td><td class="grade-cell pair-end" data-stid="trud_7_s6" data-lkey="2026-11-19__2" title="Ремез Дамир Дмитриевич • 19.11.2026 (Чт) (2-й урок)
+      </td><td class="grade-cell" data-stid="trud_9_s6" data-lkey="2026-11-19" title="Белошеин Даниил Владимирович • 19.11.2026 (Чт)
 Нажмите для выставления оценки">
         
         
@@ -1847,7 +1757,7 @@
       <td class="col-avg"><span class="avg-val ">—</span></td>
       <td class="col-rec">—</td>
       <td class="col-fin">
-        <select class="final-select" data-finkey="q2_trud_7_s6">
+        <select class="final-select" data-finkey="q2_trud_9_s6">
           <option value="" selected="">—</option>
           <option value="5">5</option>
           <option value="4">4</option>
@@ -1861,34 +1771,22 @@
     </tr><tr>
       <td class="col-idx">7</td>
       <td class="col-name">
-        <div class="student-cell" data-stid="trud_7_s7" title="Щербина Максим Александрович">
-          <span class="student-name-txt">Щербина Максим Александрович</span>
+        <div class="student-cell" data-stid="trud_9_s7" title="Логунов Архип Денисович">
+          <span class="student-name-txt">Логунов Архип Денисович</span>
           <span class="student-icons">
             
             
           </span>
         </div>
-      </td><td class="grade-cell" data-stid="trud_7_s7" data-lkey="2026-11-05" title="Щербина Максим Александрович • 05.11.2026 (Чт)
+      </td><td class="grade-cell" data-stid="trud_9_s7" data-lkey="2026-11-05" title="Логунов Архип Денисович • 05.11.2026 (Чт)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell pair-end" data-stid="trud_7_s7" data-lkey="2026-11-05__2" title="Щербина Максим Александрович • 05.11.2026 (Чт) (2-й урок)
-Нажмите для выставления оценки">
-        
-        
-      </td><td class="grade-cell" data-stid="trud_7_s7" data-lkey="2026-11-12" title="Щербина Максим Александрович • 12.11.2026 (Чт)
+      </td><td class="grade-cell" data-stid="trud_9_s7" data-lkey="2026-11-12" title="Логунов Архип Денисович • 12.11.2026 (Чт)
 Отметка: 5">
         <span class="g-chip g-5">5</span>
         
-      </td><td class="grade-cell pair-end" data-stid="trud_7_s7" data-lkey="2026-11-12__2" title="Щербина Максим Александрович • 12.11.2026 (Чт) (2-й урок)
-Нажмите для выставления оценки">
-        
-        
-      </td><td class="grade-cell" data-stid="trud_7_s7" data-lkey="2026-11-19" title="Щербина Максим Александрович • 19.11.2026 (Чт)
-Отметка: 5">
-        <span class="g-chip g-5">5</span>
-        
-      </td><td class="grade-cell pair-end" data-stid="trud_7_s7" data-lkey="2026-11-19__2" title="Щербина Максим Александрович • 19.11.2026 (Чт) (2-й урок)
+      </td><td class="grade-cell" data-stid="trud_9_s7" data-lkey="2026-11-19" title="Логунов Архип Денисович • 19.11.2026 (Чт)
 Нажмите для выставления оценки">
         
         
@@ -1896,7 +1794,7 @@
       <td class="col-avg"><span class="avg-val avg-5">5.00</span></td>
       <td class="col-rec">5</td>
       <td class="col-fin">
-        <select class="final-select" data-finkey="q2_trud_7_s7">
+        <select class="final-select" data-finkey="q2_trud_9_s7">
           <option value="" selected="">—</option>
           <option value="5">5</option>
           <option value="4">4</option>
@@ -1910,42 +1808,30 @@
     </tr><tr>
       <td class="col-idx">8</td>
       <td class="col-name">
-        <div class="student-cell" data-stid="trud_7_s8" title="Астапенков Ярослав Викторович">
-          <span class="student-name-txt">Астапенков Ярослав Викторович</span>
+        <div class="student-cell" data-stid="trud_9_s8" title="Луданик Богдан Русланович">
+          <span class="student-name-txt">Луданик Богдан Русланович</span>
           <span class="student-icons">
             
             
           </span>
         </div>
-      </td><td class="grade-cell" data-stid="trud_7_s8" data-lkey="2026-11-05" title="Астапенков Ярослав Викторович • 05.11.2026 (Чт)
+      </td><td class="grade-cell" data-stid="trud_9_s8" data-lkey="2026-11-05" title="Луданик Богдан Русланович • 05.11.2026 (Чт)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell pair-end" data-stid="trud_7_s8" data-lkey="2026-11-05__2" title="Астапенков Ярослав Викторович • 05.11.2026 (Чт) (2-й урок)
-Нажмите для выставления оценки">
+      </td><td class="grade-cell" data-stid="trud_9_s8" data-lkey="2026-11-12" title="Луданик Богдан Русланович • 12.11.2026 (Чт)
+Отметка: 5">
+        <span class="g-chip g-5">5</span>
         
-        
-      </td><td class="grade-cell" data-stid="trud_7_s8" data-lkey="2026-11-12" title="Астапенков Ярослав Викторович • 12.11.2026 (Чт)
-Нажмите для выставления оценки">
-        
-        
-      </td><td class="grade-cell pair-end" data-stid="trud_7_s8" data-lkey="2026-11-12__2" title="Астапенков Ярослав Викторович • 12.11.2026 (Чт) (2-й урок)
-Нажмите для выставления оценки">
-        
-        
-      </td><td class="grade-cell" data-stid="trud_7_s8" data-lkey="2026-11-19" title="Астапенков Ярослав Викторович • 19.11.2026 (Чт)
-Нажмите для выставления оценки">
-        
-        
-      </td><td class="grade-cell pair-end" data-stid="trud_7_s8" data-lkey="2026-11-19__2" title="Астапенков Ярослав Викторович • 19.11.2026 (Чт) (2-й урок)
+      </td><td class="grade-cell" data-stid="trud_9_s8" data-lkey="2026-11-19" title="Луданик Богдан Русланович • 19.11.2026 (Чт)
 Нажмите для выставления оценки">
         
         
       </td>
-      <td class="col-avg"><span class="avg-val ">—</span></td>
-      <td class="col-rec">—</td>
+      <td class="col-avg"><span class="avg-val avg-5">5.00</span></td>
+      <td class="col-rec">5</td>
       <td class="col-fin">
-        <select class="final-select" data-finkey="q2_trud_7_s8">
+        <select class="final-select" data-finkey="q2_trud_9_s8">
           <option value="" selected="">—</option>
           <option value="5">5</option>
           <option value="4">4</option>
@@ -1959,34 +1845,22 @@
     </tr><tr>
       <td class="col-idx">9</td>
       <td class="col-name">
-        <div class="student-cell" data-stid="trud_7_s9" title="Решетняк Ярослав Викторович">
-          <span class="student-name-txt">Решетняк Ярослав Викторович</span>
+        <div class="student-cell" data-stid="trud_9_s9" title="Лукьянов Давид Вячеславович">
+          <span class="student-name-txt">Лукьянов Давид Вячеславович</span>
           <span class="student-icons">
             
             
           </span>
         </div>
-      </td><td class="grade-cell" data-stid="trud_7_s9" data-lkey="2026-11-05" title="Решетняк Ярослав Викторович • 05.11.2026 (Чт)
+      </td><td class="grade-cell" data-stid="trud_9_s9" data-lkey="2026-11-05" title="Лукьянов Давид Вячеславович • 05.11.2026 (Чт)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell pair-end" data-stid="trud_7_s9" data-lkey="2026-11-05__2" title="Решетняк Ярослав Викторович • 05.11.2026 (Чт) (2-й урок)
+      </td><td class="grade-cell" data-stid="trud_9_s9" data-lkey="2026-11-12" title="Лукьянов Давид Вячеславович • 12.11.2026 (Чт)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell" data-stid="trud_7_s9" data-lkey="2026-11-12" title="Решетняк Ярослав Викторович • 12.11.2026 (Чт)
-Нажмите для выставления оценки">
-        
-        
-      </td><td class="grade-cell pair-end" data-stid="trud_7_s9" data-lkey="2026-11-12__2" title="Решетняк Ярослав Викторович • 12.11.2026 (Чт) (2-й урок)
-Нажмите для выставления оценки">
-        
-        
-      </td><td class="grade-cell" data-stid="trud_7_s9" data-lkey="2026-11-19" title="Решетняк Ярослав Викторович • 19.11.2026 (Чт)
-Нажмите для выставления оценки">
-        
-        
-      </td><td class="grade-cell pair-end" data-stid="trud_7_s9" data-lkey="2026-11-19__2" title="Решетняк Ярослав Викторович • 19.11.2026 (Чт) (2-й урок)
+      </td><td class="grade-cell" data-stid="trud_9_s9" data-lkey="2026-11-19" title="Лукьянов Давид Вячеславович • 19.11.2026 (Чт)
 Нажмите для выставления оценки">
         
         
@@ -1994,7 +1868,7 @@
       <td class="col-avg"><span class="avg-val ">—</span></td>
       <td class="col-rec">—</td>
       <td class="col-fin">
-        <select class="final-select" data-finkey="q2_trud_7_s9">
+        <select class="final-select" data-finkey="q2_trud_9_s9">
           <option value="" selected="">—</option>
           <option value="5">5</option>
           <option value="4">4</option>
@@ -2008,34 +1882,22 @@
     </tr><tr>
       <td class="col-idx">10</td>
       <td class="col-name">
-        <div class="student-cell" data-stid="trud_7_s10" title="Фурдыгайло Александр Романович">
-          <span class="student-name-txt">Фурдыгайло Александр Романович</span>
+        <div class="student-cell" data-stid="trud_9_s10" title="Осадчий Данил Юрьевич">
+          <span class="student-name-txt">Осадчий Данил Юрьевич</span>
           <span class="student-icons">
             
             
           </span>
         </div>
-      </td><td class="grade-cell" data-stid="trud_7_s10" data-lkey="2026-11-05" title="Фурдыгайло Александр Романович • 05.11.2026 (Чт)
+      </td><td class="grade-cell" data-stid="trud_9_s10" data-lkey="2026-11-05" title="Осадчий Данил Юрьевич • 05.11.2026 (Чт)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell pair-end" data-stid="trud_7_s10" data-lkey="2026-11-05__2" title="Фурдыгайло Александр Романович • 05.11.2026 (Чт) (2-й урок)
+      </td><td class="grade-cell" data-stid="trud_9_s10" data-lkey="2026-11-12" title="Осадчий Данил Юрьевич • 12.11.2026 (Чт)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell" data-stid="trud_7_s10" data-lkey="2026-11-12" title="Фурдыгайло Александр Романович • 12.11.2026 (Чт)
-Нажмите для выставления оценки">
-        
-        
-      </td><td class="grade-cell pair-end" data-stid="trud_7_s10" data-lkey="2026-11-12__2" title="Фурдыгайло Александр Романович • 12.11.2026 (Чт) (2-й урок)
-Нажмите для выставления оценки">
-        
-        
-      </td><td class="grade-cell" data-stid="trud_7_s10" data-lkey="2026-11-19" title="Фурдыгайло Александр Романович • 19.11.2026 (Чт)
-Нажмите для выставления оценки">
-        
-        
-      </td><td class="grade-cell pair-end" data-stid="trud_7_s10" data-lkey="2026-11-19__2" title="Фурдыгайло Александр Романович • 19.11.2026 (Чт) (2-й урок)
+      </td><td class="grade-cell" data-stid="trud_9_s10" data-lkey="2026-11-19" title="Осадчий Данил Юрьевич • 19.11.2026 (Чт)
 Нажмите для выставления оценки">
         
         
@@ -2043,7 +1905,7 @@
       <td class="col-avg"><span class="avg-val ">—</span></td>
       <td class="col-rec">—</td>
       <td class="col-fin">
-        <select class="final-select" data-finkey="q2_trud_7_s10">
+        <select class="final-select" data-finkey="q2_trud_9_s10">
           <option value="" selected="">—</option>
           <option value="5">5</option>
           <option value="4">4</option>
@@ -2057,42 +1919,30 @@
     </tr><tr>
       <td class="col-idx">11</td>
       <td class="col-name">
-        <div class="student-cell" data-stid="trud_7_s11" title="Мазилин Ярослав Артемевич">
-          <span class="student-name-txt">Мазилин Ярослав Артемевич</span>
+        <div class="student-cell" data-stid="trud_9_s11" title="Осадчий Кирилл Юрьевич">
+          <span class="student-name-txt">Осадчий Кирилл Юрьевич</span>
           <span class="student-icons">
             
             
           </span>
         </div>
-      </td><td class="grade-cell" data-stid="trud_7_s11" data-lkey="2026-11-05" title="Мазилин Ярослав Артемевич • 05.11.2026 (Чт)
+      </td><td class="grade-cell" data-stid="trud_9_s11" data-lkey="2026-11-05" title="Осадчий Кирилл Юрьевич • 05.11.2026 (Чт)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell pair-end" data-stid="trud_7_s11" data-lkey="2026-11-05__2" title="Мазилин Ярослав Артемевич • 05.11.2026 (Чт) (2-й урок)
+      </td><td class="grade-cell" data-stid="trud_9_s11" data-lkey="2026-11-12" title="Осадчий Кирилл Юрьевич • 12.11.2026 (Чт)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell" data-stid="trud_7_s11" data-lkey="2026-11-12" title="Мазилин Ярослав Артемевич • 12.11.2026 (Чт)
-Отметка: 5">
-        <span class="g-chip g-5">5</span>
-        
-      </td><td class="grade-cell pair-end" data-stid="trud_7_s11" data-lkey="2026-11-12__2" title="Мазилин Ярослав Артемевич • 12.11.2026 (Чт) (2-й урок)
-Нажмите для выставления оценки">
-        
-        
-      </td><td class="grade-cell selected-cell" data-stid="trud_7_s11" data-lkey="2026-11-19" title="Мазилин Ярослав Артемевич • 19.11.2026 (Чт)
-Отметка: 5">
-        <span class="g-chip g-5">5</span>
-        
-      </td><td class="grade-cell pair-end" data-stid="trud_7_s11" data-lkey="2026-11-19__2" title="Мазилин Ярослав Артемевич • 19.11.2026 (Чт) (2-й урок)
+      </td><td class="grade-cell" data-stid="trud_9_s11" data-lkey="2026-11-19" title="Осадчий Кирилл Юрьевич • 19.11.2026 (Чт)
 Нажмите для выставления оценки">
         
         
       </td>
-      <td class="col-avg"><span class="avg-val avg-5">5.00</span></td>
-      <td class="col-rec">5</td>
+      <td class="col-avg"><span class="avg-val ">—</span></td>
+      <td class="col-rec">—</td>
       <td class="col-fin">
-        <select class="final-select" data-finkey="q2_trud_7_s11">
+        <select class="final-select" data-finkey="q2_trud_9_s11">
           <option value="" selected="">—</option>
           <option value="5">5</option>
           <option value="4">4</option>
@@ -2106,34 +1956,96 @@
     </tr><tr>
       <td class="col-idx">12</td>
       <td class="col-name">
-        <div class="student-cell" data-stid="trud_7_s1794580118834" title="Маркеев Руслан">
-          <span class="student-name-txt">Маркеев Руслан</span>
+        <div class="student-cell" data-stid="trud_9_s12" title="Пахомов Илья Максимович">
+          <span class="student-name-txt">Пахомов Илья Максимович</span>
           <span class="student-icons">
             
             
           </span>
         </div>
-      </td><td class="grade-cell" data-stid="trud_7_s1794580118834" data-lkey="2026-11-05" title="Маркеев Руслан • 05.11.2026 (Чт)
+      </td><td class="grade-cell" data-stid="trud_9_s12" data-lkey="2026-11-05" title="Пахомов Илья Максимович • 05.11.2026 (Чт)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell pair-end" data-stid="trud_7_s1794580118834" data-lkey="2026-11-05__2" title="Маркеев Руслан • 05.11.2026 (Чт) (2-й урок)
+      </td><td class="grade-cell" data-stid="trud_9_s12" data-lkey="2026-11-12" title="Пахомов Илья Максимович • 12.11.2026 (Чт)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell" data-stid="trud_7_s1794580118834" data-lkey="2026-11-12" title="Маркеев Руслан • 12.11.2026 (Чт)
+      </td><td class="grade-cell" data-stid="trud_9_s12" data-lkey="2026-11-19" title="Пахомов Илья Максимович • 19.11.2026 (Чт)
+Нажмите для выставления оценки">
+        
+        
+      </td>
+      <td class="col-avg"><span class="avg-val ">—</span></td>
+      <td class="col-rec">—</td>
+      <td class="col-fin">
+        <select class="final-select" data-finkey="q2_trud_9_s12">
+          <option value="" selected="">—</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="зач">зач</option>
+          <option value="н/а">н/а</option>
+        </select>
+      </td>
+      <td class="col-stat">0 / 0</td>
+    </tr><tr>
+      <td class="col-idx">13</td>
+      <td class="col-name">
+        <div class="student-cell" data-stid="trud_9_s13" title="Пронин Максим Сергеевич">
+          <span class="student-name-txt">Пронин Максим Сергеевич</span>
+          <span class="student-icons">
+            
+            
+          </span>
+        </div>
+      </td><td class="grade-cell" data-stid="trud_9_s13" data-lkey="2026-11-05" title="Пронин Максим Сергеевич • 05.11.2026 (Чт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="trud_9_s13" data-lkey="2026-11-12" title="Пронин Максим Сергеевич • 12.11.2026 (Чт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="trud_9_s13" data-lkey="2026-11-19" title="Пронин Максим Сергеевич • 19.11.2026 (Чт)
+Нажмите для выставления оценки">
+        
+        
+      </td>
+      <td class="col-avg"><span class="avg-val ">—</span></td>
+      <td class="col-rec">—</td>
+      <td class="col-fin">
+        <select class="final-select" data-finkey="q2_trud_9_s13">
+          <option value="" selected="">—</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="зач">зач</option>
+          <option value="н/а">н/а</option>
+        </select>
+      </td>
+      <td class="col-stat">0 / 0</td>
+    </tr><tr>
+      <td class="col-idx">14</td>
+      <td class="col-name">
+        <div class="student-cell" data-stid="trud_9_s14" title="Серебров Максим Евгеньевич">
+          <span class="student-name-txt">Серебров Максим Евгеньевич</span>
+          <span class="student-icons">
+            
+            
+          </span>
+        </div>
+      </td><td class="grade-cell" data-stid="trud_9_s14" data-lkey="2026-11-05" title="Серебров Максим Евгеньевич • 05.11.2026 (Чт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="trud_9_s14" data-lkey="2026-11-12" title="Серебров Максим Евгеньевич • 12.11.2026 (Чт)
 Отметка: 4">
         <span class="g-chip g-4">4</span>
         
-      </td><td class="grade-cell pair-end" data-stid="trud_7_s1794580118834" data-lkey="2026-11-12__2" title="Маркеев Руслан • 12.11.2026 (Чт) (2-й урок)
-Нажмите для выставления оценки">
-        
-        
-      </td><td class="grade-cell" data-stid="trud_7_s1794580118834" data-lkey="2026-11-19" title="Маркеев Руслан • 19.11.2026 (Чт)
-Нажмите для выставления оценки">
-        
-        
-      </td><td class="grade-cell pair-end" data-stid="trud_7_s1794580118834" data-lkey="2026-11-19__2" title="Маркеев Руслан • 19.11.2026 (Чт) (2-й урок)
+      </td><td class="grade-cell" data-stid="trud_9_s14" data-lkey="2026-11-19" title="Серебров Максим Евгеньевич • 19.11.2026 (Чт)
 Нажмите для выставления оценки">
         
         
@@ -2141,7 +2053,81 @@
       <td class="col-avg"><span class="avg-val avg-4">4.00</span></td>
       <td class="col-rec">4</td>
       <td class="col-fin">
-        <select class="final-select" data-finkey="q2_trud_7_s1794580118834">
+        <select class="final-select" data-finkey="q2_trud_9_s14">
+          <option value="" selected="">—</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="зач">зач</option>
+          <option value="н/а">н/а</option>
+        </select>
+      </td>
+      <td class="col-stat">0 / 0</td>
+    </tr><tr>
+      <td class="col-idx">15</td>
+      <td class="col-name">
+        <div class="student-cell" data-stid="trud_9_s15" title="Финагин Артем Дмитриевич">
+          <span class="student-name-txt">Финагин Артем Дмитриевич</span>
+          <span class="student-icons">
+            
+            
+          </span>
+        </div>
+      </td><td class="grade-cell" data-stid="trud_9_s15" data-lkey="2026-11-05" title="Финагин Артем Дмитриевич • 05.11.2026 (Чт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="trud_9_s15" data-lkey="2026-11-12" title="Финагин Артем Дмитриевич • 12.11.2026 (Чт)
+Отметка: 5">
+        <span class="g-chip g-5">5</span>
+        
+      </td><td class="grade-cell" data-stid="trud_9_s15" data-lkey="2026-11-19" title="Финагин Артем Дмитриевич • 19.11.2026 (Чт)
+Отметка: 5">
+        <span class="g-chip g-5">5</span>
+        
+      </td>
+      <td class="col-avg"><span class="avg-val avg-5">5.00</span></td>
+      <td class="col-rec">5</td>
+      <td class="col-fin">
+        <select class="final-select" data-finkey="q2_trud_9_s15">
+          <option value="" selected="">—</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="зач">зач</option>
+          <option value="н/а">н/а</option>
+        </select>
+      </td>
+      <td class="col-stat">0 / 0</td>
+    </tr><tr>
+      <td class="col-idx">16</td>
+      <td class="col-name">
+        <div class="student-cell" data-stid="trud_9_s16" title="Щеткин Тимофей Олегович">
+          <span class="student-name-txt">Щеткин Тимофей Олегович</span>
+          <span class="student-icons">
+            
+            
+          </span>
+        </div>
+      </td><td class="grade-cell" data-stid="trud_9_s16" data-lkey="2026-11-05" title="Щеткин Тимофей Олегович • 05.11.2026 (Чт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="trud_9_s16" data-lkey="2026-11-12" title="Щеткин Тимофей Олегович • 12.11.2026 (Чт)
+Отметка: 4">
+        <span class="g-chip g-4">4</span>
+        
+      </td><td class="grade-cell" data-stid="trud_9_s16" data-lkey="2026-11-19" title="Щеткин Тимофей Олегович • 19.11.2026 (Чт)
+Нажмите для выставления оценки">
+        
+        
+      </td>
+      <td class="col-avg"><span class="avg-val avg-4">4.00</span></td>
+      <td class="col-rec">4</td>
+      <td class="col-fin">
+        <select class="final-select" data-finkey="q2_trud_9_s16">
           <option value="" selected="">—</option>
           <option value="5">5</option>
           <option value="4">4</option>
