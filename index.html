@@ -1309,7 +1309,7 @@
     </div>
     <button type="button" class="gh-pill syncing" id="btnGithubConfig" title="Изменения будут отправлены в GitHub через 2.5 сек">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"></path></svg>
-      <span id="ghStatusText">GitHub: ожидание...</span>
+      <span id="ghStatusText">Сохранение в GitHub...</span>
     </button>
     <button class="btn btn-primary btn-sm" id="btnPushGithubNow" style="display: inline-flex;" title="Немедленно сохранить все текущие оценки и ДЗ в репозиторий GitHub">
       Сохранить в GitHub
@@ -1381,13 +1381,13 @@
         <div class="class-item-meta">19 уч. • Вт </div>
       </div>
       <span class="class-tag inf">Инф</span>
-    </div><div class="class-item">
+    </div><div class="class-item active">
       <div style="min-width:0;">
         <div class="class-item-title">5 класс</div>
         <div class="class-item-meta">11 уч. • Чт </div>
       </div>
       <span class="class-tag inf">Инф</span>
-    </div><div class="class-item active">
+    </div><div class="class-item">
       <div style="min-width:0;">
         <div class="class-item-title">5 класс</div>
         <div class="class-item-meta">11 уч. • Пн • 2 ур. </div>
@@ -1432,22 +1432,22 @@
       <div class="toolbar-left">
         <div class="class-header-badge">
           <span class="class-h1" id="activeClassTitle">5 класс</span>
-          <span class="class-tag trud" id="activeClassSubj">Труд (Технология)</span>
+          <span class="class-tag inf" id="activeClassSubj">Информатика</span>
         </div>
 
         <div class="day-pills" title="Дни недели уроков по календарю 2026–2027 (нажмите, чтобы изменить расписание класса)">
           <span style="font-size:11px; color:var(--text-muted); padding:0 5px; font-weight:600;">Дни:</span>
-          <button class="day-pill active" data-day="mon">Пн</button>
+          <button class="day-pill" data-day="mon">Пн</button>
           <button class="day-pill" data-day="tue">Вт</button>
           <button class="day-pill" data-day="wed">Ср</button>
-          <button class="day-pill" data-day="thu">Чт</button>
+          <button class="day-pill active" data-day="thu">Чт</button>
           <button class="day-pill" data-day="fri">Пт</button>
         </div>
 
         <div class="day-pills" title="Количество уроков в день (для 5 класса по Труду — 2 урока в понедельник)">
           <span style="font-size:11px; color:var(--text-muted); padding:0 5px; font-weight:600;">Ур./день:</span>
-          <button class="day-pill lpd-pill" data-lpd="1">1</button>
-          <button class="day-pill lpd-pill active" data-lpd="2">2</button>
+          <button class="day-pill lpd-pill active" data-lpd="1">1</button>
+          <button class="day-pill lpd-pill" data-lpd="2">2</button>
         </div>
       </div>
 
@@ -1471,14 +1471,14 @@
     <div class="quarter-bar" id="quarterBar">
       <div style="display:flex; align-items:center; gap:6px; flex-wrap:wrap;">
         <div class="quarter-pills" id="quarterPills">
-          <button class="q-pill" data-period="q1" title="1 четверть: 01.09.2026 – 25.10.2026"><span class="q-current-dot" style="display:none;"></span>1 четв. <span class="q-pill-cnt" data-qcnt="q1">14</span></button>
-          <button class="q-pill active" data-period="q2" title="2 четверть: 05.11.2026 – 30.12.2026 (Текущая четверть)"><span class="q-current-dot" style="display: inline-block;"></span>2 четв. <span class="q-pill-cnt" data-qcnt="q2">16</span></button>
-          <button class="q-pill" data-period="q3" title="3 четверть: 11.01.2027 – 28.03.2027"><span class="q-current-dot" style="display:none;"></span>3 четв. <span class="q-pill-cnt" data-qcnt="q3">20</span></button>
-          <button class="q-pill" data-period="q4" title="4 четверть: 05.04.2027 – 31.05.2027"><span class="q-current-dot" style="display:none;"></span>4 четв. <span class="q-pill-cnt" data-qcnt="q4">12</span></button>
+          <button class="q-pill" data-period="q1" title="1 четверть: 01.09.2026 – 25.10.2026"><span class="q-current-dot" style="display:none;"></span>1 четв. <span class="q-pill-cnt" data-qcnt="q1">8</span></button>
+          <button class="q-pill active" data-period="q2" title="2 четверть: 05.11.2026 – 30.12.2026 (Текущая четверть)"><span class="q-current-dot" style="display: inline-block;"></span>2 четв. <span class="q-pill-cnt" data-qcnt="q2">8</span></button>
+          <button class="q-pill" data-period="q3" title="3 четверть: 11.01.2027 – 28.03.2027"><span class="q-current-dot" style="display:none;"></span>3 четв. <span class="q-pill-cnt" data-qcnt="q3">11</span></button>
+          <button class="q-pill" data-period="q4" title="4 четверть: 05.04.2027 – 31.05.2027"><span class="q-current-dot" style="display:none;"></span>4 четв. <span class="q-pill-cnt" data-qcnt="q4">7</span></button>
           <span class="q-sep"></span>
-          <button class="q-pill" data-period="h1" title="1 полугодие: 01.09.2026 – 30.12.2026">1 полуг. <span class="q-pill-cnt" data-qcnt="h1">30</span></button>
-          <button class="q-pill" data-period="h2" title="2 полугодие: 11.01.2027 – 31.05.2027">2 полуг. <span class="q-pill-cnt" data-qcnt="h2">32</span></button>
-          <button class="q-pill" data-period="all" title="Весь год: 01.09.2026 – 31.05.2027">Весь год <span class="q-pill-cnt" data-qcnt="all">62</span></button>
+          <button class="q-pill" data-period="h1" title="1 полугодие: 01.09.2026 – 30.12.2026">1 полуг. <span class="q-pill-cnt" data-qcnt="h1">16</span></button>
+          <button class="q-pill" data-period="h2" title="2 полугодие: 11.01.2027 – 31.05.2027">2 полуг. <span class="q-pill-cnt" data-qcnt="h2">18</span></button>
+          <button class="q-pill" data-period="all" title="Весь год: 01.09.2026 – 31.05.2027">Весь год <span class="q-pill-cnt" data-qcnt="all">34</span></button>
         </div>
         <button class="btn btn-sm" id="btnJumpCurrentQuarter" style="display:none;" title="Вернуться к текущей четверти">
           Текущая четверть
@@ -1490,7 +1490,7 @@
 
       <div class="quarter-meta" id="quarterMetaInfo">
     <span class="period-info-badge">2 четверть: 05.11 – 30.12</span>
-    <span>Показано уроков: <b>4</b> из 62</span>
+    <span>Показано уроков: <b>3</b> из 34</span>
   </div>
     </div>
 
@@ -1498,8 +1498,8 @@
     <div class="lesson-strip" id="lessonStrip">
       <div class="lesson-strip-info" id="lessonStripInfo">
     <span class="hw-pill">
-      <strong>Урок 16.11.2026 (Пн • 1-й урок):</strong>
-      <span><i style="color:var(--text-muted)">Тема не указана</i></span>
+      <strong>Урок 19.11.2026 (Чт):</strong>
+      <span>Понятие алгоритма. Исполнители алгоритмов. Система команд исполнителя</span>
     </span>
     <span class="hw-pill">
       <strong>ДЗ:</strong>
@@ -1522,29 +1522,23 @@
       <table class="journal compact-mode" id="journalTable">
         <thead id="journalHead"><tr>
     <th class="col-idx">№</th>
-    <th class="col-name">ФИО ученика</th><th class="date-th" data-lkey="2026-11-09" title="Урок: 09.11.2026 (Пн)
+    <th class="col-name">ФИО ученика</th><th class="date-th" data-lkey="2026-11-05" title="Урок: 05.11.2026 (Чт)
 Нажмите, чтобы задать тему и ДЗ">
-      <div class="d-lnum">№15</div>
-      <div class="d-date">09.11</div>
-      <div><span class="d-slot-badge">1 ур.</span></div>
+      <div class="d-lnum">№9</div>
+      <div class="d-date">05.11</div>
+      <div><span class="d-dow">Чт</span></div>
       <div class="d-badges"></div>
-    </th><th class="date-th pair-end" data-lkey="2026-11-09__2" title="Урок: 09.11.2026 (Пн) (2-й урок)
+    </th><th class="date-th" data-lkey="2026-11-12" title="Урок: 12.11.2026 (Чт)
 Нажмите, чтобы задать тему и ДЗ">
-      <div class="d-lnum">№16</div>
-      <div class="d-date">09.11</div>
-      <div><span class="d-slot-badge">2 ур.</span></div>
+      <div class="d-lnum">№10</div>
+      <div class="d-date">12.11</div>
+      <div><span class="d-dow">Чт</span></div>
       <div class="d-badges"></div>
-    </th><th class="date-th is-today" data-lkey="2026-11-16" title="Урок: 16.11.2026 (Пн)
-Нажмите, чтобы задать тему и ДЗ">
-      <div class="d-lnum">№17</div>
-      <div class="d-date">16.11</div>
-      <div><span class="d-slot-badge">1 ур.</span></div>
-      <div class="d-badges"></div>
-    </th><th class="date-th pair-end" data-lkey="2026-11-16__2" title="Урок: 16.11.2026 (Пн) (2-й урок)
-Нажмите, чтобы задать тему и ДЗ">
-      <div class="d-lnum">№18</div>
-      <div class="d-date">16.11</div>
-      <div><span class="d-slot-badge">2 ур.</span></div>
+    </th><th class="date-th is-today" data-lkey="2026-11-19" title="Урок: 19.11.2026 (Чт)
+Тема: Понятие алгоритма. Исполнители алгоритмов. Система команд исполнителя">
+      <div class="d-lnum">№11</div>
+      <div class="d-date">19.11</div>
+      <div><span class="d-dow">Чт</span></div>
       <div class="d-badges"></div>
     </th>
     <th class="col-avg" title="Средний балл (2 четверть)">Ср.</th>
@@ -1555,34 +1549,30 @@
         <tbody id="journalBody"><tr>
       <td class="col-idx">1</td>
       <td class="col-name">
-        <div class="student-cell" data-stid="trud_5_s1" title="Алексейчук Михаил Александрович">
+        <div class="student-cell" data-stid="inf_5_s1" title="Алексейчук Михаил Александрович">
           <span class="student-name-txt">Алексейчук Михаил Александрович</span>
           <span class="student-icons">
             
             
           </span>
         </div>
-      </td><td class="grade-cell" data-stid="trud_5_s1" data-lkey="2026-11-09" title="Алексейчук Михаил Александрович • 09.11.2026 (Пн)
+      </td><td class="grade-cell" data-stid="inf_5_s1" data-lkey="2026-11-05" title="Алексейчук Михаил Александрович • 05.11.2026 (Чт)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell pair-end" data-stid="trud_5_s1" data-lkey="2026-11-09__2" title="Алексейчук Михаил Александрович • 09.11.2026 (Пн) (2-й урок)
-Нажмите для выставления оценки">
-        
-        
-      </td><td class="grade-cell" data-stid="trud_5_s1" data-lkey="2026-11-16" title="Алексейчук Михаил Александрович • 16.11.2026 (Пн)
+      </td><td class="grade-cell" data-stid="inf_5_s1" data-lkey="2026-11-12" title="Алексейчук Михаил Александрович • 12.11.2026 (Чт)
 Отметка: 5">
         <span class="g-chip g-5">5</span>
         
-      </td><td class="grade-cell pair-end" data-stid="trud_5_s1" data-lkey="2026-11-16__2" title="Алексейчук Михаил Александрович • 16.11.2026 (Пн) (2-й урок)
-Нажмите для выставления оценки">
-        
+      </td><td class="grade-cell" data-stid="inf_5_s1" data-lkey="2026-11-19" title="Алексейчук Михаил Александрович • 19.11.2026 (Чт)
+Отметка: 5">
+        <span class="g-chip g-5">5</span>
         
       </td>
       <td class="col-avg"><span class="avg-val avg-5">5.00</span></td>
       <td class="col-rec">5</td>
       <td class="col-fin">
-        <select class="final-select" data-finkey="q2_trud_5_s1">
+        <select class="final-select" data-finkey="q2_inf_5_s1">
           <option value="" selected="">—</option>
           <option value="5">5</option>
           <option value="4">4</option>
@@ -1596,34 +1586,30 @@
     </tr><tr>
       <td class="col-idx">2</td>
       <td class="col-name">
-        <div class="student-cell" data-stid="trud_5_s2" title="Гончаров Иван Артёмович">
+        <div class="student-cell" data-stid="inf_5_s2" title="Гончаров Иван Артёмович">
           <span class="student-name-txt">Гончаров Иван Артёмович</span>
           <span class="student-icons">
             
             
           </span>
         </div>
-      </td><td class="grade-cell" data-stid="trud_5_s2" data-lkey="2026-11-09" title="Гончаров Иван Артёмович • 09.11.2026 (Пн)
+      </td><td class="grade-cell" data-stid="inf_5_s2" data-lkey="2026-11-05" title="Гончаров Иван Артёмович • 05.11.2026 (Чт)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell pair-end" data-stid="trud_5_s2" data-lkey="2026-11-09__2" title="Гончаров Иван Артёмович • 09.11.2026 (Пн) (2-й урок)
-Нажмите для выставления оценки">
+      </td><td class="grade-cell" data-stid="inf_5_s2" data-lkey="2026-11-12" title="Гончаров Иван Артёмович • 12.11.2026 (Чт)
+Отметка: 5">
+        <span class="g-chip g-5">5</span>
         
-        
-      </td><td class="grade-cell" data-stid="trud_5_s2" data-lkey="2026-11-16" title="Гончаров Иван Артёмович • 16.11.2026 (Пн)
-Нажмите для выставления оценки">
-        
-        
-      </td><td class="grade-cell pair-end" data-stid="trud_5_s2" data-lkey="2026-11-16__2" title="Гончаров Иван Артёмович • 16.11.2026 (Пн) (2-й урок)
+      </td><td class="grade-cell" data-stid="inf_5_s2" data-lkey="2026-11-19" title="Гончаров Иван Артёмович • 19.11.2026 (Чт)
 Нажмите для выставления оценки">
         
         
       </td>
-      <td class="col-avg"><span class="avg-val ">—</span></td>
-      <td class="col-rec">—</td>
+      <td class="col-avg"><span class="avg-val avg-5">5.00</span></td>
+      <td class="col-rec">5</td>
       <td class="col-fin">
-        <select class="final-select" data-finkey="q2_trud_5_s2">
+        <select class="final-select" data-finkey="q2_inf_5_s2">
           <option value="" selected="">—</option>
           <option value="5">5</option>
           <option value="4">4</option>
@@ -1637,26 +1623,22 @@
     </tr><tr>
       <td class="col-idx">3</td>
       <td class="col-name">
-        <div class="student-cell" data-stid="trud_5_s3" title="Калинин Алексей Дмитриевич">
+        <div class="student-cell" data-stid="inf_5_s3" title="Калинин Алексей Дмитриевич">
           <span class="student-name-txt">Калинин Алексей Дмитриевич</span>
           <span class="student-icons">
             
             
           </span>
         </div>
-      </td><td class="grade-cell" data-stid="trud_5_s3" data-lkey="2026-11-09" title="Калинин Алексей Дмитриевич • 09.11.2026 (Пн)
+      </td><td class="grade-cell" data-stid="inf_5_s3" data-lkey="2026-11-05" title="Калинин Алексей Дмитриевич • 05.11.2026 (Чт)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell pair-end" data-stid="trud_5_s3" data-lkey="2026-11-09__2" title="Калинин Алексей Дмитриевич • 09.11.2026 (Пн) (2-й урок)
+      </td><td class="grade-cell" data-stid="inf_5_s3" data-lkey="2026-11-12" title="Калинин Алексей Дмитриевич • 12.11.2026 (Чт)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell" data-stid="trud_5_s3" data-lkey="2026-11-16" title="Калинин Алексей Дмитриевич • 16.11.2026 (Пн)
-Нажмите для выставления оценки">
-        
-        
-      </td><td class="grade-cell pair-end" data-stid="trud_5_s3" data-lkey="2026-11-16__2" title="Калинин Алексей Дмитриевич • 16.11.2026 (Пн) (2-й урок)
+      </td><td class="grade-cell" data-stid="inf_5_s3" data-lkey="2026-11-19" title="Калинин Алексей Дмитриевич • 19.11.2026 (Чт)
 Нажмите для выставления оценки">
         
         
@@ -1664,7 +1646,7 @@
       <td class="col-avg"><span class="avg-val ">—</span></td>
       <td class="col-rec">—</td>
       <td class="col-fin">
-        <select class="final-select" data-finkey="q2_trud_5_s3">
+        <select class="final-select" data-finkey="q2_inf_5_s3">
           <option value="" selected="">—</option>
           <option value="5">5</option>
           <option value="4">4</option>
@@ -1678,26 +1660,22 @@
     </tr><tr>
       <td class="col-idx">4</td>
       <td class="col-name">
-        <div class="student-cell" data-stid="trud_5_s4" title="Кучма Алина Викторовна">
+        <div class="student-cell" data-stid="inf_5_s4" title="Кучма Алина Викторовна">
           <span class="student-name-txt">Кучма Алина Викторовна</span>
           <span class="student-icons">
             
             
           </span>
         </div>
-      </td><td class="grade-cell" data-stid="trud_5_s4" data-lkey="2026-11-09" title="Кучма Алина Викторовна • 09.11.2026 (Пн)
+      </td><td class="grade-cell" data-stid="inf_5_s4" data-lkey="2026-11-05" title="Кучма Алина Викторовна • 05.11.2026 (Чт)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell pair-end" data-stid="trud_5_s4" data-lkey="2026-11-09__2" title="Кучма Алина Викторовна • 09.11.2026 (Пн) (2-й урок)
+      </td><td class="grade-cell" data-stid="inf_5_s4" data-lkey="2026-11-12" title="Кучма Алина Викторовна • 12.11.2026 (Чт)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell" data-stid="trud_5_s4" data-lkey="2026-11-16" title="Кучма Алина Викторовна • 16.11.2026 (Пн)
-Нажмите для выставления оценки">
-        
-        
-      </td><td class="grade-cell pair-end" data-stid="trud_5_s4" data-lkey="2026-11-16__2" title="Кучма Алина Викторовна • 16.11.2026 (Пн) (2-й урок)
+      </td><td class="grade-cell" data-stid="inf_5_s4" data-lkey="2026-11-19" title="Кучма Алина Викторовна • 19.11.2026 (Чт)
 Нажмите для выставления оценки">
         
         
@@ -1705,7 +1683,7 @@
       <td class="col-avg"><span class="avg-val ">—</span></td>
       <td class="col-rec">—</td>
       <td class="col-fin">
-        <select class="final-select" data-finkey="q2_trud_5_s4">
+        <select class="final-select" data-finkey="q2_inf_5_s4">
           <option value="" selected="">—</option>
           <option value="5">5</option>
           <option value="4">4</option>
@@ -1719,34 +1697,30 @@
     </tr><tr>
       <td class="col-idx">5</td>
       <td class="col-name">
-        <div class="student-cell" data-stid="trud_5_s5" title="Лакомый Илья Витальевич">
+        <div class="student-cell" data-stid="inf_5_s5" title="Лакомый Илья Витальевич">
           <span class="student-name-txt">Лакомый Илья Витальевич</span>
           <span class="student-icons">
             
             
           </span>
         </div>
-      </td><td class="grade-cell" data-stid="trud_5_s5" data-lkey="2026-11-09" title="Лакомый Илья Витальевич • 09.11.2026 (Пн)
+      </td><td class="grade-cell" data-stid="inf_5_s5" data-lkey="2026-11-05" title="Лакомый Илья Витальевич • 05.11.2026 (Чт)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell pair-end" data-stid="trud_5_s5" data-lkey="2026-11-09__2" title="Лакомый Илья Витальевич • 09.11.2026 (Пн) (2-й урок)
+      </td><td class="grade-cell" data-stid="inf_5_s5" data-lkey="2026-11-12" title="Лакомый Илья Витальевич • 12.11.2026 (Чт)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell" data-stid="trud_5_s5" data-lkey="2026-11-16" title="Лакомый Илья Витальевич • 16.11.2026 (Пн)
-Нажмите для выставления оценки">
-        
-        
-      </td><td class="grade-cell pair-end" data-stid="trud_5_s5" data-lkey="2026-11-16__2" title="Лакомый Илья Витальевич • 16.11.2026 (Пн) (2-й урок)
-Нажмите для выставления оценки">
-        
+      </td><td class="grade-cell" data-stid="inf_5_s5" data-lkey="2026-11-19" title="Лакомый Илья Витальевич • 19.11.2026 (Чт)
+Отметка: 4">
+        <span class="g-chip g-4">4</span>
         
       </td>
-      <td class="col-avg"><span class="avg-val ">—</span></td>
-      <td class="col-rec">—</td>
+      <td class="col-avg"><span class="avg-val avg-4">4.00</span></td>
+      <td class="col-rec">4</td>
       <td class="col-fin">
-        <select class="final-select" data-finkey="q2_trud_5_s5">
+        <select class="final-select" data-finkey="q2_inf_5_s5">
           <option value="" selected="">—</option>
           <option value="5">5</option>
           <option value="4">4</option>
@@ -1760,26 +1734,22 @@
     </tr><tr>
       <td class="col-idx">6</td>
       <td class="col-name">
-        <div class="student-cell" data-stid="trud_5_s6" title="Малеев Михаил Денисович">
+        <div class="student-cell" data-stid="inf_5_s6" title="Малеев Михаил Денисович">
           <span class="student-name-txt">Малеев Михаил Денисович</span>
           <span class="student-icons">
             
             
           </span>
         </div>
-      </td><td class="grade-cell" data-stid="trud_5_s6" data-lkey="2026-11-09" title="Малеев Михаил Денисович • 09.11.2026 (Пн)
+      </td><td class="grade-cell" data-stid="inf_5_s6" data-lkey="2026-11-05" title="Малеев Михаил Денисович • 05.11.2026 (Чт)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell pair-end" data-stid="trud_5_s6" data-lkey="2026-11-09__2" title="Малеев Михаил Денисович • 09.11.2026 (Пн) (2-й урок)
+      </td><td class="grade-cell" data-stid="inf_5_s6" data-lkey="2026-11-12" title="Малеев Михаил Денисович • 12.11.2026 (Чт)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell" data-stid="trud_5_s6" data-lkey="2026-11-16" title="Малеев Михаил Денисович • 16.11.2026 (Пн)
-Нажмите для выставления оценки">
-        
-        
-      </td><td class="grade-cell pair-end" data-stid="trud_5_s6" data-lkey="2026-11-16__2" title="Малеев Михаил Денисович • 16.11.2026 (Пн) (2-й урок)
+      </td><td class="grade-cell" data-stid="inf_5_s6" data-lkey="2026-11-19" title="Малеев Михаил Денисович • 19.11.2026 (Чт)
 Нажмите для выставления оценки">
         
         
@@ -1787,7 +1757,7 @@
       <td class="col-avg"><span class="avg-val ">—</span></td>
       <td class="col-rec">—</td>
       <td class="col-fin">
-        <select class="final-select" data-finkey="q2_trud_5_s6">
+        <select class="final-select" data-finkey="q2_inf_5_s6">
           <option value="" selected="">—</option>
           <option value="5">5</option>
           <option value="4">4</option>
@@ -1801,34 +1771,30 @@
     </tr><tr>
       <td class="col-idx">7</td>
       <td class="col-name">
-        <div class="student-cell" data-stid="trud_5_s7" title="Насатенко Сергей Викторович">
+        <div class="student-cell" data-stid="inf_5_s7" title="Насатенко Сергей Викторович">
           <span class="student-name-txt">Насатенко Сергей Викторович</span>
           <span class="student-icons">
             
             
           </span>
         </div>
-      </td><td class="grade-cell" data-stid="trud_5_s7" data-lkey="2026-11-09" title="Насатенко Сергей Викторович • 09.11.2026 (Пн)
-Отметка: 5">
-        <span class="g-chip g-5">5</span>
-        
-      </td><td class="grade-cell pair-end" data-stid="trud_5_s7" data-lkey="2026-11-09__2" title="Насатенко Сергей Викторович • 09.11.2026 (Пн) (2-й урок)
+      </td><td class="grade-cell" data-stid="inf_5_s7" data-lkey="2026-11-05" title="Насатенко Сергей Викторович • 05.11.2026 (Чт)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell" data-stid="trud_5_s7" data-lkey="2026-11-16" title="Насатенко Сергей Викторович • 16.11.2026 (Пн)
+      </td><td class="grade-cell" data-stid="inf_5_s7" data-lkey="2026-11-12" title="Насатенко Сергей Викторович • 12.11.2026 (Чт)
 Отметка: 5">
         <span class="g-chip g-5">5</span>
         
-      </td><td class="grade-cell pair-end" data-stid="trud_5_s7" data-lkey="2026-11-16__2" title="Насатенко Сергей Викторович • 16.11.2026 (Пн) (2-й урок)
-Нажмите для выставления оценки">
-        
+      </td><td class="grade-cell" data-stid="inf_5_s7" data-lkey="2026-11-19" title="Насатенко Сергей Викторович • 19.11.2026 (Чт)
+Отметка: 5">
+        <span class="g-chip g-5">5</span>
         
       </td>
       <td class="col-avg"><span class="avg-val avg-5">5.00</span></td>
       <td class="col-rec">5</td>
       <td class="col-fin">
-        <select class="final-select" data-finkey="q2_trud_5_s7">
+        <select class="final-select" data-finkey="q2_inf_5_s7">
           <option value="" selected="">—</option>
           <option value="5">5</option>
           <option value="4">4</option>
@@ -1842,26 +1808,22 @@
     </tr><tr>
       <td class="col-idx">8</td>
       <td class="col-name">
-        <div class="student-cell" data-stid="trud_5_s8" title="Пахомов Владислав Денисович">
+        <div class="student-cell" data-stid="inf_5_s8" title="Пахомов Владислав Денисович">
           <span class="student-name-txt">Пахомов Владислав Денисович</span>
           <span class="student-icons">
             
             
           </span>
         </div>
-      </td><td class="grade-cell" data-stid="trud_5_s8" data-lkey="2026-11-09" title="Пахомов Владислав Денисович • 09.11.2026 (Пн)
-Отметка: 5">
-        <span class="g-chip g-5">5</span>
-        
-      </td><td class="grade-cell pair-end" data-stid="trud_5_s8" data-lkey="2026-11-09__2" title="Пахомов Владислав Денисович • 09.11.2026 (Пн) (2-й урок)
+      </td><td class="grade-cell" data-stid="inf_5_s8" data-lkey="2026-11-05" title="Пахомов Владислав Денисович • 05.11.2026 (Чт)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell" data-stid="trud_5_s8" data-lkey="2026-11-16" title="Пахомов Владислав Денисович • 16.11.2026 (Пн)
+      </td><td class="grade-cell" data-stid="inf_5_s8" data-lkey="2026-11-12" title="Пахомов Владислав Денисович • 12.11.2026 (Чт)
 Отметка: 5">
         <span class="g-chip g-5">5</span>
         
-      </td><td class="grade-cell pair-end" data-stid="trud_5_s8" data-lkey="2026-11-16__2" title="Пахомов Владислав Денисович • 16.11.2026 (Пн) (2-й урок)
+      </td><td class="grade-cell" data-stid="inf_5_s8" data-lkey="2026-11-19" title="Пахомов Владислав Денисович • 19.11.2026 (Чт)
 Нажмите для выставления оценки">
         
         
@@ -1869,7 +1831,7 @@
       <td class="col-avg"><span class="avg-val avg-5">5.00</span></td>
       <td class="col-rec">5</td>
       <td class="col-fin">
-        <select class="final-select" data-finkey="q2_trud_5_s8">
+        <select class="final-select" data-finkey="q2_inf_5_s8">
           <option value="" selected="">—</option>
           <option value="5">5</option>
           <option value="4">4</option>
@@ -1883,26 +1845,22 @@
     </tr><tr>
       <td class="col-idx">9</td>
       <td class="col-name">
-        <div class="student-cell" data-stid="trud_5_s9" title="Хань Святослав Романович">
+        <div class="student-cell" data-stid="inf_5_s9" title="Хань Святослав Романович">
           <span class="student-name-txt">Хань Святослав Романович</span>
           <span class="student-icons">
             
             
           </span>
         </div>
-      </td><td class="grade-cell" data-stid="trud_5_s9" data-lkey="2026-11-09" title="Хань Святослав Романович • 09.11.2026 (Пн)
+      </td><td class="grade-cell" data-stid="inf_5_s9" data-lkey="2026-11-05" title="Хань Святослав Романович • 05.11.2026 (Чт)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell pair-end" data-stid="trud_5_s9" data-lkey="2026-11-09__2" title="Хань Святослав Романович • 09.11.2026 (Пн) (2-й урок)
+      </td><td class="grade-cell" data-stid="inf_5_s9" data-lkey="2026-11-12" title="Хань Святослав Романович • 12.11.2026 (Чт)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell" data-stid="trud_5_s9" data-lkey="2026-11-16" title="Хань Святослав Романович • 16.11.2026 (Пн)
-Нажмите для выставления оценки">
-        
-        
-      </td><td class="grade-cell pair-end" data-stid="trud_5_s9" data-lkey="2026-11-16__2" title="Хань Святослав Романович • 16.11.2026 (Пн) (2-й урок)
+      </td><td class="grade-cell" data-stid="inf_5_s9" data-lkey="2026-11-19" title="Хань Святослав Романович • 19.11.2026 (Чт)
 Нажмите для выставления оценки">
         
         
@@ -1910,7 +1868,7 @@
       <td class="col-avg"><span class="avg-val ">—</span></td>
       <td class="col-rec">—</td>
       <td class="col-fin">
-        <select class="final-select" data-finkey="q2_trud_5_s9">
+        <select class="final-select" data-finkey="q2_inf_5_s9">
           <option value="" selected="">—</option>
           <option value="5">5</option>
           <option value="4">4</option>
@@ -1924,34 +1882,30 @@
     </tr><tr>
       <td class="col-idx">10</td>
       <td class="col-name">
-        <div class="student-cell" data-stid="trud_5_s10" title="Финагин Артем Константинович">
+        <div class="student-cell" data-stid="inf_5_s10" title="Финагин Артем Константинович">
           <span class="student-name-txt">Финагин Артем Константинович</span>
           <span class="student-icons">
             
             
           </span>
         </div>
-      </td><td class="grade-cell" data-stid="trud_5_s10" data-lkey="2026-11-09" title="Финагин Артем Константинович • 09.11.2026 (Пн)
+      </td><td class="grade-cell" data-stid="inf_5_s10" data-lkey="2026-11-05" title="Финагин Артем Константинович • 05.11.2026 (Чт)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell pair-end" data-stid="trud_5_s10" data-lkey="2026-11-09__2" title="Финагин Артем Константинович • 09.11.2026 (Пн) (2-й урок)
+      </td><td class="grade-cell" data-stid="inf_5_s10" data-lkey="2026-11-12" title="Финагин Артем Константинович • 12.11.2026 (Чт)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell" data-stid="trud_5_s10" data-lkey="2026-11-16" title="Финагин Артем Константинович • 16.11.2026 (Пн)
-Нажмите для выставления оценки">
-        
-        
-      </td><td class="grade-cell pair-end" data-stid="trud_5_s10" data-lkey="2026-11-16__2" title="Финагин Артем Константинович • 16.11.2026 (Пн) (2-й урок)
-Нажмите для выставления оценки">
-        
+      </td><td class="grade-cell" data-stid="inf_5_s10" data-lkey="2026-11-19" title="Финагин Артем Константинович • 19.11.2026 (Чт)
+Отметка: 4">
+        <span class="g-chip g-4">4</span>
         
       </td>
-      <td class="col-avg"><span class="avg-val ">—</span></td>
-      <td class="col-rec">—</td>
+      <td class="col-avg"><span class="avg-val avg-4">4.00</span></td>
+      <td class="col-rec">4</td>
       <td class="col-fin">
-        <select class="final-select" data-finkey="q2_trud_5_s10">
+        <select class="final-select" data-finkey="q2_inf_5_s10">
           <option value="" selected="">—</option>
           <option value="5">5</option>
           <option value="4">4</option>
@@ -1965,34 +1919,30 @@
     </tr><tr>
       <td class="col-idx">11</td>
       <td class="col-name">
-        <div class="student-cell" data-stid="trud_5_s11" title="Чолария Кира Романовна">
+        <div class="student-cell" data-stid="inf_5_s11" title="Чолария Кира Романовна">
           <span class="student-name-txt">Чолария Кира Романовна</span>
           <span class="student-icons">
             
             
           </span>
         </div>
-      </td><td class="grade-cell" data-stid="trud_5_s11" data-lkey="2026-11-09" title="Чолария Кира Романовна • 09.11.2026 (Пн)
+      </td><td class="grade-cell" data-stid="inf_5_s11" data-lkey="2026-11-05" title="Чолария Кира Романовна • 05.11.2026 (Чт)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell pair-end" data-stid="trud_5_s11" data-lkey="2026-11-09__2" title="Чолария Кира Романовна • 09.11.2026 (Пн) (2-й урок)
-Нажмите для выставления оценки">
-        
-        
-      </td><td class="grade-cell selected-cell" data-stid="trud_5_s11" data-lkey="2026-11-16" title="Чолария Кира Романовна • 16.11.2026 (Пн)
+      </td><td class="grade-cell" data-stid="inf_5_s11" data-lkey="2026-11-12" title="Чолария Кира Романовна • 12.11.2026 (Чт)
 Отметка: 5">
         <span class="g-chip g-5">5</span>
         
-      </td><td class="grade-cell pair-end" data-stid="trud_5_s11" data-lkey="2026-11-16__2" title="Чолария Кира Романовна • 16.11.2026 (Пн) (2-й урок)
-Нажмите для выставления оценки">
-        
+      </td><td class="grade-cell" data-stid="inf_5_s11" data-lkey="2026-11-19" title="Чолария Кира Романовна • 19.11.2026 (Чт)
+Отметка: 5">
+        <span class="g-chip g-5">5</span>
         
       </td>
       <td class="col-avg"><span class="avg-val avg-5">5.00</span></td>
       <td class="col-rec">5</td>
       <td class="col-fin">
-        <select class="final-select" data-finkey="q2_trud_5_s11">
+        <select class="final-select" data-finkey="q2_inf_5_s11">
           <option value="" selected="">—</option>
           <option value="5">5</option>
           <option value="4">4</option>
