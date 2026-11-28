@@ -1307,7 +1307,7 @@
       <span class="dot-live"></span>
       <span id="saveStatusText">Локально • 11:03:53</span>
     </div>
-    <button type="button" class="gh-pill syncing" id="btnGithubConfig" title="Изменения будут отправлены в GitHub через 2.5 сек">
+    <button type="button" class="gh-pill syncing" id="btnGithubConfig" title="Подключено: jacintakanyuve/journal/index.html (ветка main)">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"></path></svg>
       <span id="ghStatusText">Сохранение в GitHub...</span>
     </button>
@@ -1345,7 +1345,7 @@
         <button class="subj-btn" data-subj="Труд (Технология)">Труд</button>
       </div>
     </div>
-    <div class="class-list" id="classList"><div class="class-item">
+    <div class="class-list" id="classList"><div class="class-item active">
       <div style="min-width:0;">
         <div class="class-item-title">11 класс</div>
         <div class="class-item-meta">18 уч. • Пт, Пн </div>
@@ -1381,7 +1381,7 @@
         <div class="class-item-meta">19 уч. • Вт </div>
       </div>
       <span class="class-tag inf">Инф</span>
-    </div><div class="class-item active">
+    </div><div class="class-item">
       <div style="min-width:0;">
         <div class="class-item-title">5 класс</div>
         <div class="class-item-meta">11 уч. • Чт </div>
@@ -1431,17 +1431,17 @@
     <div class="toolbar" id="classToolbar">
       <div class="toolbar-left">
         <div class="class-header-badge">
-          <span class="class-h1" id="activeClassTitle">5 класс</span>
+          <span class="class-h1" id="activeClassTitle">11 класс</span>
           <span class="class-tag inf" id="activeClassSubj">Информатика</span>
         </div>
 
         <div class="day-pills" title="Дни недели уроков по календарю 2026–2027 (нажмите, чтобы изменить расписание класса)">
           <span style="font-size:11px; color:var(--text-muted); padding:0 5px; font-weight:600;">Дни:</span>
-          <button class="day-pill" data-day="mon">Пн</button>
+          <button class="day-pill active" data-day="mon">Пн</button>
           <button class="day-pill" data-day="tue">Вт</button>
           <button class="day-pill" data-day="wed">Ср</button>
-          <button class="day-pill active" data-day="thu">Чт</button>
-          <button class="day-pill" data-day="fri">Пт</button>
+          <button class="day-pill" data-day="thu">Чт</button>
+          <button class="day-pill active" data-day="fri">Пт</button>
         </div>
 
         <div class="day-pills" title="Количество уроков в день (для 5 класса по Труду — 2 урока в понедельник)">
@@ -1471,14 +1471,14 @@
     <div class="quarter-bar" id="quarterBar">
       <div style="display:flex; align-items:center; gap:6px; flex-wrap:wrap;">
         <div class="quarter-pills" id="quarterPills">
-          <button class="q-pill" data-period="q1" title="1 четверть: 01.09.2026 – 25.10.2026"><span class="q-current-dot" style="display:none;"></span>1 четв. <span class="q-pill-cnt" data-qcnt="q1">8</span></button>
-          <button class="q-pill active" data-period="q2" title="2 четверть: 05.11.2026 – 30.12.2026 (Текущая четверть)"><span class="q-current-dot" style="display: inline-block;"></span>2 четв. <span class="q-pill-cnt" data-qcnt="q2">8</span></button>
-          <button class="q-pill" data-period="q3" title="3 четверть: 11.01.2027 – 28.03.2027"><span class="q-current-dot" style="display:none;"></span>3 четв. <span class="q-pill-cnt" data-qcnt="q3">11</span></button>
-          <button class="q-pill" data-period="q4" title="4 четверть: 05.04.2027 – 31.05.2027"><span class="q-current-dot" style="display:none;"></span>4 четв. <span class="q-pill-cnt" data-qcnt="q4">7</span></button>
+          <button class="q-pill" data-period="q1" title="1 четверть: 01.09.2026 – 25.10.2026"><span class="q-current-dot" style="display:none;"></span>1 четв. <span class="q-pill-cnt" data-qcnt="q1">15</span></button>
+          <button class="q-pill active" data-period="q2" title="2 четверть: 05.11.2026 – 30.12.2026 (Текущая четверть)"><span class="q-current-dot" style="display: inline-block;"></span>2 четв. <span class="q-pill-cnt" data-qcnt="q2">16</span></button>
+          <button class="q-pill" data-period="q3" title="3 четверть: 11.01.2027 – 28.03.2027"><span class="q-current-dot" style="display:none;"></span>3 четв. <span class="q-pill-cnt" data-qcnt="q3">21</span></button>
+          <button class="q-pill" data-period="q4" title="4 четверть: 05.04.2027 – 31.05.2027"><span class="q-current-dot" style="display:none;"></span>4 четв. <span class="q-pill-cnt" data-qcnt="q4">13</span></button>
           <span class="q-sep"></span>
-          <button class="q-pill" data-period="h1" title="1 полугодие: 01.09.2026 – 30.12.2026">1 полуг. <span class="q-pill-cnt" data-qcnt="h1">16</span></button>
-          <button class="q-pill" data-period="h2" title="2 полугодие: 11.01.2027 – 31.05.2027">2 полуг. <span class="q-pill-cnt" data-qcnt="h2">18</span></button>
-          <button class="q-pill" data-period="all" title="Весь год: 01.09.2026 – 31.05.2027">Весь год <span class="q-pill-cnt" data-qcnt="all">34</span></button>
+          <button class="q-pill" data-period="h1" title="1 полугодие: 01.09.2026 – 30.12.2026">1 полуг. <span class="q-pill-cnt" data-qcnt="h1">31</span></button>
+          <button class="q-pill" data-period="h2" title="2 полугодие: 11.01.2027 – 31.05.2027">2 полуг. <span class="q-pill-cnt" data-qcnt="h2">34</span></button>
+          <button class="q-pill" data-period="all" title="Весь год: 01.09.2026 – 31.05.2027">Весь год <span class="q-pill-cnt" data-qcnt="all">65</span></button>
         </div>
         <button class="btn btn-sm" id="btnJumpCurrentQuarter" style="display:none;" title="Вернуться к текущей четверти">
           Текущая четверть
@@ -1490,7 +1490,7 @@
 
       <div class="quarter-meta" id="quarterMetaInfo">
     <span class="period-info-badge">2 четверть: 05.11 – 30.12</span>
-    <span>Показано уроков: <b>4</b> из 34</span>
+    <span>Показано уроков: <b>16</b> из 65</span>
   </div>
     </div>
 
@@ -1498,7 +1498,7 @@
     <div class="lesson-strip" id="lessonStrip">
       <div class="lesson-strip-info" id="lessonStripInfo">
     <span class="hw-pill">
-      <strong>Урок 26.11.2026 (Чт):</strong>
+      <strong>Урок 30.11.2026 (Пн):</strong>
       <span><i style="color:var(--text-muted)">Тема не указана</i></span>
     </span>
     <span class="hw-pill">
@@ -1522,29 +1522,101 @@
       <table class="journal" id="journalTable">
         <thead id="journalHead"><tr>
     <th class="col-idx">№</th>
-    <th class="col-name">ФИО ученика</th><th class="date-th" data-lkey="2026-11-05" title="Урок: 05.11.2026 (Чт)
+    <th class="col-name">ФИО ученика</th><th class="date-th" data-lkey="2026-11-06" title="Урок: 06.11.2026 (Пт)
 Нажмите, чтобы задать тему и ДЗ">
-      <div class="d-lnum">№9</div>
-      <div class="d-date">05.11</div>
-      <div><span class="d-dow">Чт</span></div>
+      <div class="d-lnum">№16</div>
+      <div class="d-date">06.11</div>
+      <div><span class="d-dow">Пт</span></div>
       <div class="d-badges"></div>
-    </th><th class="date-th" data-lkey="2026-11-12" title="Урок: 12.11.2026 (Чт)
+    </th><th class="date-th" data-lkey="2026-11-09" title="Урок: 09.11.2026 (Пн)
 Нажмите, чтобы задать тему и ДЗ">
-      <div class="d-lnum">№10</div>
-      <div class="d-date">12.11</div>
-      <div><span class="d-dow">Чт</span></div>
+      <div class="d-lnum">№17</div>
+      <div class="d-date">09.11</div>
+      <div><span class="d-dow">Пн</span></div>
       <div class="d-badges"></div>
-    </th><th class="date-th" data-lkey="2026-11-19" title="Урок: 19.11.2026 (Чт)
+    </th><th class="date-th" data-lkey="2026-11-13" title="Урок: 13.11.2026 (Пт)
 Нажмите, чтобы задать тему и ДЗ">
-      <div class="d-lnum">№11</div>
-      <div class="d-date">19.11</div>
-      <div><span class="d-dow">Чт</span></div>
+      <div class="d-lnum">№18</div>
+      <div class="d-date">13.11</div>
+      <div><span class="d-dow">Пт</span></div>
       <div class="d-badges"></div>
-    </th><th class="date-th is-today" data-lkey="2026-11-26" title="Урок: 26.11.2026 (Чт)
+    </th><th class="date-th" data-lkey="2026-11-16" title="Урок: 16.11.2026 (Пн)
 Нажмите, чтобы задать тему и ДЗ">
-      <div class="d-lnum">№12</div>
-      <div class="d-date">26.11</div>
-      <div><span class="d-dow">Чт</span></div>
+      <div class="d-lnum">№19</div>
+      <div class="d-date">16.11</div>
+      <div><span class="d-dow">Пн</span></div>
+      <div class="d-badges"></div>
+    </th><th class="date-th" data-lkey="2026-11-20" title="Урок: 20.11.2026 (Пт)
+Тема: Решение алгоритмических задач, связанных с анализом графов (поиск кратчайшего пути, количество путей)">
+      <div class="d-lnum">№20</div>
+      <div class="d-date">20.11</div>
+      <div><span class="d-dow">Пт</span></div>
+      <div class="d-badges"></div>
+    </th><th class="date-th" data-lkey="2026-11-23" title="Урок: 23.11.2026 (Пн)
+Нажмите, чтобы задать тему и ДЗ">
+      <div class="d-lnum">№21</div>
+      <div class="d-date">23.11</div>
+      <div><span class="d-dow">Пн</span></div>
+      <div class="d-badges"></div>
+    </th><th class="date-th" data-lkey="2026-11-27" title="Урок: 27.11.2026 (Пт)
+Нажмите, чтобы задать тему и ДЗ">
+      <div class="d-lnum">№22</div>
+      <div class="d-date">27.11</div>
+      <div><span class="d-dow">Пт</span></div>
+      <div class="d-badges"></div>
+    </th><th class="date-th is-today" data-lkey="2026-11-30" title="Урок: 30.11.2026 (Пн)
+Нажмите, чтобы задать тему и ДЗ">
+      <div class="d-lnum">№23</div>
+      <div class="d-date">30.11</div>
+      <div><span class="d-dow">Пн</span></div>
+      <div class="d-badges"></div>
+    </th><th class="date-th" data-lkey="2026-12-04" title="Урок: 04.12.2026 (Пт)
+Нажмите, чтобы задать тему и ДЗ">
+      <div class="d-lnum">№24</div>
+      <div class="d-date">04.12</div>
+      <div><span class="d-dow">Пт</span></div>
+      <div class="d-badges"></div>
+    </th><th class="date-th" data-lkey="2026-12-07" title="Урок: 07.12.2026 (Пн)
+Нажмите, чтобы задать тему и ДЗ">
+      <div class="d-lnum">№25</div>
+      <div class="d-date">07.12</div>
+      <div><span class="d-dow">Пн</span></div>
+      <div class="d-badges"></div>
+    </th><th class="date-th" data-lkey="2026-12-11" title="Урок: 11.12.2026 (Пт)
+Нажмите, чтобы задать тему и ДЗ">
+      <div class="d-lnum">№26</div>
+      <div class="d-date">11.12</div>
+      <div><span class="d-dow">Пт</span></div>
+      <div class="d-badges"></div>
+    </th><th class="date-th" data-lkey="2026-12-14" title="Урок: 14.12.2026 (Пн)
+Нажмите, чтобы задать тему и ДЗ">
+      <div class="d-lnum">№27</div>
+      <div class="d-date">14.12</div>
+      <div><span class="d-dow">Пн</span></div>
+      <div class="d-badges"></div>
+    </th><th class="date-th" data-lkey="2026-12-18" title="Урок: 18.12.2026 (Пт)
+Нажмите, чтобы задать тему и ДЗ">
+      <div class="d-lnum">№28</div>
+      <div class="d-date">18.12</div>
+      <div><span class="d-dow">Пт</span></div>
+      <div class="d-badges"></div>
+    </th><th class="date-th" data-lkey="2026-12-21" title="Урок: 21.12.2026 (Пн)
+Нажмите, чтобы задать тему и ДЗ">
+      <div class="d-lnum">№29</div>
+      <div class="d-date">21.12</div>
+      <div><span class="d-dow">Пн</span></div>
+      <div class="d-badges"></div>
+    </th><th class="date-th" data-lkey="2026-12-25" title="Урок: 25.12.2026 (Пт)
+Нажмите, чтобы задать тему и ДЗ">
+      <div class="d-lnum">№30</div>
+      <div class="d-date">25.12</div>
+      <div><span class="d-dow">Пт</span></div>
+      <div class="d-badges"></div>
+    </th><th class="date-th" data-lkey="2026-12-28" title="Урок: 28.12.2026 (Пн)
+Нажмите, чтобы задать тему и ДЗ">
+      <div class="d-lnum">№31</div>
+      <div class="d-date">28.12</div>
+      <div><span class="d-dow">Пн</span></div>
       <div class="d-badges"></div>
     </th>
     <th class="col-avg" title="Средний балл (2 четверть)">Ср.</th>
@@ -1555,34 +1627,82 @@
         <tbody id="journalBody"><tr>
       <td class="col-idx">1</td>
       <td class="col-name">
-        <div class="student-cell" data-stid="inf_5_s1" title="Алексейчук Михаил Александрович">
-          <span class="student-name-txt">Алексейчук Михаил Александрович</span>
+        <div class="student-cell" data-stid="inf_11_s1" title="Бондарь Александра Сергеевна">
+          <span class="student-name-txt">Бондарь Александра Сергеевна</span>
           <span class="student-icons">
             
             
           </span>
         </div>
-      </td><td class="grade-cell" data-stid="inf_5_s1" data-lkey="2026-11-05" title="Алексейчук Михаил Александрович • 05.11.2026 (Чт)
+      </td><td class="grade-cell" data-stid="inf_11_s1" data-lkey="2026-11-06" title="Бондарь Александра Сергеевна • 06.11.2026 (Пт)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell" data-stid="inf_5_s1" data-lkey="2026-11-12" title="Алексейчук Михаил Александрович • 12.11.2026 (Чт)
-Отметка: 5">
-        <span class="g-chip g-5">5</span>
-        
-      </td><td class="grade-cell" data-stid="inf_5_s1" data-lkey="2026-11-19" title="Алексейчук Михаил Александрович • 19.11.2026 (Чт)
+      </td><td class="grade-cell" data-stid="inf_11_s1" data-lkey="2026-11-09" title="Бондарь Александра Сергеевна • 09.11.2026 (Пн)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell" data-stid="inf_5_s1" data-lkey="2026-11-26" title="Алексейчук Михаил Александрович • 26.11.2026 (Чт)
+      </td><td class="grade-cell" data-stid="inf_11_s1" data-lkey="2026-11-13" title="Бондарь Александра Сергеевна • 13.11.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s1" data-lkey="2026-11-16" title="Бондарь Александра Сергеевна • 16.11.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s1" data-lkey="2026-11-20" title="Бондарь Александра Сергеевна • 20.11.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s1" data-lkey="2026-11-23" title="Бондарь Александра Сергеевна • 23.11.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s1" data-lkey="2026-11-27" title="Бондарь Александра Сергеевна • 27.11.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s1" data-lkey="2026-11-30" title="Бондарь Александра Сергеевна • 30.11.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s1" data-lkey="2026-12-04" title="Бондарь Александра Сергеевна • 04.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s1" data-lkey="2026-12-07" title="Бондарь Александра Сергеевна • 07.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s1" data-lkey="2026-12-11" title="Бондарь Александра Сергеевна • 11.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s1" data-lkey="2026-12-14" title="Бондарь Александра Сергеевна • 14.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s1" data-lkey="2026-12-18" title="Бондарь Александра Сергеевна • 18.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s1" data-lkey="2026-12-21" title="Бондарь Александра Сергеевна • 21.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s1" data-lkey="2026-12-25" title="Бондарь Александра Сергеевна • 25.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s1" data-lkey="2026-12-28" title="Бондарь Александра Сергеевна • 28.12.2026 (Пн)
 Нажмите для выставления оценки">
         
         
       </td>
-      <td class="col-avg"><span class="avg-val avg-5">5.00</span></td>
-      <td class="col-rec">5</td>
+      <td class="col-avg"><span class="avg-val ">—</span></td>
+      <td class="col-rec">—</td>
       <td class="col-fin">
-        <select class="final-select" data-finkey="q2_inf_5_s1">
+        <select class="final-select" data-finkey="q2_inf_11_s1">
           <option value="" selected="">—</option>
           <option value="5">5</option>
           <option value="4">4</option>
@@ -1596,34 +1716,82 @@
     </tr><tr>
       <td class="col-idx">2</td>
       <td class="col-name">
-        <div class="student-cell" data-stid="inf_5_s2" title="Гончаров Иван Артёмович">
-          <span class="student-name-txt">Гончаров Иван Артёмович</span>
+        <div class="student-cell" data-stid="inf_11_s2" title="Галицын Марк Романович">
+          <span class="student-name-txt">Галицын Марк Романович</span>
           <span class="student-icons">
             
             
           </span>
         </div>
-      </td><td class="grade-cell" data-stid="inf_5_s2" data-lkey="2026-11-05" title="Гончаров Иван Артёмович • 05.11.2026 (Чт)
+      </td><td class="grade-cell" data-stid="inf_11_s2" data-lkey="2026-11-06" title="Галицын Марк Романович • 06.11.2026 (Пт)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell" data-stid="inf_5_s2" data-lkey="2026-11-12" title="Гончаров Иван Артёмович • 12.11.2026 (Чт)
+      </td><td class="grade-cell" data-stid="inf_11_s2" data-lkey="2026-11-09" title="Галицын Марк Романович • 09.11.2026 (Пн)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell" data-stid="inf_5_s2" data-lkey="2026-11-19" title="Гончаров Иван Артёмович • 19.11.2026 (Чт)
+      </td><td class="grade-cell" data-stid="inf_11_s2" data-lkey="2026-11-13" title="Галицын Марк Романович • 13.11.2026 (Пт)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell" data-stid="inf_5_s2" data-lkey="2026-11-26" title="Гончаров Иван Артёмович • 26.11.2026 (Чт)
+      </td><td class="grade-cell" data-stid="inf_11_s2" data-lkey="2026-11-16" title="Галицын Марк Романович • 16.11.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s2" data-lkey="2026-11-20" title="Галицын Марк Романович • 20.11.2026 (Пт)
+Отметка: 5">
+        <span class="g-chip g-5">5</span>
+        
+      </td><td class="grade-cell" data-stid="inf_11_s2" data-lkey="2026-11-23" title="Галицын Марк Романович • 23.11.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s2" data-lkey="2026-11-27" title="Галицын Марк Романович • 27.11.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s2" data-lkey="2026-11-30" title="Галицын Марк Романович • 30.11.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s2" data-lkey="2026-12-04" title="Галицын Марк Романович • 04.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s2" data-lkey="2026-12-07" title="Галицын Марк Романович • 07.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s2" data-lkey="2026-12-11" title="Галицын Марк Романович • 11.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s2" data-lkey="2026-12-14" title="Галицын Марк Романович • 14.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s2" data-lkey="2026-12-18" title="Галицын Марк Романович • 18.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s2" data-lkey="2026-12-21" title="Галицын Марк Романович • 21.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s2" data-lkey="2026-12-25" title="Галицын Марк Романович • 25.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s2" data-lkey="2026-12-28" title="Галицын Марк Романович • 28.12.2026 (Пн)
 Нажмите для выставления оценки">
         
         
       </td>
-      <td class="col-avg"><span class="avg-val ">—</span></td>
-      <td class="col-rec">—</td>
+      <td class="col-avg"><span class="avg-val avg-5">5.00</span></td>
+      <td class="col-rec">5</td>
       <td class="col-fin">
-        <select class="final-select" data-finkey="q2_inf_5_s2">
+        <select class="final-select" data-finkey="q2_inf_11_s2">
           <option value="" selected="">—</option>
           <option value="5">5</option>
           <option value="4">4</option>
@@ -1637,34 +1805,82 @@
     </tr><tr>
       <td class="col-idx">3</td>
       <td class="col-name">
-        <div class="student-cell" data-stid="inf_5_s3" title="Калинин Алексей Дмитриевич">
-          <span class="student-name-txt">Калинин Алексей Дмитриевич</span>
+        <div class="student-cell" data-stid="inf_11_s3" title="Гасанов Владислав Камандарович">
+          <span class="student-name-txt">Гасанов Владислав Камандарович</span>
           <span class="student-icons">
             
             
           </span>
         </div>
-      </td><td class="grade-cell" data-stid="inf_5_s3" data-lkey="2026-11-05" title="Калинин Алексей Дмитриевич • 05.11.2026 (Чт)
+      </td><td class="grade-cell" data-stid="inf_11_s3" data-lkey="2026-11-06" title="Гасанов Владислав Камандарович • 06.11.2026 (Пт)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell" data-stid="inf_5_s3" data-lkey="2026-11-12" title="Калинин Алексей Дмитриевич • 12.11.2026 (Чт)
+      </td><td class="grade-cell" data-stid="inf_11_s3" data-lkey="2026-11-09" title="Гасанов Владислав Камандарович • 09.11.2026 (Пн)
+Отметка: 5">
+        <span class="g-chip g-5">5</span>
+        
+      </td><td class="grade-cell" data-stid="inf_11_s3" data-lkey="2026-11-13" title="Гасанов Владислав Камандарович • 13.11.2026 (Пт)
+Отметка: 5">
+        <span class="g-chip g-5">5</span>
+        
+      </td><td class="grade-cell" data-stid="inf_11_s3" data-lkey="2026-11-16" title="Гасанов Владислав Камандарович • 16.11.2026 (Пн)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell" data-stid="inf_5_s3" data-lkey="2026-11-19" title="Калинин Алексей Дмитриевич • 19.11.2026 (Чт)
+      </td><td class="grade-cell" data-stid="inf_11_s3" data-lkey="2026-11-20" title="Гасанов Владислав Камандарович • 20.11.2026 (Пт)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell" data-stid="inf_5_s3" data-lkey="2026-11-26" title="Калинин Алексей Дмитриевич • 26.11.2026 (Чт)
+      </td><td class="grade-cell" data-stid="inf_11_s3" data-lkey="2026-11-23" title="Гасанов Владислав Камандарович • 23.11.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s3" data-lkey="2026-11-27" title="Гасанов Владислав Камандарович • 27.11.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s3" data-lkey="2026-11-30" title="Гасанов Владислав Камандарович • 30.11.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s3" data-lkey="2026-12-04" title="Гасанов Владислав Камандарович • 04.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s3" data-lkey="2026-12-07" title="Гасанов Владислав Камандарович • 07.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s3" data-lkey="2026-12-11" title="Гасанов Владислав Камандарович • 11.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s3" data-lkey="2026-12-14" title="Гасанов Владислав Камандарович • 14.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s3" data-lkey="2026-12-18" title="Гасанов Владислав Камандарович • 18.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s3" data-lkey="2026-12-21" title="Гасанов Владислав Камандарович • 21.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s3" data-lkey="2026-12-25" title="Гасанов Владислав Камандарович • 25.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s3" data-lkey="2026-12-28" title="Гасанов Владислав Камандарович • 28.12.2026 (Пн)
 Нажмите для выставления оценки">
         
         
       </td>
-      <td class="col-avg"><span class="avg-val ">—</span></td>
-      <td class="col-rec">—</td>
+      <td class="col-avg"><span class="avg-val avg-5">5.00</span></td>
+      <td class="col-rec">5</td>
       <td class="col-fin">
-        <select class="final-select" data-finkey="q2_inf_5_s3">
+        <select class="final-select" data-finkey="q2_inf_11_s3">
           <option value="" selected="">—</option>
           <option value="5">5</option>
           <option value="4">4</option>
@@ -1678,34 +1894,82 @@
     </tr><tr>
       <td class="col-idx">4</td>
       <td class="col-name">
-        <div class="student-cell" data-stid="inf_5_s4" title="Кучма Алина Викторовна">
-          <span class="student-name-txt">Кучма Алина Викторовна</span>
+        <div class="student-cell" data-stid="inf_11_s4" title="Григорюк Ангелина Александровна">
+          <span class="student-name-txt">Григорюк Ангелина Александровна</span>
           <span class="student-icons">
             
             
           </span>
         </div>
-      </td><td class="grade-cell" data-stid="inf_5_s4" data-lkey="2026-11-05" title="Кучма Алина Викторовна • 05.11.2026 (Чт)
+      </td><td class="grade-cell" data-stid="inf_11_s4" data-lkey="2026-11-06" title="Григорюк Ангелина Александровна • 06.11.2026 (Пт)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell" data-stid="inf_5_s4" data-lkey="2026-11-12" title="Кучма Алина Викторовна • 12.11.2026 (Чт)
+      </td><td class="grade-cell" data-stid="inf_11_s4" data-lkey="2026-11-09" title="Григорюк Ангелина Александровна • 09.11.2026 (Пн)
+Отметка: 5">
+        <span class="g-chip g-5">5</span>
+        
+      </td><td class="grade-cell" data-stid="inf_11_s4" data-lkey="2026-11-13" title="Григорюк Ангелина Александровна • 13.11.2026 (Пт)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell" data-stid="inf_5_s4" data-lkey="2026-11-19" title="Кучма Алина Викторовна • 19.11.2026 (Чт)
+      </td><td class="grade-cell" data-stid="inf_11_s4" data-lkey="2026-11-16" title="Григорюк Ангелина Александровна • 16.11.2026 (Пн)
+Отметка: 5">
+        <span class="g-chip g-5">5</span>
+        
+      </td><td class="grade-cell" data-stid="inf_11_s4" data-lkey="2026-11-20" title="Григорюк Ангелина Александровна • 20.11.2026 (Пт)
+Отметка: 5">
+        <span class="g-chip g-5">5</span>
+        
+      </td><td class="grade-cell" data-stid="inf_11_s4" data-lkey="2026-11-23" title="Григорюк Ангелина Александровна • 23.11.2026 (Пн)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell selected-cell" data-stid="inf_5_s4" data-lkey="2026-11-26" title="Кучма Алина Викторовна • 26.11.2026 (Чт)
+      </td><td class="grade-cell" data-stid="inf_11_s4" data-lkey="2026-11-27" title="Григорюк Ангелина Александровна • 27.11.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s4" data-lkey="2026-11-30" title="Григорюк Ангелина Александровна • 30.11.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s4" data-lkey="2026-12-04" title="Григорюк Ангелина Александровна • 04.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s4" data-lkey="2026-12-07" title="Григорюк Ангелина Александровна • 07.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s4" data-lkey="2026-12-11" title="Григорюк Ангелина Александровна • 11.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s4" data-lkey="2026-12-14" title="Григорюк Ангелина Александровна • 14.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s4" data-lkey="2026-12-18" title="Григорюк Ангелина Александровна • 18.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s4" data-lkey="2026-12-21" title="Григорюк Ангелина Александровна • 21.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s4" data-lkey="2026-12-25" title="Григорюк Ангелина Александровна • 25.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s4" data-lkey="2026-12-28" title="Григорюк Ангелина Александровна • 28.12.2026 (Пн)
 Нажмите для выставления оценки">
         
         
       </td>
-      <td class="col-avg"><span class="avg-val ">—</span></td>
-      <td class="col-rec">—</td>
+      <td class="col-avg"><span class="avg-val avg-5">5.00</span></td>
+      <td class="col-rec">5</td>
       <td class="col-fin">
-        <select class="final-select" data-finkey="q2_inf_5_s4">
+        <select class="final-select" data-finkey="q2_inf_11_s4">
           <option value="" selected="">—</option>
           <option value="5">5</option>
           <option value="4">4</option>
@@ -1719,26 +1983,74 @@
     </tr><tr>
       <td class="col-idx">5</td>
       <td class="col-name">
-        <div class="student-cell" data-stid="inf_5_s5" title="Лакомый Илья Витальевич">
-          <span class="student-name-txt">Лакомый Илья Витальевич</span>
+        <div class="student-cell" data-stid="inf_11_s5" title="Запорожцев Илья Алексеевич">
+          <span class="student-name-txt">Запорожцев Илья Алексеевич</span>
           <span class="student-icons">
             
             
           </span>
         </div>
-      </td><td class="grade-cell" data-stid="inf_5_s5" data-lkey="2026-11-05" title="Лакомый Илья Витальевич • 05.11.2026 (Чт)
+      </td><td class="grade-cell" data-stid="inf_11_s5" data-lkey="2026-11-06" title="Запорожцев Илья Алексеевич • 06.11.2026 (Пт)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell" data-stid="inf_5_s5" data-lkey="2026-11-12" title="Лакомый Илья Витальевич • 12.11.2026 (Чт)
+      </td><td class="grade-cell" data-stid="inf_11_s5" data-lkey="2026-11-09" title="Запорожцев Илья Алексеевич • 09.11.2026 (Пн)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell" data-stid="inf_5_s5" data-lkey="2026-11-19" title="Лакомый Илья Витальевич • 19.11.2026 (Чт)
+      </td><td class="grade-cell" data-stid="inf_11_s5" data-lkey="2026-11-13" title="Запорожцев Илья Алексеевич • 13.11.2026 (Пт)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell" data-stid="inf_5_s5" data-lkey="2026-11-26" title="Лакомый Илья Витальевич • 26.11.2026 (Чт)
+      </td><td class="grade-cell" data-stid="inf_11_s5" data-lkey="2026-11-16" title="Запорожцев Илья Алексеевич • 16.11.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s5" data-lkey="2026-11-20" title="Запорожцев Илья Алексеевич • 20.11.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s5" data-lkey="2026-11-23" title="Запорожцев Илья Алексеевич • 23.11.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s5" data-lkey="2026-11-27" title="Запорожцев Илья Алексеевич • 27.11.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s5" data-lkey="2026-11-30" title="Запорожцев Илья Алексеевич • 30.11.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s5" data-lkey="2026-12-04" title="Запорожцев Илья Алексеевич • 04.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s5" data-lkey="2026-12-07" title="Запорожцев Илья Алексеевич • 07.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s5" data-lkey="2026-12-11" title="Запорожцев Илья Алексеевич • 11.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s5" data-lkey="2026-12-14" title="Запорожцев Илья Алексеевич • 14.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s5" data-lkey="2026-12-18" title="Запорожцев Илья Алексеевич • 18.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s5" data-lkey="2026-12-21" title="Запорожцев Илья Алексеевич • 21.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s5" data-lkey="2026-12-25" title="Запорожцев Илья Алексеевич • 25.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s5" data-lkey="2026-12-28" title="Запорожцев Илья Алексеевич • 28.12.2026 (Пн)
 Нажмите для выставления оценки">
         
         
@@ -1746,7 +2058,7 @@
       <td class="col-avg"><span class="avg-val ">—</span></td>
       <td class="col-rec">—</td>
       <td class="col-fin">
-        <select class="final-select" data-finkey="q2_inf_5_s5">
+        <select class="final-select" data-finkey="q2_inf_11_s5">
           <option value="" selected="">—</option>
           <option value="5">5</option>
           <option value="4">4</option>
@@ -1760,26 +2072,74 @@
     </tr><tr>
       <td class="col-idx">6</td>
       <td class="col-name">
-        <div class="student-cell" data-stid="inf_5_s6" title="Малеев Михаил Денисович">
-          <span class="student-name-txt">Малеев Михаил Денисович</span>
+        <div class="student-cell" data-stid="inf_11_s6" title="Канивец Варвара Мухаммедовна">
+          <span class="student-name-txt">Канивец Варвара Мухаммедовна</span>
           <span class="student-icons">
             
             
           </span>
         </div>
-      </td><td class="grade-cell" data-stid="inf_5_s6" data-lkey="2026-11-05" title="Малеев Михаил Денисович • 05.11.2026 (Чт)
+      </td><td class="grade-cell" data-stid="inf_11_s6" data-lkey="2026-11-06" title="Канивец Варвара Мухаммедовна • 06.11.2026 (Пт)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell" data-stid="inf_5_s6" data-lkey="2026-11-12" title="Малеев Михаил Денисович • 12.11.2026 (Чт)
-Нажмите для выставления оценки">
-        
-        
-      </td><td class="grade-cell" data-stid="inf_5_s6" data-lkey="2026-11-19" title="Малеев Михаил Денисович • 19.11.2026 (Чт)
+      </td><td class="grade-cell" data-stid="inf_11_s6" data-lkey="2026-11-09" title="Канивец Варвара Мухаммедовна • 09.11.2026 (Пн)
 Отметка: 5">
         <span class="g-chip g-5">5</span>
         
-      </td><td class="grade-cell" data-stid="inf_5_s6" data-lkey="2026-11-26" title="Малеев Михаил Денисович • 26.11.2026 (Чт)
+      </td><td class="grade-cell" data-stid="inf_11_s6" data-lkey="2026-11-13" title="Канивец Варвара Мухаммедовна • 13.11.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s6" data-lkey="2026-11-16" title="Канивец Варвара Мухаммедовна • 16.11.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s6" data-lkey="2026-11-20" title="Канивец Варвара Мухаммедовна • 20.11.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s6" data-lkey="2026-11-23" title="Канивец Варвара Мухаммедовна • 23.11.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s6" data-lkey="2026-11-27" title="Канивец Варвара Мухаммедовна • 27.11.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s6" data-lkey="2026-11-30" title="Канивец Варвара Мухаммедовна • 30.11.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s6" data-lkey="2026-12-04" title="Канивец Варвара Мухаммедовна • 04.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s6" data-lkey="2026-12-07" title="Канивец Варвара Мухаммедовна • 07.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s6" data-lkey="2026-12-11" title="Канивец Варвара Мухаммедовна • 11.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s6" data-lkey="2026-12-14" title="Канивец Варвара Мухаммедовна • 14.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s6" data-lkey="2026-12-18" title="Канивец Варвара Мухаммедовна • 18.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s6" data-lkey="2026-12-21" title="Канивец Варвара Мухаммедовна • 21.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s6" data-lkey="2026-12-25" title="Канивец Варвара Мухаммедовна • 25.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s6" data-lkey="2026-12-28" title="Канивец Варвара Мухаммедовна • 28.12.2026 (Пн)
 Нажмите для выставления оценки">
         
         
@@ -1787,7 +2147,7 @@
       <td class="col-avg"><span class="avg-val avg-5">5.00</span></td>
       <td class="col-rec">5</td>
       <td class="col-fin">
-        <select class="final-select" data-finkey="q2_inf_5_s6">
+        <select class="final-select" data-finkey="q2_inf_11_s6">
           <option value="" selected="">—</option>
           <option value="5">5</option>
           <option value="4">4</option>
@@ -1801,26 +2161,74 @@
     </tr><tr>
       <td class="col-idx">7</td>
       <td class="col-name">
-        <div class="student-cell" data-stid="inf_5_s7" title="Насатенко Сергей Викторович">
-          <span class="student-name-txt">Насатенко Сергей Викторович</span>
+        <div class="student-cell" data-stid="inf_11_s7" title="Ковальчук Игорь Олегович">
+          <span class="student-name-txt">Ковальчук Игорь Олегович</span>
           <span class="student-icons">
             
             
           </span>
         </div>
-      </td><td class="grade-cell" data-stid="inf_5_s7" data-lkey="2026-11-05" title="Насатенко Сергей Викторович • 05.11.2026 (Чт)
+      </td><td class="grade-cell" data-stid="inf_11_s7" data-lkey="2026-11-06" title="Ковальчук Игорь Олегович • 06.11.2026 (Пт)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell" data-stid="inf_5_s7" data-lkey="2026-11-12" title="Насатенко Сергей Викторович • 12.11.2026 (Чт)
+      </td><td class="grade-cell" data-stid="inf_11_s7" data-lkey="2026-11-09" title="Ковальчук Игорь Олегович • 09.11.2026 (Пн)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell" data-stid="inf_5_s7" data-lkey="2026-11-19" title="Насатенко Сергей Викторович • 19.11.2026 (Чт)
+      </td><td class="grade-cell" data-stid="inf_11_s7" data-lkey="2026-11-13" title="Ковальчук Игорь Олегович • 13.11.2026 (Пт)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell" data-stid="inf_5_s7" data-lkey="2026-11-26" title="Насатенко Сергей Викторович • 26.11.2026 (Чт)
+      </td><td class="grade-cell" data-stid="inf_11_s7" data-lkey="2026-11-16" title="Ковальчук Игорь Олегович • 16.11.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s7" data-lkey="2026-11-20" title="Ковальчук Игорь Олегович • 20.11.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s7" data-lkey="2026-11-23" title="Ковальчук Игорь Олегович • 23.11.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s7" data-lkey="2026-11-27" title="Ковальчук Игорь Олегович • 27.11.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s7" data-lkey="2026-11-30" title="Ковальчук Игорь Олегович • 30.11.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s7" data-lkey="2026-12-04" title="Ковальчук Игорь Олегович • 04.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s7" data-lkey="2026-12-07" title="Ковальчук Игорь Олегович • 07.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s7" data-lkey="2026-12-11" title="Ковальчук Игорь Олегович • 11.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s7" data-lkey="2026-12-14" title="Ковальчук Игорь Олегович • 14.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s7" data-lkey="2026-12-18" title="Ковальчук Игорь Олегович • 18.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s7" data-lkey="2026-12-21" title="Ковальчук Игорь Олегович • 21.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s7" data-lkey="2026-12-25" title="Ковальчук Игорь Олегович • 25.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s7" data-lkey="2026-12-28" title="Ковальчук Игорь Олегович • 28.12.2026 (Пн)
 Нажмите для выставления оценки">
         
         
@@ -1828,7 +2236,7 @@
       <td class="col-avg"><span class="avg-val ">—</span></td>
       <td class="col-rec">—</td>
       <td class="col-fin">
-        <select class="final-select" data-finkey="q2_inf_5_s7">
+        <select class="final-select" data-finkey="q2_inf_11_s7">
           <option value="" selected="">—</option>
           <option value="5">5</option>
           <option value="4">4</option>
@@ -1842,34 +2250,82 @@
     </tr><tr>
       <td class="col-idx">8</td>
       <td class="col-name">
-        <div class="student-cell" data-stid="inf_5_s8" title="Пахомов Владислав Денисович">
-          <span class="student-name-txt">Пахомов Владислав Денисович</span>
+        <div class="student-cell" data-stid="inf_11_s8" title="Кузик Валентин Леонидович">
+          <span class="student-name-txt">Кузик Валентин Леонидович</span>
           <span class="student-icons">
             
             
           </span>
         </div>
-      </td><td class="grade-cell" data-stid="inf_5_s8" data-lkey="2026-11-05" title="Пахомов Владислав Денисович • 05.11.2026 (Чт)
+      </td><td class="grade-cell" data-stid="inf_11_s8" data-lkey="2026-11-06" title="Кузик Валентин Леонидович • 06.11.2026 (Пт)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell" data-stid="inf_5_s8" data-lkey="2026-11-12" title="Пахомов Владислав Денисович • 12.11.2026 (Чт)
-Отметка: 5">
-        <span class="g-chip g-5">5</span>
+      </td><td class="grade-cell" data-stid="inf_11_s8" data-lkey="2026-11-09" title="Кузик Валентин Леонидович • 09.11.2026 (Пн)
+Нажмите для выставления оценки">
         
-      </td><td class="grade-cell" data-stid="inf_5_s8" data-lkey="2026-11-19" title="Пахомов Владислав Денисович • 19.11.2026 (Чт)
-Отметка: 5">
-        <span class="g-chip g-5">5</span>
         
-      </td><td class="grade-cell" data-stid="inf_5_s8" data-lkey="2026-11-26" title="Пахомов Владислав Денисович • 26.11.2026 (Чт)
-Отметка: 5">
-        <span class="g-chip g-5">5</span>
+      </td><td class="grade-cell" data-stid="inf_11_s8" data-lkey="2026-11-13" title="Кузик Валентин Леонидович • 13.11.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s8" data-lkey="2026-11-16" title="Кузик Валентин Леонидович • 16.11.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s8" data-lkey="2026-11-20" title="Кузик Валентин Леонидович • 20.11.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s8" data-lkey="2026-11-23" title="Кузик Валентин Леонидович • 23.11.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s8" data-lkey="2026-11-27" title="Кузик Валентин Леонидович • 27.11.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s8" data-lkey="2026-11-30" title="Кузик Валентин Леонидович • 30.11.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s8" data-lkey="2026-12-04" title="Кузик Валентин Леонидович • 04.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s8" data-lkey="2026-12-07" title="Кузик Валентин Леонидович • 07.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s8" data-lkey="2026-12-11" title="Кузик Валентин Леонидович • 11.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s8" data-lkey="2026-12-14" title="Кузик Валентин Леонидович • 14.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s8" data-lkey="2026-12-18" title="Кузик Валентин Леонидович • 18.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s8" data-lkey="2026-12-21" title="Кузик Валентин Леонидович • 21.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s8" data-lkey="2026-12-25" title="Кузик Валентин Леонидович • 25.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s8" data-lkey="2026-12-28" title="Кузик Валентин Леонидович • 28.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
         
       </td>
-      <td class="col-avg"><span class="avg-val avg-5">5.00</span></td>
-      <td class="col-rec">5</td>
+      <td class="col-avg"><span class="avg-val ">—</span></td>
+      <td class="col-rec">—</td>
       <td class="col-fin">
-        <select class="final-select" data-finkey="q2_inf_5_s8">
+        <select class="final-select" data-finkey="q2_inf_11_s8">
           <option value="" selected="">—</option>
           <option value="5">5</option>
           <option value="4">4</option>
@@ -1883,34 +2339,82 @@
     </tr><tr>
       <td class="col-idx">9</td>
       <td class="col-name">
-        <div class="student-cell" data-stid="inf_5_s9" title="Хань Святослав Романович">
-          <span class="student-name-txt">Хань Святослав Романович</span>
+        <div class="student-cell" data-stid="inf_11_s9" title="Ломейко Дарья Сергеевна">
+          <span class="student-name-txt">Ломейко Дарья Сергеевна</span>
           <span class="student-icons">
             
             
           </span>
         </div>
-      </td><td class="grade-cell" data-stid="inf_5_s9" data-lkey="2026-11-05" title="Хань Святослав Романович • 05.11.2026 (Чт)
+      </td><td class="grade-cell" data-stid="inf_11_s9" data-lkey="2026-11-06" title="Ломейко Дарья Сергеевна • 06.11.2026 (Пт)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell" data-stid="inf_5_s9" data-lkey="2026-11-12" title="Хань Святослав Романович • 12.11.2026 (Чт)
+      </td><td class="grade-cell" data-stid="inf_11_s9" data-lkey="2026-11-09" title="Ломейко Дарья Сергеевна • 09.11.2026 (Пн)
+Отметка: 5">
+        <span class="g-chip g-5">5</span>
+        
+      </td><td class="grade-cell" data-stid="inf_11_s9" data-lkey="2026-11-13" title="Ломейко Дарья Сергеевна • 13.11.2026 (Пт)
+Отметка: 5">
+        <span class="g-chip g-5">5</span>
+        
+      </td><td class="grade-cell" data-stid="inf_11_s9" data-lkey="2026-11-16" title="Ломейко Дарья Сергеевна • 16.11.2026 (Пн)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell" data-stid="inf_5_s9" data-lkey="2026-11-19" title="Хань Святослав Романович • 19.11.2026 (Чт)
+      </td><td class="grade-cell" data-stid="inf_11_s9" data-lkey="2026-11-20" title="Ломейко Дарья Сергеевна • 20.11.2026 (Пт)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell" data-stid="inf_5_s9" data-lkey="2026-11-26" title="Хань Святослав Романович • 26.11.2026 (Чт)
+      </td><td class="grade-cell" data-stid="inf_11_s9" data-lkey="2026-11-23" title="Ломейко Дарья Сергеевна • 23.11.2026 (Пн)
+Отметка: 5">
+        <span class="g-chip g-5">5</span>
+        
+      </td><td class="grade-cell" data-stid="inf_11_s9" data-lkey="2026-11-27" title="Ломейко Дарья Сергеевна • 27.11.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s9" data-lkey="2026-11-30" title="Ломейко Дарья Сергеевна • 30.11.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s9" data-lkey="2026-12-04" title="Ломейко Дарья Сергеевна • 04.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s9" data-lkey="2026-12-07" title="Ломейко Дарья Сергеевна • 07.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s9" data-lkey="2026-12-11" title="Ломейко Дарья Сергеевна • 11.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s9" data-lkey="2026-12-14" title="Ломейко Дарья Сергеевна • 14.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s9" data-lkey="2026-12-18" title="Ломейко Дарья Сергеевна • 18.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s9" data-lkey="2026-12-21" title="Ломейко Дарья Сергеевна • 21.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s9" data-lkey="2026-12-25" title="Ломейко Дарья Сергеевна • 25.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s9" data-lkey="2026-12-28" title="Ломейко Дарья Сергеевна • 28.12.2026 (Пн)
 Нажмите для выставления оценки">
         
         
       </td>
-      <td class="col-avg"><span class="avg-val ">—</span></td>
-      <td class="col-rec">—</td>
+      <td class="col-avg"><span class="avg-val avg-5">5.00</span></td>
+      <td class="col-rec">5</td>
       <td class="col-fin">
-        <select class="final-select" data-finkey="q2_inf_5_s9">
+        <select class="final-select" data-finkey="q2_inf_11_s9">
           <option value="" selected="">—</option>
           <option value="5">5</option>
           <option value="4">4</option>
@@ -1924,34 +2428,82 @@
     </tr><tr>
       <td class="col-idx">10</td>
       <td class="col-name">
-        <div class="student-cell" data-stid="inf_5_s10" title="Финагин Артем Константинович">
-          <span class="student-name-txt">Финагин Артем Константинович</span>
+        <div class="student-cell" data-stid="inf_11_s10" title="Романенко Александр Сергеевич">
+          <span class="student-name-txt">Романенко Александр Сергеевич</span>
           <span class="student-icons">
             
             
           </span>
         </div>
-      </td><td class="grade-cell" data-stid="inf_5_s10" data-lkey="2026-11-05" title="Финагин Артем Константинович • 05.11.2026 (Чт)
+      </td><td class="grade-cell" data-stid="inf_11_s10" data-lkey="2026-11-06" title="Романенко Александр Сергеевич • 06.11.2026 (Пт)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell" data-stid="inf_5_s10" data-lkey="2026-11-12" title="Финагин Артем Константинович • 12.11.2026 (Чт)
-Отметка: 5">
-        <span class="g-chip g-5">5</span>
-        
-      </td><td class="grade-cell" data-stid="inf_5_s10" data-lkey="2026-11-19" title="Финагин Артем Константинович • 19.11.2026 (Чт)
+      </td><td class="grade-cell" data-stid="inf_11_s10" data-lkey="2026-11-09" title="Романенко Александр Сергеевич • 09.11.2026 (Пн)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell" data-stid="inf_5_s10" data-lkey="2026-11-26" title="Финагин Артем Константинович • 26.11.2026 (Чт)
+      </td><td class="grade-cell" data-stid="inf_11_s10" data-lkey="2026-11-13" title="Романенко Александр Сергеевич • 13.11.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s10" data-lkey="2026-11-16" title="Романенко Александр Сергеевич • 16.11.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s10" data-lkey="2026-11-20" title="Романенко Александр Сергеевич • 20.11.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s10" data-lkey="2026-11-23" title="Романенко Александр Сергеевич • 23.11.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s10" data-lkey="2026-11-27" title="Романенко Александр Сергеевич • 27.11.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s10" data-lkey="2026-11-30" title="Романенко Александр Сергеевич • 30.11.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s10" data-lkey="2026-12-04" title="Романенко Александр Сергеевич • 04.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s10" data-lkey="2026-12-07" title="Романенко Александр Сергеевич • 07.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s10" data-lkey="2026-12-11" title="Романенко Александр Сергеевич • 11.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s10" data-lkey="2026-12-14" title="Романенко Александр Сергеевич • 14.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s10" data-lkey="2026-12-18" title="Романенко Александр Сергеевич • 18.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s10" data-lkey="2026-12-21" title="Романенко Александр Сергеевич • 21.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s10" data-lkey="2026-12-25" title="Романенко Александр Сергеевич • 25.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s10" data-lkey="2026-12-28" title="Романенко Александр Сергеевич • 28.12.2026 (Пн)
 Нажмите для выставления оценки">
         
         
       </td>
-      <td class="col-avg"><span class="avg-val avg-5">5.00</span></td>
-      <td class="col-rec">5</td>
+      <td class="col-avg"><span class="avg-val ">—</span></td>
+      <td class="col-rec">—</td>
       <td class="col-fin">
-        <select class="final-select" data-finkey="q2_inf_5_s10">
+        <select class="final-select" data-finkey="q2_inf_11_s10">
           <option value="" selected="">—</option>
           <option value="5">5</option>
           <option value="4">4</option>
@@ -1965,26 +2517,74 @@
     </tr><tr>
       <td class="col-idx">11</td>
       <td class="col-name">
-        <div class="student-cell" data-stid="inf_5_s11" title="Чолария Кира Романовна">
-          <span class="student-name-txt">Чолария Кира Романовна</span>
+        <div class="student-cell" data-stid="inf_11_s11" title="Семионкин Андрей Витальевич">
+          <span class="student-name-txt">Семионкин Андрей Витальевич</span>
           <span class="student-icons">
             
             
           </span>
         </div>
-      </td><td class="grade-cell" data-stid="inf_5_s11" data-lkey="2026-11-05" title="Чолария Кира Романовна • 05.11.2026 (Чт)
+      </td><td class="grade-cell" data-stid="inf_11_s11" data-lkey="2026-11-06" title="Семионкин Андрей Витальевич • 06.11.2026 (Пт)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell" data-stid="inf_5_s11" data-lkey="2026-11-12" title="Чолария Кира Романовна • 12.11.2026 (Чт)
+      </td><td class="grade-cell" data-stid="inf_11_s11" data-lkey="2026-11-09" title="Семионкин Андрей Витальевич • 09.11.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s11" data-lkey="2026-11-13" title="Семионкин Андрей Витальевич • 13.11.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s11" data-lkey="2026-11-16" title="Семионкин Андрей Витальевич • 16.11.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s11" data-lkey="2026-11-20" title="Семионкин Андрей Витальевич • 20.11.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s11" data-lkey="2026-11-23" title="Семионкин Андрей Витальевич • 23.11.2026 (Пн)
 Отметка: 5">
         <span class="g-chip g-5">5</span>
         
-      </td><td class="grade-cell" data-stid="inf_5_s11" data-lkey="2026-11-19" title="Чолария Кира Романовна • 19.11.2026 (Чт)
+      </td><td class="grade-cell" data-stid="inf_11_s11" data-lkey="2026-11-27" title="Семионкин Андрей Витальевич • 27.11.2026 (Пт)
 Нажмите для выставления оценки">
         
         
-      </td><td class="grade-cell" data-stid="inf_5_s11" data-lkey="2026-11-26" title="Чолария Кира Романовна • 26.11.2026 (Чт)
+      </td><td class="grade-cell" data-stid="inf_11_s11" data-lkey="2026-11-30" title="Семионкин Андрей Витальевич • 30.11.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s11" data-lkey="2026-12-04" title="Семионкин Андрей Витальевич • 04.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s11" data-lkey="2026-12-07" title="Семионкин Андрей Витальевич • 07.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s11" data-lkey="2026-12-11" title="Семионкин Андрей Витальевич • 11.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s11" data-lkey="2026-12-14" title="Семионкин Андрей Витальевич • 14.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s11" data-lkey="2026-12-18" title="Семионкин Андрей Витальевич • 18.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s11" data-lkey="2026-12-21" title="Семионкин Андрей Витальевич • 21.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s11" data-lkey="2026-12-25" title="Семионкин Андрей Витальевич • 25.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s11" data-lkey="2026-12-28" title="Семионкин Андрей Витальевич • 28.12.2026 (Пн)
 Нажмите для выставления оценки">
         
         
@@ -1992,7 +2592,630 @@
       <td class="col-avg"><span class="avg-val avg-5">5.00</span></td>
       <td class="col-rec">5</td>
       <td class="col-fin">
-        <select class="final-select" data-finkey="q2_inf_5_s11">
+        <select class="final-select" data-finkey="q2_inf_11_s11">
+          <option value="" selected="">—</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="зач">зач</option>
+          <option value="н/а">н/а</option>
+        </select>
+      </td>
+      <td class="col-stat">0 / 0</td>
+    </tr><tr>
+      <td class="col-idx">12</td>
+      <td class="col-name">
+        <div class="student-cell" data-stid="inf_11_s12" title="Сидоренко Денис Андреевич">
+          <span class="student-name-txt">Сидоренко Денис Андреевич</span>
+          <span class="student-icons">
+            
+            
+          </span>
+        </div>
+      </td><td class="grade-cell" data-stid="inf_11_s12" data-lkey="2026-11-06" title="Сидоренко Денис Андреевич • 06.11.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s12" data-lkey="2026-11-09" title="Сидоренко Денис Андреевич • 09.11.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s12" data-lkey="2026-11-13" title="Сидоренко Денис Андреевич • 13.11.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s12" data-lkey="2026-11-16" title="Сидоренко Денис Андреевич • 16.11.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s12" data-lkey="2026-11-20" title="Сидоренко Денис Андреевич • 20.11.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s12" data-lkey="2026-11-23" title="Сидоренко Денис Андреевич • 23.11.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s12" data-lkey="2026-11-27" title="Сидоренко Денис Андреевич • 27.11.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s12" data-lkey="2026-11-30" title="Сидоренко Денис Андреевич • 30.11.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s12" data-lkey="2026-12-04" title="Сидоренко Денис Андреевич • 04.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s12" data-lkey="2026-12-07" title="Сидоренко Денис Андреевич • 07.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s12" data-lkey="2026-12-11" title="Сидоренко Денис Андреевич • 11.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s12" data-lkey="2026-12-14" title="Сидоренко Денис Андреевич • 14.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s12" data-lkey="2026-12-18" title="Сидоренко Денис Андреевич • 18.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s12" data-lkey="2026-12-21" title="Сидоренко Денис Андреевич • 21.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s12" data-lkey="2026-12-25" title="Сидоренко Денис Андреевич • 25.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s12" data-lkey="2026-12-28" title="Сидоренко Денис Андреевич • 28.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td>
+      <td class="col-avg"><span class="avg-val ">—</span></td>
+      <td class="col-rec">—</td>
+      <td class="col-fin">
+        <select class="final-select" data-finkey="q2_inf_11_s12">
+          <option value="" selected="">—</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="зач">зач</option>
+          <option value="н/а">н/а</option>
+        </select>
+      </td>
+      <td class="col-stat">0 / 0</td>
+    </tr><tr>
+      <td class="col-idx">13</td>
+      <td class="col-name">
+        <div class="student-cell" data-stid="inf_11_s13" title="Сидорова Карина Александровна">
+          <span class="student-name-txt">Сидорова Карина Александровна</span>
+          <span class="student-icons">
+            
+            
+          </span>
+        </div>
+      </td><td class="grade-cell" data-stid="inf_11_s13" data-lkey="2026-11-06" title="Сидорова Карина Александровна • 06.11.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s13" data-lkey="2026-11-09" title="Сидорова Карина Александровна • 09.11.2026 (Пн)
+Отметка: 5">
+        <span class="g-chip g-5">5</span>
+        
+      </td><td class="grade-cell" data-stid="inf_11_s13" data-lkey="2026-11-13" title="Сидорова Карина Александровна • 13.11.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s13" data-lkey="2026-11-16" title="Сидорова Карина Александровна • 16.11.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s13" data-lkey="2026-11-20" title="Сидорова Карина Александровна • 20.11.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s13" data-lkey="2026-11-23" title="Сидорова Карина Александровна • 23.11.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s13" data-lkey="2026-11-27" title="Сидорова Карина Александровна • 27.11.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s13" data-lkey="2026-11-30" title="Сидорова Карина Александровна • 30.11.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s13" data-lkey="2026-12-04" title="Сидорова Карина Александровна • 04.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s13" data-lkey="2026-12-07" title="Сидорова Карина Александровна • 07.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s13" data-lkey="2026-12-11" title="Сидорова Карина Александровна • 11.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s13" data-lkey="2026-12-14" title="Сидорова Карина Александровна • 14.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s13" data-lkey="2026-12-18" title="Сидорова Карина Александровна • 18.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s13" data-lkey="2026-12-21" title="Сидорова Карина Александровна • 21.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s13" data-lkey="2026-12-25" title="Сидорова Карина Александровна • 25.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s13" data-lkey="2026-12-28" title="Сидорова Карина Александровна • 28.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td>
+      <td class="col-avg"><span class="avg-val avg-5">5.00</span></td>
+      <td class="col-rec">5</td>
+      <td class="col-fin">
+        <select class="final-select" data-finkey="q2_inf_11_s13">
+          <option value="" selected="">—</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="зач">зач</option>
+          <option value="н/а">н/а</option>
+        </select>
+      </td>
+      <td class="col-stat">0 / 0</td>
+    </tr><tr>
+      <td class="col-idx">14</td>
+      <td class="col-name">
+        <div class="student-cell" data-stid="inf_11_s14" title="Силяев Егор Сергеевич">
+          <span class="student-name-txt">Силяев Егор Сергеевич</span>
+          <span class="student-icons">
+            
+            
+          </span>
+        </div>
+      </td><td class="grade-cell" data-stid="inf_11_s14" data-lkey="2026-11-06" title="Силяев Егор Сергеевич • 06.11.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s14" data-lkey="2026-11-09" title="Силяев Егор Сергеевич • 09.11.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s14" data-lkey="2026-11-13" title="Силяев Егор Сергеевич • 13.11.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s14" data-lkey="2026-11-16" title="Силяев Егор Сергеевич • 16.11.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s14" data-lkey="2026-11-20" title="Силяев Егор Сергеевич • 20.11.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s14" data-lkey="2026-11-23" title="Силяев Егор Сергеевич • 23.11.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s14" data-lkey="2026-11-27" title="Силяев Егор Сергеевич • 27.11.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s14" data-lkey="2026-11-30" title="Силяев Егор Сергеевич • 30.11.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s14" data-lkey="2026-12-04" title="Силяев Егор Сергеевич • 04.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s14" data-lkey="2026-12-07" title="Силяев Егор Сергеевич • 07.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s14" data-lkey="2026-12-11" title="Силяев Егор Сергеевич • 11.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s14" data-lkey="2026-12-14" title="Силяев Егор Сергеевич • 14.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s14" data-lkey="2026-12-18" title="Силяев Егор Сергеевич • 18.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s14" data-lkey="2026-12-21" title="Силяев Егор Сергеевич • 21.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s14" data-lkey="2026-12-25" title="Силяев Егор Сергеевич • 25.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s14" data-lkey="2026-12-28" title="Силяев Егор Сергеевич • 28.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td>
+      <td class="col-avg"><span class="avg-val ">—</span></td>
+      <td class="col-rec">—</td>
+      <td class="col-fin">
+        <select class="final-select" data-finkey="q2_inf_11_s14">
+          <option value="" selected="">—</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="зач">зач</option>
+          <option value="н/а">н/а</option>
+        </select>
+      </td>
+      <td class="col-stat">0 / 0</td>
+    </tr><tr>
+      <td class="col-idx">15</td>
+      <td class="col-name">
+        <div class="student-cell" data-stid="inf_11_s15" title="Стадницкая Анастасия Дмитриевна">
+          <span class="student-name-txt">Стадницкая Анастасия Дмитриевна</span>
+          <span class="student-icons">
+            
+            
+          </span>
+        </div>
+      </td><td class="grade-cell" data-stid="inf_11_s15" data-lkey="2026-11-06" title="Стадницкая Анастасия Дмитриевна • 06.11.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s15" data-lkey="2026-11-09" title="Стадницкая Анастасия Дмитриевна • 09.11.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s15" data-lkey="2026-11-13" title="Стадницкая Анастасия Дмитриевна • 13.11.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s15" data-lkey="2026-11-16" title="Стадницкая Анастасия Дмитриевна • 16.11.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s15" data-lkey="2026-11-20" title="Стадницкая Анастасия Дмитриевна • 20.11.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s15" data-lkey="2026-11-23" title="Стадницкая Анастасия Дмитриевна • 23.11.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s15" data-lkey="2026-11-27" title="Стадницкая Анастасия Дмитриевна • 27.11.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s15" data-lkey="2026-11-30" title="Стадницкая Анастасия Дмитриевна • 30.11.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s15" data-lkey="2026-12-04" title="Стадницкая Анастасия Дмитриевна • 04.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s15" data-lkey="2026-12-07" title="Стадницкая Анастасия Дмитриевна • 07.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s15" data-lkey="2026-12-11" title="Стадницкая Анастасия Дмитриевна • 11.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s15" data-lkey="2026-12-14" title="Стадницкая Анастасия Дмитриевна • 14.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s15" data-lkey="2026-12-18" title="Стадницкая Анастасия Дмитриевна • 18.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s15" data-lkey="2026-12-21" title="Стадницкая Анастасия Дмитриевна • 21.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s15" data-lkey="2026-12-25" title="Стадницкая Анастасия Дмитриевна • 25.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s15" data-lkey="2026-12-28" title="Стадницкая Анастасия Дмитриевна • 28.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td>
+      <td class="col-avg"><span class="avg-val ">—</span></td>
+      <td class="col-rec">—</td>
+      <td class="col-fin">
+        <select class="final-select" data-finkey="q2_inf_11_s15">
+          <option value="" selected="">—</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="зач">зач</option>
+          <option value="н/а">н/а</option>
+        </select>
+      </td>
+      <td class="col-stat">0 / 0</td>
+    </tr><tr>
+      <td class="col-idx">16</td>
+      <td class="col-name">
+        <div class="student-cell" data-stid="inf_11_s16" title="Омельяненко Каролина Александровна">
+          <span class="student-name-txt">Омельяненко Каролина Александровна</span>
+          <span class="student-icons">
+            
+            
+          </span>
+        </div>
+      </td><td class="grade-cell" data-stid="inf_11_s16" data-lkey="2026-11-06" title="Омельяненко Каролина Александровна • 06.11.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s16" data-lkey="2026-11-09" title="Омельяненко Каролина Александровна • 09.11.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s16" data-lkey="2026-11-13" title="Омельяненко Каролина Александровна • 13.11.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s16" data-lkey="2026-11-16" title="Омельяненко Каролина Александровна • 16.11.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s16" data-lkey="2026-11-20" title="Омельяненко Каролина Александровна • 20.11.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s16" data-lkey="2026-11-23" title="Омельяненко Каролина Александровна • 23.11.2026 (Пн)
+Отметка: 5">
+        <span class="g-chip g-5">5</span>
+        
+      </td><td class="grade-cell" data-stid="inf_11_s16" data-lkey="2026-11-27" title="Омельяненко Каролина Александровна • 27.11.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s16" data-lkey="2026-11-30" title="Омельяненко Каролина Александровна • 30.11.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s16" data-lkey="2026-12-04" title="Омельяненко Каролина Александровна • 04.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s16" data-lkey="2026-12-07" title="Омельяненко Каролина Александровна • 07.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s16" data-lkey="2026-12-11" title="Омельяненко Каролина Александровна • 11.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s16" data-lkey="2026-12-14" title="Омельяненко Каролина Александровна • 14.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s16" data-lkey="2026-12-18" title="Омельяненко Каролина Александровна • 18.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s16" data-lkey="2026-12-21" title="Омельяненко Каролина Александровна • 21.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s16" data-lkey="2026-12-25" title="Омельяненко Каролина Александровна • 25.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s16" data-lkey="2026-12-28" title="Омельяненко Каролина Александровна • 28.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td>
+      <td class="col-avg"><span class="avg-val avg-5">5.00</span></td>
+      <td class="col-rec">5</td>
+      <td class="col-fin">
+        <select class="final-select" data-finkey="q2_inf_11_s16">
+          <option value="" selected="">—</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="зач">зач</option>
+          <option value="н/а">н/а</option>
+        </select>
+      </td>
+      <td class="col-stat">0 / 0</td>
+    </tr><tr>
+      <td class="col-idx">17</td>
+      <td class="col-name">
+        <div class="student-cell" data-stid="inf_11_s17" title="Хапков Илья Денисович">
+          <span class="student-name-txt">Хапков Илья Денисович</span>
+          <span class="student-icons">
+            
+            
+          </span>
+        </div>
+      </td><td class="grade-cell" data-stid="inf_11_s17" data-lkey="2026-11-06" title="Хапков Илья Денисович • 06.11.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s17" data-lkey="2026-11-09" title="Хапков Илья Денисович • 09.11.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s17" data-lkey="2026-11-13" title="Хапков Илья Денисович • 13.11.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s17" data-lkey="2026-11-16" title="Хапков Илья Денисович • 16.11.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s17" data-lkey="2026-11-20" title="Хапков Илья Денисович • 20.11.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s17" data-lkey="2026-11-23" title="Хапков Илья Денисович • 23.11.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s17" data-lkey="2026-11-27" title="Хапков Илья Денисович • 27.11.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s17" data-lkey="2026-11-30" title="Хапков Илья Денисович • 30.11.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s17" data-lkey="2026-12-04" title="Хапков Илья Денисович • 04.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s17" data-lkey="2026-12-07" title="Хапков Илья Денисович • 07.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s17" data-lkey="2026-12-11" title="Хапков Илья Денисович • 11.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s17" data-lkey="2026-12-14" title="Хапков Илья Денисович • 14.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s17" data-lkey="2026-12-18" title="Хапков Илья Денисович • 18.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s17" data-lkey="2026-12-21" title="Хапков Илья Денисович • 21.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s17" data-lkey="2026-12-25" title="Хапков Илья Денисович • 25.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s17" data-lkey="2026-12-28" title="Хапков Илья Денисович • 28.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td>
+      <td class="col-avg"><span class="avg-val ">—</span></td>
+      <td class="col-rec">—</td>
+      <td class="col-fin">
+        <select class="final-select" data-finkey="q2_inf_11_s17">
+          <option value="" selected="">—</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="зач">зач</option>
+          <option value="н/а">н/а</option>
+        </select>
+      </td>
+      <td class="col-stat">0 / 0</td>
+    </tr><tr>
+      <td class="col-idx">18</td>
+      <td class="col-name">
+        <div class="student-cell" data-stid="inf_11_s18" title="Харченко Анастасия Сергеевна">
+          <span class="student-name-txt">Харченко Анастасия Сергеевна</span>
+          <span class="student-icons">
+            
+            
+          </span>
+        </div>
+      </td><td class="grade-cell" data-stid="inf_11_s18" data-lkey="2026-11-06" title="Харченко Анастасия Сергеевна • 06.11.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s18" data-lkey="2026-11-09" title="Харченко Анастасия Сергеевна • 09.11.2026 (Пн)
+Отметка: 5">
+        <span class="g-chip g-5">5</span>
+        
+      </td><td class="grade-cell" data-stid="inf_11_s18" data-lkey="2026-11-13" title="Харченко Анастасия Сергеевна • 13.11.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s18" data-lkey="2026-11-16" title="Харченко Анастасия Сергеевна • 16.11.2026 (Пн)
+Отметка: 5">
+        <span class="g-chip g-5">5</span>
+        
+      </td><td class="grade-cell" data-stid="inf_11_s18" data-lkey="2026-11-20" title="Харченко Анастасия Сергеевна • 20.11.2026 (Пт)
+Отметка: 5">
+        <span class="g-chip g-5">5</span>
+        
+      </td><td class="grade-cell" data-stid="inf_11_s18" data-lkey="2026-11-23" title="Харченко Анастасия Сергеевна • 23.11.2026 (Пн)
+Отметка: 5">
+        <span class="g-chip g-5">5</span>
+        
+      </td><td class="grade-cell" data-stid="inf_11_s18" data-lkey="2026-11-27" title="Харченко Анастасия Сергеевна • 27.11.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s18" data-lkey="2026-11-30" title="Харченко Анастасия Сергеевна • 30.11.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s18" data-lkey="2026-12-04" title="Харченко Анастасия Сергеевна • 04.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s18" data-lkey="2026-12-07" title="Харченко Анастасия Сергеевна • 07.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s18" data-lkey="2026-12-11" title="Харченко Анастасия Сергеевна • 11.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s18" data-lkey="2026-12-14" title="Харченко Анастасия Сергеевна • 14.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s18" data-lkey="2026-12-18" title="Харченко Анастасия Сергеевна • 18.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s18" data-lkey="2026-12-21" title="Харченко Анастасия Сергеевна • 21.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s18" data-lkey="2026-12-25" title="Харченко Анастасия Сергеевна • 25.12.2026 (Пт)
+Нажмите для выставления оценки">
+        
+        
+      </td><td class="grade-cell" data-stid="inf_11_s18" data-lkey="2026-12-28" title="Харченко Анастасия Сергеевна • 28.12.2026 (Пн)
+Нажмите для выставления оценки">
+        
+        
+      </td>
+      <td class="col-avg"><span class="avg-val avg-5">5.00</span></td>
+      <td class="col-rec">5</td>
+      <td class="col-fin">
+        <select class="final-select" data-finkey="q2_inf_11_s18">
           <option value="" selected="">—</option>
           <option value="5">5</option>
           <option value="4">4</option>
